@@ -2728,8 +2728,8 @@
     },
     {
       "path": "skill/VALIDATION.json",
-      "bytes": 1476,
-      "sha256": "979b72fd63ecdc190c7d45aba266d2552f6a396878156be117e57cc4bf212340",
+      "bytes": 1514,
+      "sha256": "2f0112f137c12e841c776de554f62e887693759da187afea0363dd8f0724df90",
       "mode": "0o644",
       "origin": "added 2026-11-03: skill/VALIDATION.json"
     },
@@ -2840,8 +2840,8 @@
     },
     {
       "path": "skill/validate_skills.py",
-      "bytes": 7218,
-      "sha256": "d9e2f0d305e83d5ae7e1427f606d6a81e05a8f993e9164824f01283e12e0e074",
+      "bytes": 7677,
+      "sha256": "51398ae91af1ed03c73b1ed41f2343414209e3eea5c3b770aefe6b6eb539d42d",
       "mode": "0o644",
       "origin": "added 2026-11-03: skill/validate_skills.py"
     },

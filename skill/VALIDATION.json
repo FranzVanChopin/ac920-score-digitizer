@@ -28,8 +28,8 @@
     {
       "name": "pynq_offline_pair_and_failure_cases",
       "passed": true,
-      "evidence": "real Vivado XSA pair",
-      "metadata_ranges": 6,
+      "evidence": "synthetic metadata/presence fixture; not a valid bitstream",
+      "metadata_ranges": 1,
       "hardware_tested": false,
       "generation_match_proven": false
     },

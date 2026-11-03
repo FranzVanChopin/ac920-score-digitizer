@@ -32,7 +32,14 @@ def run(xsa=None):
     assert fp.drc('| INBB-1 | Critical Warning | Black Box Instances | 15 |')['counts']['Critical Warning']==15
     checks.append(dict(name='fpga_real_reports_and_invalid_summary',passed=True,wns_ns=.817,drc_warnings=8,synthesis_and_implementation_separated=True))
     mx=load('musicxml',BASE/'musicxml-regression/scripts/compare_musicxml.py')
-    sample=ROOT/'recognition/card_20261103/Outputs/01.musicxml'
+    # the recognition evidence lives under board/ after the 2026-11-02 restructure;
+    # keep the other two candidates so this also runs in the original pack layout.
+    sample=next((p for p in (
+        ROOT/'board/recognition/card_20261103/Outputs/01.musicxml',
+        ROOT/'recognition/card_20261103/Outputs/01.musicxml',
+        ROOT/'data/samples/result/01.musicxml',
+    ) if p.is_file()),None)
+    assert sample is not None,'sample MusicXML not found; expected board/recognition/card_20261103/Outputs/01.musicxml'
     assert mx.compare(sample,sample)['semantic_events_equal']
     with tempfile.TemporaryDirectory() as tmp:
         tmp=Path(tmp)
