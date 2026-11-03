@@ -1,0 +1,53 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "name": "skill_format_and_python_syntax",
+      "passed": true,
+      "skills": 6
+    },
+    {
+      "name": "fpga_real_reports_and_invalid_summary",
+      "passed": true,
+      "wns_ns": 0.817,
+      "drc_warnings": 8,
+      "synthesis_and_implementation_separated": true
+    },
+    {
+      "name": "musicxml_real_output_and_semantic_mutations",
+      "passed": true,
+      "real_score_events": 1901,
+      "cases": [
+        "format_only",
+        "changed_pitch",
+        "equivalent_divisions",
+        "chord_backup_voice",
+        "added_event"
+      ]
+    },
+    {
+      "name": "pynq_offline_pair_and_failure_cases",
+      "passed": true,
+      "evidence": "real Vivado XSA pair",
+      "metadata_ranges": 6,
+      "hardware_tested": false,
+      "generation_match_proven": false
+    },
+    {
+      "name": "beat_exact_and_fractional_fps",
+      "passed": true,
+      "normal_example_frames": 1680,
+      "max_rounding_error_frames": "1/2"
+    },
+    {
+      "name": "privacy_safe_and_raw_transcript_fixtures",
+      "passed": true
+    }
+  ],
+  "scope": "New offline skill behavior checks, not full historical algorithm regression, PYNQ deployment, tool installation or live-board/audio tests.",
+  "template_review": {
+    "skill": "multi-project-handoff",
+    "method": "Retrospective project contract review",
+    "external_team_reuse_tested": false
+  }
+}

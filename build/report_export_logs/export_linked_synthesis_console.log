@@ -1,238 +1,238 @@
-
-****** Vivado v2024.2 (64-bit)
-  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
-  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
-  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Tue Nov  3 11:56:56 2026
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source outputs/handoff_evidence_20261103/work/export_linked_synthesis.tcl
-# set root [file normalize [file join [file dirname [info script]] .. .. ..]]
-# set project [file join $root lab camera_onecard_20261029 build vivado_camera camera_capture.xpr]
-# set output [file join $root release AC920_Handoff_Evidence_20261103 build reports]
-# open_project -read_only $project
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'F:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera'
-INFO: [Project 1-313] Project file moved from 'R:/build/vivado_camera' since last save.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinix/Vivado/2024.2/data/ip'.
-WARNING: [BD 41-1663] The design 'camera_capture.bd' cannot be modified due to following reason(s):
-* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
-
-WARNING: [BD 41-1661] One or more IPs have been locked in the design 'camera_capture.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
-List of locked IPs:
-camera_capture_camera_gpio_0
-camera_capture_demosaic_0
-camera_capture_ps_0
-camera_capture_csi_rx_0
-camera_capture_rgb12_to_rgb10_0
-camera_capture_gamma_0
-camera_capture_rgb10_to_rgb8_0
-camera_capture_vdma_0
-camera_capture_mode_bit_0
-camera_capture_enable_bit_0
-camera_capture_request_bit_0
-camera_capture_abort_bit_0
-camera_capture_isp_reset_bit_0
-camera_capture_capture_status_0
-camera_capture_control_axi_0
-camera_capture_memory_axi_0
-camera_capture_one_0
-camera_capture_zero_0
-camera_capture_ctrl_reset_0
-camera_capture_video_reset_0
-
-INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
-open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 677.953 ; gain = 268.480
-# open_run synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xczu4ev-sfvc784-1L-i
-INFO: [Device 21-403] Loading part xczu4ev-sfvc784-1L-i
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0.dcp' for cell 'camera_capture_i/camera_gpio'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/camera_capture_control_axi_0.dcp' for cell 'camera_capture_i/control_axi'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0.dcp' for cell 'camera_capture_i/csi_rx'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.dcp' for cell 'camera_capture_i/ctrl_reset'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_demosaic_0/camera_capture_demosaic_0.dcp' for cell 'camera_capture_i/demosaic'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_frame_gate_0/camera_capture_frame_gate_0.dcp' for cell 'camera_capture_i/frame_gate'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_gamma_0/camera_capture_gamma_0.dcp' for cell 'camera_capture_i/gamma'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_isp_control_0/camera_capture_isp_control_0.dcp' for cell 'camera_capture_i/isp_control'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_key_sync_0/camera_capture_key_sync_0.dcp' for cell 'camera_capture_i/key_sync'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/camera_capture_memory_axi_0.dcp' for cell 'camera_capture_i/memory_axi'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ps_0/camera_capture_ps_0.dcp' for cell 'camera_capture_i/ps'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_rgb10_to_rgb8_0/camera_capture_rgb10_to_rgb8_0.dcp' for cell 'camera_capture_i/rgb10_to_rgb8'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_rgb12_to_rgb10_0/camera_capture_rgb12_to_rgb10_0.dcp' for cell 'camera_capture_i/rgb12_to_rgb10'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.dcp' for cell 'camera_capture_i/vdma'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.dcp' for cell 'camera_capture_i/video_reset'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0.dcp' for cell 'camera_capture_i/csi_rx/inst/phy'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0.dcp' for cell 'camera_capture_i/csi_rx/inst/r_sync'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_1/bd_f1a9_rx_0.dcp' for cell 'camera_capture_i/csi_rx/inst/rx'
-INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_2/bd_f1a9_vfb_0_0.dcp' for cell 'camera_capture_i/csi_rx/inst/vfb_0'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.347 . Memory (MB): peak = 1718.652 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 461 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ps_0/camera_capture_ps_0.xdc] for cell 'camera_capture_i/ps/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ps_0/camera_capture_ps_0.xdc] for cell 'camera_capture_i/ps/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/ip_0/bd_f1a9_phy_0_hssio_rx.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/ip_0/bd_f1a9_phy_0_hssio_rx.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc] for cell 'camera_capture_i/vdma/U0'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:60]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:64]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:68]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:72]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:76]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:80]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:84]
-WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-4' is a duplicate and will not be added again. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:92]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:112]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:128]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:132]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:156]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:160]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:164]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:168]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:172]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:176]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:180]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:184]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:188]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:192]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:196]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:200]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:204]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:208]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:212]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:216]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:220]
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc] for cell 'camera_capture_i/vdma/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0_board.xdc] for cell 'camera_capture_i/camera_gpio/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0_board.xdc] for cell 'camera_capture_i/camera_gpio/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0.xdc] for cell 'camera_capture_i/camera_gpio/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0.xdc] for cell 'camera_capture_i/camera_gpio/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc] for cell 'camera_capture_i/control_axi/inst'
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:11]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:12]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:14]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:15]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:17]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:18]
-WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:19]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:20]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:21]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:22]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:25]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:27]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:28]
-WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:29]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:30]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:31]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:32]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:33]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:34]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:35]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:37]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:38]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:39]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:40]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:41]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:42]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:43]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:44]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:45]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:46]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:47]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:48]
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc] for cell 'camera_capture_i/control_axi/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0_board.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0_board.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/smartconnect.xdc] for cell 'camera_capture_i/memory_axi/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/smartconnect.xdc] for cell 'camera_capture_i/memory_axi/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0_board.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0_board.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.xdc:50]
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0_board.xdc] for cell 'camera_capture_i/video_reset/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0_board.xdc] for cell 'camera_capture_i/video_reset/U0'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.xdc] for cell 'camera_capture_i/video_reset/U0'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.xdc:50]
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.xdc] for cell 'camera_capture_i/video_reset/U0'
-Parsing XDC File [F:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/vivado/ac920_camera_capture_pins.xdc]
-Finished Parsing XDC File [F:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/vivado/ac920_camera_capture_pins.xdc]
-Parsing XDC File [F:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/vivado/ac920_camera_capture_cdc.xdc]
-Finished Parsing XDC File [F:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/vivado/ac920_camera_capture_cdc.xdc]
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
-WARNING: [Vivado 12-508] No pins matched '*hs_settle_reg_axi_r2_reg[*]/C'. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:73]
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:73]
-WARNING: [Vivado 12-508] No pins matched '*en_hs_datapath_reg/C'. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:74]
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:74]
-WARNING: [Vivado 12-508] No pins matched '*init_done_reg/C'. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:75]
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:75]
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_impl.xdc] for cell 'camera_capture_i/csi_rx/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_impl.xdc] for cell 'camera_capture_i/csi_rx/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_demosaic_0/camera_capture_demosaic_0.xdc] for cell 'camera_capture_i/demosaic/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_demosaic_0/camera_capture_demosaic_0.xdc] for cell 'camera_capture_i/demosaic/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_gamma_0/camera_capture_gamma_0.xdc] for cell 'camera_capture_i/gamma/inst'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_gamma_0/camera_capture_gamma_0.xdc] for cell 'camera_capture_i/gamma/inst'
-Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0_clocks.xdc] for cell 'camera_capture_i/vdma/U0'
-Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0_clocks.xdc] for cell 'camera_capture_i/vdma/U0'
-INFO: [Project 1-1714] 347 XPM XDC files have been applied to the design.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-1687] 35 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2658.809 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 41 instances were transformed.
-  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
-  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
-  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
-  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 26 instances
-
-open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2658.809 ; gain = 1980.855
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {IS_BLACKBOX == 1}'.
-# set blackboxes [get_cells -hierarchical -filter {IS_BLACKBOX == 1}]
-# if {[llength $blackboxes] != 0} {error "Synthesis has unresolved IP blackboxes: $blackboxes"}
-# report_timing_summary -delay_type min_max -check_timing_verbose -file [file join $output synthesis_timing.rpt]
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-report_timing_summary: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3844.695 ; gain = 1185.887
-# report_utilization -file [file join $output synthesis_utilization.rpt]
-# report_drc -file [file join $output synthesis_drc.rpt]
-Command: report_drc -file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt.
-report_drc completed successfully
-# close_project
-# exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 11:57:37 2026...
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Nov  3 11:56:56 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source outputs/handoff_evidence_20261103/work/export_linked_synthesis.tcl
+# set root [file normalize [file join [file dirname [info script]] .. .. ..]]
+# set project [file join $root lab camera_onecard_20261029 build vivado_camera camera_capture.xpr]
+# set output [file join $root release AC920_Handoff_Evidence_20261103 build reports]
+# open_project -read_only $project
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is '<PROJECT_ROOT>/lab/camera_onecard_20261029/build/vivado_camera'
+INFO: [Project 1-313] Project file moved from 'R:/build/vivado_camera' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinix/Vivado/2024.2/data/ip'.
+WARNING: [BD 41-1663] The design 'camera_capture.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'camera_capture.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+camera_capture_camera_gpio_0
+camera_capture_demosaic_0
+camera_capture_ps_0
+camera_capture_csi_rx_0
+camera_capture_rgb12_to_rgb10_0
+camera_capture_gamma_0
+camera_capture_rgb10_to_rgb8_0
+camera_capture_vdma_0
+camera_capture_mode_bit_0
+camera_capture_enable_bit_0
+camera_capture_request_bit_0
+camera_capture_abort_bit_0
+camera_capture_isp_reset_bit_0
+camera_capture_capture_status_0
+camera_capture_control_axi_0
+camera_capture_memory_axi_0
+camera_capture_one_0
+camera_capture_zero_0
+camera_capture_ctrl_reset_0
+camera_capture_video_reset_0
+
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 677.953 ; gain = 268.480
+# open_run synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu4ev-sfvc784-1L-i
+INFO: [Device 21-403] Loading part xczu4ev-sfvc784-1L-i
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0.dcp' for cell 'camera_capture_i/camera_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/camera_capture_control_axi_0.dcp' for cell 'camera_capture_i/control_axi'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0.dcp' for cell 'camera_capture_i/csi_rx'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.dcp' for cell 'camera_capture_i/ctrl_reset'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_demosaic_0/camera_capture_demosaic_0.dcp' for cell 'camera_capture_i/demosaic'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_frame_gate_0/camera_capture_frame_gate_0.dcp' for cell 'camera_capture_i/frame_gate'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_gamma_0/camera_capture_gamma_0.dcp' for cell 'camera_capture_i/gamma'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_isp_control_0/camera_capture_isp_control_0.dcp' for cell 'camera_capture_i/isp_control'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_key_sync_0/camera_capture_key_sync_0.dcp' for cell 'camera_capture_i/key_sync'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/camera_capture_memory_axi_0.dcp' for cell 'camera_capture_i/memory_axi'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ps_0/camera_capture_ps_0.dcp' for cell 'camera_capture_i/ps'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_rgb10_to_rgb8_0/camera_capture_rgb10_to_rgb8_0.dcp' for cell 'camera_capture_i/rgb10_to_rgb8'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_rgb12_to_rgb10_0/camera_capture_rgb12_to_rgb10_0.dcp' for cell 'camera_capture_i/rgb12_to_rgb10'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.dcp' for cell 'camera_capture_i/vdma'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.dcp' for cell 'camera_capture_i/video_reset'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0.dcp' for cell 'camera_capture_i/csi_rx/inst/phy'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0.dcp' for cell 'camera_capture_i/csi_rx/inst/r_sync'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_1/bd_f1a9_rx_0.dcp' for cell 'camera_capture_i/csi_rx/inst/rx'
+INFO: [Project 1-454] Reading design checkpoint 'f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_2/bd_f1a9_vfb_0_0.dcp' for cell 'camera_capture_i/csi_rx/inst/vfb_0'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.347 . Memory (MB): peak = 1718.652 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 461 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ps_0/camera_capture_ps_0.xdc] for cell 'camera_capture_i/ps/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ps_0/camera_capture_ps_0.xdc] for cell 'camera_capture_i/ps/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/ip_0/bd_f1a9_phy_0_hssio_rx.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/ip_0/bd_f1a9_phy_0_hssio_rx.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_3/bd_f1a9_r_sync_0.xdc] for cell 'camera_capture_i/csi_rx/inst/r_sync/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_board.xdc] for cell 'camera_capture_i/csi_rx/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc] for cell 'camera_capture_i/vdma/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:64]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:84]
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-4' is a duplicate and will not be added again. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:112]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:132]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:156]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:160]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:168]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:172]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:176]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:180]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:184]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:188]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc:220]
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0.xdc] for cell 'camera_capture_i/vdma/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0_board.xdc] for cell 'camera_capture_i/camera_gpio/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0_board.xdc] for cell 'camera_capture_i/camera_gpio/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0.xdc] for cell 'camera_capture_i/camera_gpio/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_camera_gpio_0/camera_capture_camera_gpio_0.xdc] for cell 'camera_capture_i/camera_gpio/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_1/bd_d6d3_psr0_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr0/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_2/bd_d6d3_psr_aclk_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0_board.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/bd_0/ip/ip_3/bd_d6d3_psr_aclk1_0.xdc] for cell 'camera_capture_i/control_axi/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc] for cell 'camera_capture_i/control_axi/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:11]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:14]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:17]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:18]
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:19]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:20]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:22]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:25]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:28]
+WARNING: [Vivado_Tcl 4-935] Waiver ID 'CDC-1' is a duplicate and will not be added again. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:29]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:31]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:32]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:34]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:35]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:37]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:38]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:40]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:41]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:43]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:44]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:46]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:47]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc:48]
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_control_axi_0/smartconnect.xdc] for cell 'camera_capture_i/control_axi/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0_board.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0_board.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/bd_0/ip/ip_1/bd_70da_psr_aclk_0.xdc] for cell 'camera_capture_i/memory_axi/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/smartconnect.xdc] for cell 'camera_capture_i/memory_axi/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_memory_axi_0/smartconnect.xdc] for cell 'camera_capture_i/memory_axi/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0_board.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0_board.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.xdc:50]
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_ctrl_reset_0/camera_capture_ctrl_reset_0.xdc] for cell 'camera_capture_i/ctrl_reset/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0_board.xdc] for cell 'camera_capture_i/video_reset/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0_board.xdc] for cell 'camera_capture_i/video_reset/U0'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.xdc] for cell 'camera_capture_i/video_reset/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.xdc:50]
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_video_reset_0/camera_capture_video_reset_0.xdc] for cell 'camera_capture_i/video_reset/U0'
+Parsing XDC File [<PROJECT_ROOT>/lab/camera_onecard_20261029/vivado/ac920_camera_capture_pins.xdc]
+Finished Parsing XDC File [<PROJECT_ROOT>/lab/camera_onecard_20261029/vivado/ac920_camera_capture_pins.xdc]
+Parsing XDC File [<PROJECT_ROOT>/lab/camera_onecard_20261029/vivado/ac920_camera_capture_cdc.xdc]
+Finished Parsing XDC File [<PROJECT_ROOT>/lab/camera_onecard_20261029/vivado/ac920_camera_capture_cdc.xdc]
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
+WARNING: [Vivado 12-508] No pins matched '*hs_settle_reg_axi_r2_reg[*]/C'. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:73]
+WARNING: [Vivado 12-508] No pins matched '*en_hs_datapath_reg/C'. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:74]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:74]
+WARNING: [Vivado 12-508] No pins matched '*init_done_reg/C'. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:75]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc:75]
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/bd_0/ip/ip_0/bd_f1a9_phy_0_clocks.xdc] for cell 'camera_capture_i/csi_rx/inst/phy/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_impl.xdc] for cell 'camera_capture_i/csi_rx/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_csi_rx_0/camera_capture_csi_rx_0_impl.xdc] for cell 'camera_capture_i/csi_rx/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_demosaic_0/camera_capture_demosaic_0.xdc] for cell 'camera_capture_i/demosaic/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_demosaic_0/camera_capture_demosaic_0.xdc] for cell 'camera_capture_i/demosaic/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_gamma_0/camera_capture_gamma_0.xdc] for cell 'camera_capture_i/gamma/inst'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_gamma_0/camera_capture_gamma_0.xdc] for cell 'camera_capture_i/gamma/inst'
+Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0_clocks.xdc] for cell 'camera_capture_i/vdma/U0'
+Finished Parsing XDC File [f:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/ip/camera_capture_vdma_0/camera_capture_vdma_0_clocks.xdc] for cell 'camera_capture_i/vdma/U0'
+INFO: [Project 1-1714] 347 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 35 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2658.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 41 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 26 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2658.809 ; gain = 1980.855
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {IS_BLACKBOX == 1}'.
+# set blackboxes [get_cells -hierarchical -filter {IS_BLACKBOX == 1}]
+# if {[llength $blackboxes] != 0} {error "Synthesis has unresolved IP blackboxes: $blackboxes"}
+# report_timing_summary -delay_type min_max -check_timing_verbose -file [file join $output synthesis_timing.rpt]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3844.695 ; gain = 1185.887
+# report_utilization -file [file join $output synthesis_utilization.rpt]
+# report_drc -file [file join $output synthesis_drc.rpt]
+Command: report_drc -file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt.
+report_drc completed successfully
+# close_project
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 11:57:37 2026...

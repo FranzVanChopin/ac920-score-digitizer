@@ -1,0 +1,14 @@
+{
+  "review_pass": true,
+  "automated_checks": {
+    "review_pass": true,
+    "findings": [],
+    "files_checked": 135,
+    "scope": "Heuristic privacy check, not a proof of anonymization. No file is changed or deleted."
+  },
+  "manual_scope_review": "Abstract workstreams and technical methods only; no transcript, conversation ID, screenshot or raw session file selected. Technical reports/logs have local identity redactions.",
+  "privacy_limits": "Heuristic checks and manual review reduce accidental disclosure; not a mathematical guarantee of anonymity.",
+  "skills_offline_checks_passed": true,
+  "pynq_runtime_validated": false,
+  "old_archives_preserved_locally": true
+}

@@ -1,350 +1,350 @@
-[
-  {
-    "path": "recognition/historical/stable720_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
-    "source": "lab/display_stability_20261101/recognition_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
-    "bytes": 961,
-    "sha256": "06ab04bb522482cc761a150ce277193bd8015629cf0ca9069f352cec57c2968c"
-  },
-  {
-    "path": "recognition/historical/stable720_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
-    "source": "lab/display_stability_20261101/recognition_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
-    "bytes": 649,
-    "sha256": "a6f367930ff5ba2afe386bd65fdb79de84a3a9c19d1996a591ef56b618397f28"
-  },
-  {
-    "path": "recognition/historical/stable720_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
-    "source": "lab/display_stability_20261101/recognition_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
-    "bytes": 2081,
-    "sha256": "b49e3aff6d2e1ab89e268cfd2f5b1e67aacbaee6ce30c59f27b9105127ac0dbc"
-  },
-  {
-    "path": "recognition/historical/stable720_timing/log/ac920-onecard/20260516_091741_055719.log",
-    "source": "lab/display_stability_20261101/recognition_timing/log/ac920-onecard/20260516_091741_055719.log",
-    "bytes": 737,
-    "sha256": "b1043ab44fd57e82e8b47d1db75f1142c11b1b0eb7183b86e763f9343af2765f"
-  },
-  {
-    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/engrave_check.txt",
-    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/engrave_check.txt",
-    "bytes": 210,
-    "sha256": "435965821e44d1b5623f917c1dc2bab75fa6c6fdff943bf5ddfa925fd853ed9d"
-  },
-  {
-    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/recognition.log",
-    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/recognition.log",
-    "bytes": 977,
-    "sha256": "f169be7e3d4a787e4f7ab8a73f3fb5405dbc3eac09bbe6bc3f95e48953c46bcf"
-  },
-  {
-    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/result.json",
-    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/result.json",
-    "bytes": 1120,
-    "sha256": "617b0d034b742dd05392c985eb887d92805395e727ddd2fda7bef3f790e58a8c"
-  },
-  {
-    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/results/00.musicxml",
-    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/results/00.musicxml",
-    "bytes": 102603,
-    "sha256": "13295b80201dcbb8bf89985442a0d8a85457a4a20d2e5151571156d9eee994b3"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-00_0c378895_ccw/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-00_0c378895_ccw/frontend.run.json",
-    "bytes": 961,
-    "sha256": "9d3a5a8c555d4036cb95c5cb4bbfabd6108d329fef84019e87f61c9ac97efc97"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-00_0c378895_ccw/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-00_0c378895_ccw/relation.run.json",
-    "bytes": 649,
-    "sha256": "490ec908cbb347b578702db884234637db122c764485e050dd4d68173111792d"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-00_0c378895_ccw/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-00_0c378895_ccw/report.json",
-    "bytes": 2074,
-    "sha256": "cb318ebfbb9833e6d3e315835b1f6ce8c3c42cd9c9fd565905ce0c51e4ee7d9c"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-01_a1133dfb_ccw/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-01_a1133dfb_ccw/frontend.run.json",
-    "bytes": 962,
-    "sha256": "390015eb00a90f87df451200b13acc4c4b66fe29cb82884fde65907df96e51bb"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-01_a1133dfb_ccw/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-01_a1133dfb_ccw/relation.run.json",
-    "bytes": 650,
-    "sha256": "c00c8caad4ee8fdc27a112b8bd1a3d0ad65382f7c753c458f721c027f19e377a"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-01_a1133dfb_ccw/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-01_a1133dfb_ccw/report.json",
-    "bytes": 2136,
-    "sha256": "28e90d62164c61ccd1c5be7f003be9d21667d2e38059529dfff4a0f5ad106042"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-04_d8d93ce4_ccw/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-04_d8d93ce4_ccw/frontend.run.json",
-    "bytes": 962,
-    "sha256": "de44506a6e3b04922adb3fe142aa332fc86d2effafb3040014f89ce4b7aa8a11"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-04_d8d93ce4_ccw/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-04_d8d93ce4_ccw/relation.run.json",
-    "bytes": 649,
-    "sha256": "0eb8fcf2a48d08c6ad97d17190d9af03df85b0d2c494b9b94f23155952878a86"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/00-04_d8d93ce4_ccw/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-04_d8d93ce4_ccw/report.json",
-    "bytes": 2138,
-    "sha256": "10c107647381accf458d5ea7f9ac6145c2a8c204ec99dc39d775f0b5836b80d2"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-00_a89c3eab_ccw/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-00_a89c3eab_ccw/frontend.run.json",
-    "bytes": 962,
-    "sha256": "1b6617b9608de97c9e7e7f348af2b89943e0abe355c3bc7ba06d0a18dd3c3025"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-00_a89c3eab_ccw/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-00_a89c3eab_ccw/relation.run.json",
-    "bytes": 650,
-    "sha256": "d00aa120522cf2ec63ab71cd593621e2eaee1e56fb4c0824fc94e379a81af5b4"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-00_a89c3eab_ccw/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-00_a89c3eab_ccw/report.json",
-    "bytes": 2111,
-    "sha256": "fe8f7f0b6f9c1bbe4b83e78c12d2cf2c49b4484d448ae9d7ad2409cf22e35082"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-01_f8c1c132_ccw/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-01_f8c1c132_ccw/frontend.run.json",
-    "bytes": 963,
-    "sha256": "9db8a2da32efd06a5a7b4d952bfdfdb2c6ca41fd781e90974b4faffbe5a0658c"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-01_f8c1c132_ccw/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-01_f8c1c132_ccw/relation.run.json",
-    "bytes": 650,
-    "sha256": "4de888b4ce27f749e3c5c80ca650edb86c1d66c80f12cf3920a344c85a0d7955"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-01_f8c1c132_ccw/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-01_f8c1c132_ccw/report.json",
-    "bytes": 2137,
-    "sha256": "b1a38b58cd7ba826721aab7d1ef3a30d7c1770acbe8419bbcfa3921646ba08d6"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-02_4727c762_ccw/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-02_4727c762_ccw/frontend.run.json",
-    "bytes": 962,
-    "sha256": "b054a2cffd7592fbefb8070c98d280e1149abeb5cec21989b06fb28d43f6b902"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-02_4727c762_ccw/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-02_4727c762_ccw/relation.run.json",
-    "bytes": 650,
-    "sha256": "13ad3c8a05f6aec72f1f4e9f17373d7e02306ef56aa382085af4366c96cb77ad"
-  },
-  {
-    "path": "recognition/historical/v16_board/album/pages/01-02_4727c762_ccw/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-02_4727c762_ccw/report.json",
-    "bytes": 2136,
-    "sha256": "f0e1ae28fd3c4d27c14d7f2afd938776c7b0ca915f0f42925e851192e9236d23"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve1/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve1/frontend.run.json",
-    "bytes": 963,
-    "sha256": "09eea58b7d3738b04d42d6adac5016c735c8af732928e3b024d790c51d301b4f"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve1/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve1/relation.run.json",
-    "bytes": 649,
-    "sha256": "ba39d84ea48d87ab18f57537b805ebc427eb062af30d4c0456866ef3bee35004"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve1/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve1/report.json",
-    "bytes": 2033,
-    "sha256": "15da3339ce6a644542d742d2623711e0b095528fe20df74744219f23e8bf71e5"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve2/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve2/frontend.run.json",
-    "bytes": 961,
-    "sha256": "0cb03187a55b530e166d1f0ac89be4dbaa11f77c4e64f45169b23a8a53483d89"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve2/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve2/relation.run.json",
-    "bytes": 650,
-    "sha256": "4de0fe904ff97f8238d279cd8f00bdae5c0d77b346172f7fa3b39b0126593606"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve2/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve2/report.json",
-    "bytes": 2136,
-    "sha256": "1143b60529fe0b16a5344f97741517f3afe8336e05618bd4a36b59554158010b"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve3/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve3/frontend.run.json",
-    "bytes": 963,
-    "sha256": "7fcbe4f08984e51951324de90c78b7fe20c2a35e9060d3529997a087645bb451"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve3/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve3/relation.run.json",
-    "bytes": 648,
-    "sha256": "0a47e9164fa95b60cfdef5a5a90a60906e3481a80614161068df75860146eef2"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve3/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve3/report.json",
-    "bytes": 2093,
-    "sha256": "4f4f4bba0918bf31cf2f16aab2e6b022e5b170174658bcb2b79424a74fe2a948"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve4/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve4/frontend.run.json",
-    "bytes": 961,
-    "sha256": "9a27af04d457ef27bbf26b29ad298ed5bf10faeb4d22cb00c6f7bfbc89e5940e"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve4/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve4/relation.run.json",
-    "bytes": 648,
-    "sha256": "050509139811add383a4f19de9514512c4613ae0e39e950fd6294b17a52a9585"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve4/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve4/report.json",
-    "bytes": 2135,
-    "sha256": "b37063e4c3f73435300ff91d7c7ac4a46972c3d94271a0714a749c5474b07b7a"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve5/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve5/frontend.run.json",
-    "bytes": 963,
-    "sha256": "f7205ca0e6d00a2fbe417976c594ac358158e27d77695f647e67dd9cdb13bd7c"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve5/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve5/relation.run.json",
-    "bytes": 649,
-    "sha256": "7be52de9dacecf2a05d9a93e938dccfe3b20d0a451826a49a40b7524c2c6b654"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve5/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve5/report.json",
-    "bytes": 2093,
-    "sha256": "90895955f6df711948c246e95e62fc8f80c8bd8c28325b7b0b22852197c1d8e8"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve6/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve6/frontend.run.json",
-    "bytes": 961,
-    "sha256": "c572ca2a7520a7fa7cc11a80bdc5334a7a550348d8cea952570f394a7cc66041"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve6/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve6/relation.run.json",
-    "bytes": 649,
-    "sha256": "efa6f8e8da765e5e3c846684888550b7308a5e7d3866c71adee265cd96582015"
-  },
-  {
-    "path": "recognition/historical/v16_board/serve6/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve6/report.json",
-    "bytes": 2137,
-    "sha256": "deeeff8937509387b7e64d77d6b8a9a966a7d33da2c64eeaca7e05c785623852"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_a/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_a/frontend.run.json",
-    "bytes": 962,
-    "sha256": "646a3d47e78cc6b38f88fcdba98ed8893e36fa504e19e7aa870889dd9db7bbcd"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_a/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_a/relation.run.json",
-    "bytes": 650,
-    "sha256": "b31e79b4c86b5bd7a6e599b2e0778a4111d3a2ce332833d9ed1626c97096c4d1"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_a/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_a/report.json",
-    "bytes": 1995,
-    "sha256": "0c18714fc3177199c41a13f80dadacae494adf9c4e781fcd86c05a1dcf4309fc"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_b/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_b/frontend.run.json",
-    "bytes": 962,
-    "sha256": "4c7e6aba02a70cbef8209edd020fd74e38e72781daca2b9d117af295e443e59a"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_b/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_b/relation.run.json",
-    "bytes": 649,
-    "sha256": "d6572cc8545ac53036c35e8875ae643eab702feaf9906ed7108c522f0a7e787e"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_b/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_b/report.json",
-    "bytes": 1996,
-    "sha256": "13b427c2c2523b4f85b8e4de5a9a14f6b020195f8ac8b1c41444ced9f4ed2359"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_cam/frontend.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_cam/frontend.run.json",
-    "bytes": 961,
-    "sha256": "921c8088033c6112c2c0d85265ac7332f1015fb76336a6423350fffac59a8f49"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_cam/relation.run.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_cam/relation.run.json",
-    "bytes": 650,
-    "sha256": "715817db36e8d1f59b2f29aca2a96e6631114e78cf7c995afda789265df9216e"
-  },
-  {
-    "path": "recognition/historical/v16_board/single_cam/report.json",
-    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_cam/report.json",
-    "bytes": 2041,
-    "sha256": "efd3c949d3d66c154781cb8b5c62007a616bbd95582291cb79171e0da2041126"
-  },
-  {
-    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/album.json",
-    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/album.json",
-    "bytes": 1252,
-    "sha256": "7bdb9b9123e5fa098e617e82876cefa52f03da0d6e8f4218d0b18a3488022ee5"
-  },
-  {
-    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
-    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
-    "bytes": 961,
-    "sha256": "06ab04bb522482cc761a150ce277193bd8015629cf0ca9069f352cec57c2968c"
-  },
-  {
-    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
-    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
-    "bytes": 649,
-    "sha256": "a6f367930ff5ba2afe386bd65fdb79de84a3a9c19d1996a591ef56b618397f28"
-  },
-  {
-    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
-    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
-    "bytes": 2081,
-    "sha256": "b49e3aff6d2e1ab89e268cfd2f5b1e67aacbaee6ce30c59f27b9105127ac0dbc"
-  },
-  {
-    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/service.log",
-    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/service.log",
-    "bytes": 43029,
-    "sha256": "153e621b24d114ec6dee8622efb47d0082623341d580e0aad61869f574f7fe82"
-  }
-]
+[
+  {
+    "path": "recognition/historical/stable720_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
+    "source": "lab/display_stability_20261101/recognition_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
+    "bytes": 961,
+    "sha256": "06ab04bb522482cc761a150ce277193bd8015629cf0ca9069f352cec57c2968c"
+  },
+  {
+    "path": "recognition/historical/stable720_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
+    "source": "lab/display_stability_20261101/recognition_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
+    "bytes": 649,
+    "sha256": "a6f367930ff5ba2afe386bd65fdb79de84a3a9c19d1996a591ef56b618397f28"
+  },
+  {
+    "path": "recognition/historical/stable720_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
+    "source": "lab/display_stability_20261101/recognition_timing/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
+    "bytes": 2081,
+    "sha256": "b49e3aff6d2e1ab89e268cfd2f5b1e67aacbaee6ce30c59f27b9105127ac0dbc"
+  },
+  {
+    "path": "recognition/historical/stable720_timing/log/ac920-onecard/20260516_091741_055719.log",
+    "source": "lab/display_stability_20261101/recognition_timing/log/ac920-onecard/20260516_091741_055719.log",
+    "bytes": 737,
+    "sha256": "b1043ab44fd57e82e8b47d1db75f1142c11b1b0eb7183b86e763f9343af2765f"
+  },
+  {
+    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/engrave_check.txt",
+    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/engrave_check.txt",
+    "bytes": 210,
+    "sha256": "435965821e44d1b5623f917c1dc2bab75fa6c6fdff943bf5ddfa925fd853ed9d"
+  },
+  {
+    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/recognition.log",
+    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/recognition.log",
+    "bytes": 977,
+    "sha256": "f169be7e3d4a787e4f7ab8a73f3fb5405dbc3eac09bbe6bc3f95e48953c46bcf"
+  },
+  {
+    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/result.json",
+    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/result.json",
+    "bytes": 1120,
+    "sha256": "617b0d034b742dd05392c985eb887d92805395e727ddd2fda7bef3f790e58a8c"
+  },
+  {
+    "path": "recognition/historical/v16_integration/claude-score-studio-v16-check-20261030/verification/results/00.musicxml",
+    "source": "lab/score_studio_v16_20261030/validation/board/claude-score-studio-v16-check-20261030/verification/results/00.musicxml",
+    "bytes": 102603,
+    "sha256": "13295b80201dcbb8bf89985442a0d8a85457a4a20d2e5151571156d9eee994b3"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-00_0c378895_ccw/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-00_0c378895_ccw/frontend.run.json",
+    "bytes": 961,
+    "sha256": "9d3a5a8c555d4036cb95c5cb4bbfabd6108d329fef84019e87f61c9ac97efc97"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-00_0c378895_ccw/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-00_0c378895_ccw/relation.run.json",
+    "bytes": 649,
+    "sha256": "490ec908cbb347b578702db884234637db122c764485e050dd4d68173111792d"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-00_0c378895_ccw/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-00_0c378895_ccw/report.json",
+    "bytes": 2074,
+    "sha256": "cb318ebfbb9833e6d3e315835b1f6ce8c3c42cd9c9fd565905ce0c51e4ee7d9c"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-01_a1133dfb_ccw/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-01_a1133dfb_ccw/frontend.run.json",
+    "bytes": 962,
+    "sha256": "390015eb00a90f87df451200b13acc4c4b66fe29cb82884fde65907df96e51bb"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-01_a1133dfb_ccw/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-01_a1133dfb_ccw/relation.run.json",
+    "bytes": 650,
+    "sha256": "c00c8caad4ee8fdc27a112b8bd1a3d0ad65382f7c753c458f721c027f19e377a"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-01_a1133dfb_ccw/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-01_a1133dfb_ccw/report.json",
+    "bytes": 2136,
+    "sha256": "28e90d62164c61ccd1c5be7f003be9d21667d2e38059529dfff4a0f5ad106042"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-04_d8d93ce4_ccw/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-04_d8d93ce4_ccw/frontend.run.json",
+    "bytes": 962,
+    "sha256": "de44506a6e3b04922adb3fe142aa332fc86d2effafb3040014f89ce4b7aa8a11"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-04_d8d93ce4_ccw/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-04_d8d93ce4_ccw/relation.run.json",
+    "bytes": 649,
+    "sha256": "0eb8fcf2a48d08c6ad97d17190d9af03df85b0d2c494b9b94f23155952878a86"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/00-04_d8d93ce4_ccw/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/00-04_d8d93ce4_ccw/report.json",
+    "bytes": 2138,
+    "sha256": "10c107647381accf458d5ea7f9ac6145c2a8c204ec99dc39d775f0b5836b80d2"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-00_a89c3eab_ccw/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-00_a89c3eab_ccw/frontend.run.json",
+    "bytes": 962,
+    "sha256": "1b6617b9608de97c9e7e7f348af2b89943e0abe355c3bc7ba06d0a18dd3c3025"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-00_a89c3eab_ccw/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-00_a89c3eab_ccw/relation.run.json",
+    "bytes": 650,
+    "sha256": "d00aa120522cf2ec63ab71cd593621e2eaee1e56fb4c0824fc94e379a81af5b4"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-00_a89c3eab_ccw/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-00_a89c3eab_ccw/report.json",
+    "bytes": 2111,
+    "sha256": "fe8f7f0b6f9c1bbe4b83e78c12d2cf2c49b4484d448ae9d7ad2409cf22e35082"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-01_f8c1c132_ccw/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-01_f8c1c132_ccw/frontend.run.json",
+    "bytes": 963,
+    "sha256": "9db8a2da32efd06a5a7b4d952bfdfdb2c6ca41fd781e90974b4faffbe5a0658c"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-01_f8c1c132_ccw/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-01_f8c1c132_ccw/relation.run.json",
+    "bytes": 650,
+    "sha256": "4de888b4ce27f749e3c5c80ca650edb86c1d66c80f12cf3920a344c85a0d7955"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-01_f8c1c132_ccw/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-01_f8c1c132_ccw/report.json",
+    "bytes": 2137,
+    "sha256": "b1a38b58cd7ba826721aab7d1ef3a30d7c1770acbe8419bbcfa3921646ba08d6"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-02_4727c762_ccw/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-02_4727c762_ccw/frontend.run.json",
+    "bytes": 962,
+    "sha256": "b054a2cffd7592fbefb8070c98d280e1149abeb5cec21989b06fb28d43f6b902"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-02_4727c762_ccw/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-02_4727c762_ccw/relation.run.json",
+    "bytes": 650,
+    "sha256": "13ad3c8a05f6aec72f1f4e9f17373d7e02306ef56aa382085af4366c96cb77ad"
+  },
+  {
+    "path": "recognition/historical/v16_board/album/pages/01-02_4727c762_ccw/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/album/pages/01-02_4727c762_ccw/report.json",
+    "bytes": 2136,
+    "sha256": "f0e1ae28fd3c4d27c14d7f2afd938776c7b0ca915f0f42925e851192e9236d23"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve1/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve1/frontend.run.json",
+    "bytes": 963,
+    "sha256": "09eea58b7d3738b04d42d6adac5016c735c8af732928e3b024d790c51d301b4f"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve1/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve1/relation.run.json",
+    "bytes": 649,
+    "sha256": "ba39d84ea48d87ab18f57537b805ebc427eb062af30d4c0456866ef3bee35004"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve1/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve1/report.json",
+    "bytes": 2033,
+    "sha256": "15da3339ce6a644542d742d2623711e0b095528fe20df74744219f23e8bf71e5"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve2/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve2/frontend.run.json",
+    "bytes": 961,
+    "sha256": "0cb03187a55b530e166d1f0ac89be4dbaa11f77c4e64f45169b23a8a53483d89"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve2/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve2/relation.run.json",
+    "bytes": 650,
+    "sha256": "4de0fe904ff97f8238d279cd8f00bdae5c0d77b346172f7fa3b39b0126593606"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve2/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve2/report.json",
+    "bytes": 2136,
+    "sha256": "1143b60529fe0b16a5344f97741517f3afe8336e05618bd4a36b59554158010b"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve3/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve3/frontend.run.json",
+    "bytes": 963,
+    "sha256": "7fcbe4f08984e51951324de90c78b7fe20c2a35e9060d3529997a087645bb451"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve3/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve3/relation.run.json",
+    "bytes": 648,
+    "sha256": "0a47e9164fa95b60cfdef5a5a90a60906e3481a80614161068df75860146eef2"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve3/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve3/report.json",
+    "bytes": 2093,
+    "sha256": "4f4f4bba0918bf31cf2f16aab2e6b022e5b170174658bcb2b79424a74fe2a948"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve4/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve4/frontend.run.json",
+    "bytes": 961,
+    "sha256": "9a27af04d457ef27bbf26b29ad298ed5bf10faeb4d22cb00c6f7bfbc89e5940e"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve4/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve4/relation.run.json",
+    "bytes": 648,
+    "sha256": "050509139811add383a4f19de9514512c4613ae0e39e950fd6294b17a52a9585"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve4/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve4/report.json",
+    "bytes": 2135,
+    "sha256": "b37063e4c3f73435300ff91d7c7ac4a46972c3d94271a0714a749c5474b07b7a"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve5/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve5/frontend.run.json",
+    "bytes": 963,
+    "sha256": "f7205ca0e6d00a2fbe417976c594ac358158e27d77695f647e67dd9cdb13bd7c"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve5/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve5/relation.run.json",
+    "bytes": 649,
+    "sha256": "7be52de9dacecf2a05d9a93e938dccfe3b20d0a451826a49a40b7524c2c6b654"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve5/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve5/report.json",
+    "bytes": 2093,
+    "sha256": "90895955f6df711948c246e95e62fc8f80c8bd8c28325b7b0b22852197c1d8e8"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve6/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve6/frontend.run.json",
+    "bytes": 961,
+    "sha256": "c572ca2a7520a7fa7cc11a80bdc5334a7a550348d8cea952570f394a7cc66041"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve6/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve6/relation.run.json",
+    "bytes": 649,
+    "sha256": "efa6f8e8da765e5e3c846684888550b7308a5e7d3866c71adee265cd96582015"
+  },
+  {
+    "path": "recognition/historical/v16_board/serve6/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/serve6/report.json",
+    "bytes": 2137,
+    "sha256": "deeeff8937509387b7e64d77d6b8a9a966a7d33da2c64eeaca7e05c785623852"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_a/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_a/frontend.run.json",
+    "bytes": 962,
+    "sha256": "646a3d47e78cc6b38f88fcdba98ed8893e36fa504e19e7aa870889dd9db7bbcd"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_a/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_a/relation.run.json",
+    "bytes": 650,
+    "sha256": "b31e79b4c86b5bd7a6e599b2e0778a4111d3a2ce332833d9ed1626c97096c4d1"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_a/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_a/report.json",
+    "bytes": 1995,
+    "sha256": "0c18714fc3177199c41a13f80dadacae494adf9c4e781fcd86c05a1dcf4309fc"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_b/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_b/frontend.run.json",
+    "bytes": 962,
+    "sha256": "4c7e6aba02a70cbef8209edd020fd74e38e72781daca2b9d117af295e443e59a"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_b/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_b/relation.run.json",
+    "bytes": 649,
+    "sha256": "d6572cc8545ac53036c35e8875ae643eab702feaf9906ed7108c522f0a7e787e"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_b/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_b/report.json",
+    "bytes": 1996,
+    "sha256": "13b427c2c2523b4f85b8e4de5a9a14f6b020195f8ac8b1c41444ced9f4ed2359"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_cam/frontend.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_cam/frontend.run.json",
+    "bytes": 961,
+    "sha256": "921c8088033c6112c2c0d85265ac7332f1015fb76336a6423350fffac59a8f49"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_cam/relation.run.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_cam/relation.run.json",
+    "bytes": 650,
+    "sha256": "715817db36e8d1f59b2f29aca2a96e6631114e78cf7c995afda789265df9216e"
+  },
+  {
+    "path": "recognition/historical/v16_board/single_cam/report.json",
+    "source": "lab/score_studio_v16_20261030/upstream/results/board_v16/single_cam/report.json",
+    "bytes": 2041,
+    "sha256": "efd3c949d3d66c154781cb8b5c62007a616bbd95582291cb79171e0da2041126"
+  },
+  {
+    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/album.json",
+    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/album.json",
+    "bytes": 1252,
+    "sha256": "7bdb9b9123e5fa098e617e82876cefa52f03da0d6e8f4218d0b18a3488022ee5"
+  },
+  {
+    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
+    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/frontend.run.json",
+    "bytes": 961,
+    "sha256": "06ab04bb522482cc761a150ce277193bd8015629cf0ca9069f352cec57c2968c"
+  },
+  {
+    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
+    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/relation.run.json",
+    "bytes": 649,
+    "sha256": "a6f367930ff5ba2afe386bd65fdb79de84a3a9c19d1996a591ef56b618397f28"
+  },
+  {
+    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
+    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/report.json",
+    "bytes": 2081,
+    "sha256": "b49e3aff6d2e1ab89e268cfd2f5b1e67aacbaee6ce30c59f27b9105127ac0dbc"
+  },
+  {
+    "path": "recognition/historical/frozen_runtime/var/lib/ac920-onecard/results/service.log",
+    "source": "frozen runtime.tar.gz:var/lib/ac920-onecard/results/service.log",
+    "bytes": 43029,
+    "sha256": "153e621b24d114ec6dee8622efb47d0082623341d580e0aad61869f574f7fe82"
+  }
+]

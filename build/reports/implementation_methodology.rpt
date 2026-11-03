@@ -2,8 +2,8 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanc
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 | Date         : Tue Nov  3 11:56:41 2026
-| Host         : DESKTOP-0VLPHNT running 64-bit major release  (build 9200)
-| Command      : report_methodology -file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_methodology.rpt
+| Host         : <LOCAL_HOST> running 64-bit major release  (build 9200)
+| Command      : report_methodology -file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_methodology.rpt
 | Design       : camera_capture_wrapper
 | Device       : xczu4ev-sfvc784-1L-i
 | Speed File   : -1L

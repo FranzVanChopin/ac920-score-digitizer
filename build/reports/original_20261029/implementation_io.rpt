@@ -2,7 +2,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanc
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 | Date                      : Thu Oct 29 20:09:45 2026
-| Host                      : DESKTOP-0VLPHNT running 64-bit major release  (build 9200)
+| Host                      : <LOCAL_HOST> running 64-bit major release  (build 9200)
 | Command                   : report_io -file R:/build/vivado_camera/implementation_io.rpt
 | Design                    : camera_capture_wrapper
 | Device                    : xczu4ev

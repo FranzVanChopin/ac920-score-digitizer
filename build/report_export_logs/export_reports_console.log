@@ -1,133 +1,133 @@
-
-****** Vivado v2024.2 (64-bit)
-  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
-  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
-  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Tue Nov  3 11:55:54 2026
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source outputs/handoff_evidence_20261103/work/export_reports.tcl
-# set root [file normalize [file join [file dirname [info script]] .. .. ..]]
-# set hw [file join $root lab camera_onecard_20261029 build vivado_camera]
-# set output [file join $root release AC920_Handoff_Evidence_20261103 build reports]
-# file mkdir $output
-# foreach {stage checkpoint} [list synthesis [file join $hw camera_capture.runs synth_1 camera_capture_wrapper.dcp] implementation [file join $hw camera_capture.runs impl_1 camera_capture_wrapper_routed.dcp]] {
-#     if {![file isfile $checkpoint]} {error "Missing accepted-design checkpoint: $checkpoint"}
-#     open_checkpoint $checkpoint
-#     report_timing_summary -delay_type min_max -check_timing_verbose -file [file join $output ${stage}_timing.rpt]
-#     report_utilization -file [file join $output ${stage}_utilization.rpt]
-#     report_drc -file [file join $output ${stage}_drc.rpt]
-#     if {$stage eq "implementation"} {
-#         check_timing -verbose -file [file join $output check_timing.rpt]
-#         report_cdc -details -file [file join $output implementation_cdc.rpt]
-#         report_bus_skew -warn_on_violation -file [file join $output implementation_bus_skew.rpt]
-#         report_methodology -file [file join $output implementation_methodology.rpt]
-#     }
-#     close_design
-# }
-Command: open_checkpoint F:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.runs/synth_1/camera_capture_wrapper.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 426.832 ; gain = 9.215
-INFO: [Device 21-403] Loading part xczu4ev-sfvc784-1L-i
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1609.305 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1609.305 ; gain = 0.000
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_camera_gpio_0' instantiated as 'camera_capture_i/camera_gpio' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:276]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_control_axi_0' instantiated as 'camera_capture_i/control_axi' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:302]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_csi_rx_0' instantiated as 'camera_capture_i/csi_rx' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:429]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_ctrl_reset_0' instantiated as 'camera_capture_i/ctrl_reset' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:462]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_demosaic_0' instantiated as 'camera_capture_i/demosaic' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:469]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_frame_gate_0' instantiated as 'camera_capture_i/frame_gate' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:510]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_gamma_0' instantiated as 'camera_capture_i/gamma' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:529]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_isp_control_0' instantiated as 'camera_capture_i/isp_control' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:567]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_key_sync_0' instantiated as 'camera_capture_i/key_sync' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:579]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_memory_axi_0' instantiated as 'camera_capture_i/memory_axi' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:585]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_ps_0' instantiated as 'camera_capture_i/ps' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:629]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_rgb10_to_rgb8_0' instantiated as 'camera_capture_i/rgb10_to_rgb8' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:715]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_rgb12_to_rgb10_0' instantiated as 'camera_capture_i/rgb12_to_rgb10' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:732]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_vdma_0' instantiated as 'camera_capture_i/vdma' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:753]
-CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_video_reset_0' instantiated as 'camera_capture_i/video_reset' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:796]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1920.820 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
-  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
-open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1920.820 ; gain = 1512.688
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-Command: report_drc -file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinix/Vivado/2024.2/data/ip'.
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt.
-report_drc completed successfully
-Command: open_checkpoint F:/Documents/Codex/FPGA/Music_Score_Recognization/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.runs/impl_1/camera_capture_wrapper_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.305 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.329 . Memory (MB): peak = 2397.305 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2397.305 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2397.305 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2397.305 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2397.305 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.305 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2598.152 ; gain = 200.848
-Read Physdb Files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2598.152 ; gain = 200.848
-Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2598.152 ; gain = 200.848
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2598.152 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 41 instances were transformed.
-  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
-  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
-  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
-  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 26 instances
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
-open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2598.152 ; gain = 200.848
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-Command: report_drc -file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_drc.rpt
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinix/Vivado/2024.2/data/ip'.
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_drc.rpt.
-report_drc completed successfully
-INFO: [Timing 38-91] UpdateTimingParams: No interconnect No Cell Dly, Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-INFO: [Timing 38-314] The report_cdc command only analyzes and reports clock domain crossing paths where clocks have been defined on both source and destination sides. Ports with no input delay constraint are skipped. Please run check_timing to verify there are no missing clock definitions in your design, nor any unconstrained input port.
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-Command: report_methodology -file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_methodology.rpt
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_methodology.rpt.
-report_methodology completed successfully
-# exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 11:56:42 2026...
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Nov  3 11:55:54 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source outputs/handoff_evidence_20261103/work/export_reports.tcl
+# set root [file normalize [file join [file dirname [info script]] .. .. ..]]
+# set hw [file join $root lab camera_onecard_20261029 build vivado_camera]
+# set output [file join $root release AC920_Handoff_Evidence_20261103 build reports]
+# file mkdir $output
+# foreach {stage checkpoint} [list synthesis [file join $hw camera_capture.runs synth_1 camera_capture_wrapper.dcp] implementation [file join $hw camera_capture.runs impl_1 camera_capture_wrapper_routed.dcp]] {
+#     if {![file isfile $checkpoint]} {error "Missing accepted-design checkpoint: $checkpoint"}
+#     open_checkpoint $checkpoint
+#     report_timing_summary -delay_type min_max -check_timing_verbose -file [file join $output ${stage}_timing.rpt]
+#     report_utilization -file [file join $output ${stage}_utilization.rpt]
+#     report_drc -file [file join $output ${stage}_drc.rpt]
+#     if {$stage eq "implementation"} {
+#         check_timing -verbose -file [file join $output check_timing.rpt]
+#         report_cdc -details -file [file join $output implementation_cdc.rpt]
+#         report_bus_skew -warn_on_violation -file [file join $output implementation_bus_skew.rpt]
+#         report_methodology -file [file join $output implementation_methodology.rpt]
+#     }
+#     close_design
+# }
+Command: open_checkpoint <PROJECT_ROOT>/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.runs/synth_1/camera_capture_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 426.832 ; gain = 9.215
+INFO: [Device 21-403] Loading part xczu4ev-sfvc784-1L-i
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1609.305 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1609.305 ; gain = 0.000
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_camera_gpio_0' instantiated as 'camera_capture_i/camera_gpio' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:276]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_control_axi_0' instantiated as 'camera_capture_i/control_axi' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:302]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_csi_rx_0' instantiated as 'camera_capture_i/csi_rx' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:429]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_ctrl_reset_0' instantiated as 'camera_capture_i/ctrl_reset' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:462]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_demosaic_0' instantiated as 'camera_capture_i/demosaic' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:469]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_frame_gate_0' instantiated as 'camera_capture_i/frame_gate' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:510]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_gamma_0' instantiated as 'camera_capture_i/gamma' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:529]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_isp_control_0' instantiated as 'camera_capture_i/isp_control' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:567]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_key_sync_0' instantiated as 'camera_capture_i/key_sync' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:579]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_memory_axi_0' instantiated as 'camera_capture_i/memory_axi' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:585]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_ps_0' instantiated as 'camera_capture_i/ps' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:629]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_rgb10_to_rgb8_0' instantiated as 'camera_capture_i/rgb10_to_rgb8' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:715]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_rgb12_to_rgb10_0' instantiated as 'camera_capture_i/rgb12_to_rgb10' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:732]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_vdma_0' instantiated as 'camera_capture_i/vdma' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:753]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'camera_capture_video_reset_0' instantiated as 'camera_capture_i/video_reset' [r:/build/vivado_camera/camera_capture.gen/sources_1/bd/camera_capture/synth/camera_capture.v:796]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1920.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1920.820 ; gain = 1512.688
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: report_drc -file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinix/Vivado/2024.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_drc.rpt.
+report_drc completed successfully
+Command: open_checkpoint <PROJECT_ROOT>/lab/camera_onecard_20261029/build/vivado_camera/camera_capture.runs/impl_1/camera_capture_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.329 . Memory (MB): peak = 2397.305 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2397.305 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2397.305 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2397.305 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2397.305 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2397.305 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2598.152 ; gain = 200.848
+Read Physdb Files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2598.152 ; gain = 200.848
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2598.152 ; gain = 200.848
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2598.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 41 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 26 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2598.152 ; gain = 200.848
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+Command: report_drc -file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xlinix/Vivado/2024.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_drc.rpt.
+report_drc completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: No interconnect No Cell Dly, Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-314] The report_cdc command only analyzes and reports clock domain crossing paths where clocks have been defined on both source and destination sides. Ports with no input delay constraint are skipped. Please run check_timing to verify there are no missing clock definitions in your design, nor any unconstrained input port.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: report_methodology -file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_methodology.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file <PROJECT_ROOT>/release/AC920_Handoff_Evidence_20261103/build/reports/implementation_methodology.rpt.
+report_methodology completed successfully
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 11:56:42 2026...

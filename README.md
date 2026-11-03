@@ -26,7 +26,9 @@
 ├── board/               上板工程：两个自包含工程包 + recognition/ 板端识别证据 + 部署快照 + 相机配置
 ├── data/                测试数据：samples/ 样张与参考结果
 ├── report/              设计报告与接口约定
-└── skill/               技能包（预留）
+├── skill/               6 个可复用技能包（SKILL.md 入口 + 只读脚本）；另含对话节选
+├── collaboration/       抽象协作说明：分工、并行工作线、问题与修正方法
+└── docs/                技能包报告章节、证据溯源与隐私复核
 ```
 
 FPGA 实现结果：WNS **0.817 ns**、TNS **0**、WHS **0.011 ns**、THS **0**，实现 DRC 无 Error / Critical Warning

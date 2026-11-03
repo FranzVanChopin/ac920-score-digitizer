@@ -1,0 +1,6 @@
+start_beat,end_beat,visual,source,caption,validation
+0,8,input,replace_with_input,input provenance,verify dimensions
+8,20,processing,replace_with_actual_intermediate,processing scope,verify coordinate map
+20,32,inference,actual prediction or labeled architecture,implemented compute path,verify actual backend
+32,40,decoding,actual events,structure and timing,verify events
+40,48,output,actual exported artifact,result and limits,verify output opens

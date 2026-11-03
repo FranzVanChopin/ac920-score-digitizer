@@ -2,7 +2,6 @@
   "status": "success_read_only_FAT",
   "collected_jst": "2026-11-03T12:03:36.409417+09:00",
   "card": {
-    "disk_number": 4,
     "disk_bytes": 512711720960,
     "boot_partition_bytes": 17179869184,
     "filesystem": "FAT32",
@@ -202,6 +201,6 @@
     }
   ],
   "log_completed_marker": true,
-  "scope": "Read-only files from Windows-visible FAT partition. No new recognition was run. ext4 service journal was not collected; original Windows process has no raw-device administrator access. Historical board logs supplied separately.",
+  "scope": "FAT recognition artifacts copied read-only; no new inference or audio. Linux system journal is outside this collection. Published copies may have identity/path redactions; use the public MANIFEST.json for file integrity.",
   "card_files_written": false
 }

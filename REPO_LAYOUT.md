@@ -140,8 +140,11 @@ D:\College_study\Major\2026_FPGA\嵌赛final\_backup_pre_restructure\AC920_Sourc
 
 证据包的 `VALIDATION.json` 记录了板端逐页结果：第 01 首共 6 页，逐页 17 / 14 / 11 / 6 / 10 / 13 小节，
 合计 71 小节。因此 `data/samples/page/sample01-1.bmp`（第 1 页）覆盖的是 **17 小节**，
-此前文档中「约 18–20 小节」的估计已全部改正。同文件也确认
-`data/samples/result/01.musicxml` 的 SHA-256 与卡内回读的 `Outputs/01.musicxml` 一致。
+此前文档中「约 18–20 小节」的估计已全部改正。
+
+> **关于两份 `01.musicxml`**：`data/samples/result/01.musicxml`（LF 行尾）与
+> `board/recognition/card_20261103/Outputs/01.musicxml`（2026-11-03 脱敏重导出，CRLF 行尾）
+> **内容相同、字节不同**。此前记录的「SHA-256 一致」在证据包重导出后不再成立，以本节为准。
 
 ### 由此带来的 `.gitignore` 例外
 
@@ -158,3 +161,40 @@ D:\College_study\Major\2026_FPGA\嵌赛final\_backup_pre_restructure\AC920_Sourc
 | `README_给组长.md` | 同上未交付 |
 | 设计报告 docx、海报、视频、整机与转接板照片 | 在 `嵌赛final\` 下，尚未并入仓库（视频 186 MB 需 Git LFS 或外链） |
 | `data/samples/source/*.mxl` 的制谱许可 | 未确认，发布前需补来源 |
+
+## 8. 2026-11-03 脱敏补充包并入
+
+来源 `final\AC920_Public_Handoff_20261103\AC920_Public_Handoff_20261103\`（包内双层同名目录）。
+该包是上一证据包的**脱敏替换版**：声明不含聊天原文/会话标识/个人路径，并附 `docs/PRIVACY_REVIEW.json`
+（134 文件自动扫描 + 人工复核，`findings: []`）。
+
+| 包内路径 | 本仓库位置 | 数量 |
+|---|---|---|
+| `build/reports/**` | `build/reports/**` | 26（覆盖，脱敏重导出） |
+| `build/report_export_logs/**` | `build/report_export_logs/**` | 2（覆盖） |
+| `recognition/**` | `board/recognition/**` | 80（覆盖） |
+| `collaboration/**` | `collaboration/**` | 3（新增，抽象协作说明） |
+| `docs/**` | `docs/**` | 3（新增：技能包报告章节、证据溯源、隐私复核） |
+| `skill/**` | `skill/**` | 20（新增：6 个技能包 + README + `validate_skills.py` + `VALIDATION.json`） |
+
+未并入：包根 `README.md`、`MANIFEST.json`、`verify_manifest.py`——仓库已有 `README.md` 与
+`PACKAGE_MANIFEST.json`，收录会撞车；包完整性由 `PACKAGE_MANIFEST.json` 统一校验。
+
+### 两点必须知道
+
+1. **80 个文件只差行尾**。包内副本是 CRLF、仓库原副本是 LF，内容一致。仍选择全量覆盖，
+   因为 `docs/EVIDENCE_PROVENANCE.json` 逐文件记录了 `published_sha256`（发布副本身份），
+   跳过换行符差异会让那份溯源记录与仓库实际内容不符。
+2. **包内 4 个中文文件名已改为英文**，仓库同步采用英文名：
+
+   | 原文件名 | 现文件名 |
+   |---|---|
+   | `collaboration/协作概述.md` | `collaboration/brief_description_of_collaboration.md` |
+   | `collaboration/并行工作线与贡献.md` | `collaboration/parallel_working_lines_and_contribution.md` |
+   | `collaboration/问题与修正方法.md` | `collaboration/problems_and_solution.md` |
+   | `docs/3.3.5.2_技能包说明.md` | `docs/3.3.5.2_skills_interpretation.md` |
+
+   正文一级标题仍为中文，与仓库其余中文文档一致。
+
+包内 `collaboration/` 的 3 份抽象说明**替代**了 §7 中记录的旧缺口（聊天摘录、`EXPORT_SCOPE.json` 等
+原始材料按脱敏要求不再分发）。

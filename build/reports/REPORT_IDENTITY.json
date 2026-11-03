@@ -1,99 +1,99 @@
-{
-  "profile": "DP_STABLE720_RESPONSE1",
-  "report_export_jst": "2026-11-03T12:00:57.608146+09:00",
-  "report_kind": "Reports regenerated from existing accepted design; no synthesis, implementation, bitstream or board changes",
-  "firmware_version": "a4_interactive_ui1_light2",
-  "boot_sha256": "F855AB741399375A44189F2F9D6670AB5E56C19F02D4AD709149D721BAAF6CE8",
-  "bitstream_sha256": "1B63ED3C42CB904CF27BED8185756A74AE6507BB6103C4A714F3F2C02B85E823",
-  "xsa_sha256": "DFEB73F143F5CE5231C153D938FA5E70CAAAEC153560F643ED2F92DEB5737AEF",
-  "firmware_sources_verified": 43,
-  "checkpoints": {
-    "lab\\camera_onecard_20261029\\build\\vivado_camera\\camera_capture.runs\\synth_1\\camera_capture_wrapper.dcp": "664090ae4dbf0796191bd8aefa5b833788913db0a01b00bca696de7c91490947",
-    "lab\\camera_onecard_20261029\\build\\vivado_camera\\camera_capture.runs\\impl_1\\camera_capture_wrapper_routed.dcp": "6b993410c8867643df3783b0926e65417aa1a0c3600d21a14e9a9b9db242e94e"
-  },
-  "timing": {
-    "synthesis": {
-      "wns_ns": 1.871,
-      "tns_ns": 0.0,
-      "setup_failing_endpoints": 0,
-      "whs_ns": -0.447,
-      "ths_ns": -1014.791,
-      "hold_failing_endpoints": 20115,
-      "wpws_ns": -0.832,
-      "resources": {
-        "CLB LUTs": {
-          "used": "12911",
-          "available": "87840",
-          "percent": "14.70"
-        },
-        "CLB Registers": {
-          "used": "19425",
-          "available": "175680",
-          "percent": "11.06"
-        },
-        "Block RAM Tile": {
-          "used": "22.5",
-          "available": "128",
-          "percent": "17.58"
-        },
-        "URAM": {
-          "used": "8",
-          "available": "48",
-          "percent": "16.67"
-        },
-        "DSPs": {
-          "used": "8",
-          "available": "728",
-          "percent": "1.10"
-        }
-      }
-    },
-    "implementation": {
-      "wns_ns": 0.817,
-      "tns_ns": 0.0,
-      "setup_failing_endpoints": 0,
-      "whs_ns": 0.011,
-      "ths_ns": 0.0,
-      "hold_failing_endpoints": 0,
-      "wpws_ns": 0.145,
-      "resources": {
-        "CLB LUTs": {
-          "used": "10825",
-          "available": "87840",
-          "percent": "12.32"
-        },
-        "CLB Registers": {
-          "used": "16272",
-          "available": "175680",
-          "percent": "9.26"
-        },
-        "Block RAM Tile": {
-          "used": "22.5",
-          "available": "128",
-          "percent": "17.58"
-        },
-        "URAM": {
-          "used": "8",
-          "available": "48",
-          "percent": "16.67"
-        },
-        "DSPs": {
-          "used": "8",
-          "available": "728",
-          "percent": "1.10"
-        }
-      }
-    }
-  },
-  "implementation_drc": {
-    "errors": 0,
-    "critical_warnings": 0,
-    "warnings": 8,
-    "rules": {
-      "DPOP-4": 4,
-      "REQP-1934": 1,
-      "REQP-1935": 2,
-      "RTSTAT-10": 1
-    }
-  }
-}
+{
+  "profile": "DP_STABLE720_RESPONSE1",
+  "report_export_jst": "2026-11-03T12:00:57.608146+09:00",
+  "report_kind": "Reports regenerated from existing accepted design; no synthesis, implementation, bitstream or board changes",
+  "firmware_version": "a4_interactive_ui1_light2",
+  "boot_sha256": "F855AB741399375A44189F2F9D6670AB5E56C19F02D4AD709149D721BAAF6CE8",
+  "bitstream_sha256": "1B63ED3C42CB904CF27BED8185756A74AE6507BB6103C4A714F3F2C02B85E823",
+  "xsa_sha256": "DFEB73F143F5CE5231C153D938FA5E70CAAAEC153560F643ED2F92DEB5737AEF",
+  "firmware_sources_verified": 43,
+  "checkpoints": {
+    "lab\\camera_onecard_20261029\\build\\vivado_camera\\camera_capture.runs\\synth_1\\camera_capture_wrapper.dcp": "664090ae4dbf0796191bd8aefa5b833788913db0a01b00bca696de7c91490947",
+    "lab\\camera_onecard_20261029\\build\\vivado_camera\\camera_capture.runs\\impl_1\\camera_capture_wrapper_routed.dcp": "6b993410c8867643df3783b0926e65417aa1a0c3600d21a14e9a9b9db242e94e"
+  },
+  "timing": {
+    "synthesis": {
+      "wns_ns": 1.871,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "whs_ns": -0.447,
+      "ths_ns": -1014.791,
+      "hold_failing_endpoints": 20115,
+      "wpws_ns": -0.832,
+      "resources": {
+        "CLB LUTs": {
+          "used": "12911",
+          "available": "87840",
+          "percent": "14.70"
+        },
+        "CLB Registers": {
+          "used": "19425",
+          "available": "175680",
+          "percent": "11.06"
+        },
+        "Block RAM Tile": {
+          "used": "22.5",
+          "available": "128",
+          "percent": "17.58"
+        },
+        "URAM": {
+          "used": "8",
+          "available": "48",
+          "percent": "16.67"
+        },
+        "DSPs": {
+          "used": "8",
+          "available": "728",
+          "percent": "1.10"
+        }
+      }
+    },
+    "implementation": {
+      "wns_ns": 0.817,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "whs_ns": 0.011,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "wpws_ns": 0.145,
+      "resources": {
+        "CLB LUTs": {
+          "used": "10825",
+          "available": "87840",
+          "percent": "12.32"
+        },
+        "CLB Registers": {
+          "used": "16272",
+          "available": "175680",
+          "percent": "9.26"
+        },
+        "Block RAM Tile": {
+          "used": "22.5",
+          "available": "128",
+          "percent": "17.58"
+        },
+        "URAM": {
+          "used": "8",
+          "available": "48",
+          "percent": "16.67"
+        },
+        "DSPs": {
+          "used": "8",
+          "available": "728",
+          "percent": "1.10"
+        }
+      }
+    }
+  },
+  "implementation_drc": {
+    "errors": 0,
+    "critical_warnings": 0,
+    "warnings": 8,
+    "rules": {
+      "DPOP-4": 4,
+      "REQP-1934": 1,
+      "REQP-1935": 2,
+      "RTSTAT-10": 1
+    }
+  }
+}
