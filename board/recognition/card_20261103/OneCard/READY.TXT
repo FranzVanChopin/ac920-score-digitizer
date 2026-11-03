@@ -1,0 +1,6 @@
+AC920_ONECARD_V1
+capture=0
+linux=1
+linux_bytes=1803456
+linux_crc32=53C5999F
+root_partuuid=d3c4cd8d-02

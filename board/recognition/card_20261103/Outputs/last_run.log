@@ -1,0 +1,50 @@
+10:39:46 recognizer ready
+10:39:47 01-00: sent (01-00.bmp, rotation ccw, meter auto)
+10:39:47 01-01: sent (01-01.bmp, rotation ccw, meter @prev)
+[UI_STAGE]{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/01-00.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/01-00.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/01-00.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/01-00.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/01-00.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/01-00.bmp"}
+10:40:23 01-00: 17 measures, 347 notes, clefs on 100% of the systems, 35.905 s, rotation ccw -> 01.musicxml
+10:40:24 01-02: sent (01-02.bmp, rotation ccw, meter @prev)
+[UI_STAGE]{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/01-01.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/01-01.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/01-01.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/01-01.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/01-01.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/01-01.bmp"}
+10:40:50 01-01: 14 measures, 309 notes, clefs on 100% of the systems, 26.366 s, rotation ccw -> 01.musicxml
+10:40:50 01-03: sent (01-03.bmp, rotation ccw, meter @prev)
+[UI_STAGE]{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/01-02.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/01-02.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/01-02.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/01-02.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/01-02.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/01-02.bmp"}
+10:41:29 01-02: 11 measures, 385 notes, clefs on 100% of the systems, 38.124 s, rotation ccw -> 01.musicxml
+10:41:29 01-04: sent (01-04.bmp, rotation ccw, meter @prev)
+[UI_STAGE]{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/01-03.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/01-03.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/01-03.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/01-03.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/01-03.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/01-03.bmp"}
+10:41:55 01-03: 6 measures, 136 notes, clefs on 100% of the systems, 25.518 s, rotation ccw -> 01.musicxml
+10:41:55 01-05: sent (01-05.bmp, rotation ccw, meter @prev)
+[UI_STAGE]{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/01-04.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/01-04.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/01-04.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/01-04.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/01-04.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/01-04.bmp"}
+10:42:28 01-04: 10 measures, 298 notes, clefs on 100% of the systems, 32.923 s, rotation ccw -> 01.musicxml
+[UI_STAGE]{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/01-05.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/01-05.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/01-05.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/01-05.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/01-05.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/01-05.bmp"}
+10:42:49 01-05: 13 measures, 341 notes, clefs on 100% of the systems, 21.234 s, rotation ccw -> 01.musicxml
+10:42:51 7 page(s) recognized; songs: 00, 01

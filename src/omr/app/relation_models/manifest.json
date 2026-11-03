@@ -1,0 +1,65 @@
+{
+  "backend": "ONNX Runtime CPU",
+  "reference_required": false,
+  "sources": {
+    "build\\staff_removal_20261010\\model_raw_v2\\best.pt": "14685cfab0bc24786d2c090f04578c6fc8165137cdb593a3071e7d0f3f3a93b5",
+    "build\\relation_decoder_20261010\\model\\best.pt": "66fd2650fb51656e8fa003ebececea768317d78d0407d79699aa64376c640e3b",
+    "build\\relation_decoder_20261010\\model\\edge.pt": "9e84ab810ab153caae20a06c8bbf874ddc122d04fe5e42f0684cb512175bd396",
+    "build\\relation_context_20261010\\grace.pt": "d4a06e469e85c93addae28c19f6347b3c01b44f978af5d1cb141a81b2e7a61f2"
+  },
+  "files": [
+    {
+      "path": "edge.onnx",
+      "bytes": 2821,
+      "sha256": "e2954ea0309d7a72240be1b4ab345d014aab16c4ea6b78bc3203df3b6d0a0c0f"
+    },
+    {
+      "path": "edge_scores.json",
+      "bytes": 41,
+      "sha256": "5b6f1a96ad9077418e6c7d28066de5335cd8677df29fe03f98ce7f4e52ae8488"
+    },
+    {
+      "path": "grace.onnx",
+      "bytes": 39210,
+      "sha256": "8fc63b933026f02fa999d78ed2442de39356d4d3cd22f73d6ac92383ebba4681"
+    },
+    {
+      "path": "grace_training.json",
+      "bytes": 26,
+      "sha256": "82aabc80c2a27572628f954a1a0813ebde8761ecb27466ef0397d23dd826923d"
+    },
+    {
+      "path": "stroke.onnx",
+      "bytes": 245592,
+      "sha256": "6e51c6c3bf463181b351a575612902a05b5113ef0fcc9e7baf47d012dacf0639"
+    },
+    {
+      "path": "stroke_scores.json",
+      "bytes": 1228,
+      "sha256": "9fa0224822abd96d5cffdb5e8e484032306e8c7d59a3d87b4f76aae2f4b0f1e5"
+    },
+    {
+      "path": "symbol.onnx",
+      "bytes": 245904,
+      "sha256": "e014e4104d674d699ebc30fae73cab4cf6219fbd7837779932b8839f960b188d"
+    },
+    {
+      "path": "symbol_scores.json",
+      "bytes": 1996,
+      "sha256": "0564d84dbf2d9bd4d54392ed9f40f6ed50c9fb67c9d9f37e60a3015c22ad8eb1"
+    }
+  ],
+  "limits": {
+    "tile": [
+      1,
+      1,
+      160,
+      320
+    ],
+    "grace_batch": 128,
+    "voice_lanes": 2,
+    "voice_search_states": 32,
+    "maximum_photo_pixels": 16000000,
+    "maximum_photo_dimension": 8192
+  }
+}

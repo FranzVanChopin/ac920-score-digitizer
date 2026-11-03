@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=AC920 Score Studio
+Exec=/usr/bin/python3 /opt/ac920-panel/launch_dp_ui.py
+Terminal=false
+X-GNOME-Autostart-enabled=true
+X-GNOME-AutoRestart=true
+NoDisplay=true

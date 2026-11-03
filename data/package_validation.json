@@ -1,0 +1,13 @@
+{
+  "profile": "DP_STABLE720_RESPONSE1",
+  "firmware_sources_verified": 43,
+  "deployed_linux_sources_verified": 28,
+  "v16_original_assets_verified": 63,
+  "source_only": true,
+  "board_unchanged": true,
+  "live_hardware_test_run": false,
+  "model_weights_included": "v16 small deployed weights and bundle relation models",
+  "largest_file_bytes": 2454934,
+  "secret_literal_scan": "No literal password/API token/private key candidates in selected source",
+  "excluded_private_card_identity": true
+}

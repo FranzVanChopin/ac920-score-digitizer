@@ -1,0 +1,15 @@
+{
+  "mode": "all",
+  "measures": 36,
+  "grace_heads": 0,
+  "context_changes": 2,
+  "rhythm_issues": 3,
+  "elapsed_s": 2.3435623839998243,
+  "reference_supplied_to_recognizer": false,
+  "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.",
+  "limits": [
+    "Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.",
+    "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.",
+    "Desktop verification only, no ARM64/physical FPGA verification."
+  ]
+}

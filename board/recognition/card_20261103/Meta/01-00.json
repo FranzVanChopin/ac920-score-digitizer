@@ -1,0 +1,15 @@
+{
+"version":"a4_interactive_hdmi_video1","complete":true,"song":1,"page":0,
+"image_file":"Image/01-00.bmp","gray_file":"Grey/01-00.bmp",
+"frame":19209,"uptime_ms":1315057,"same_frame":true,"controls_stable":true,
+"sensor":"IMX477","sensor_size":[4056,3040],"sensor_raw_bits":12,"binning":false,
+"crop_mode":"fixed_a4","crop_xywh":[0,86,4056,2868],"output_size":[4056,2868],
+"image_format":"BMP_RGB24","gray_format":"BMP_GRAY8",
+"gray_from_saved_color":true,"gray_coefficients_rgb":[4899,9617,1868],"gray_divisor":16384,"gray_rounding":8192,
+"resize":false,"clahe":false,"binarize":false,
+"exposure_lines":735,"exposure_us":21000,"frame_length_lines":3500,"line_length_clocks":24000,"timing_pixel_rate_hz":840000000,
+"analogue_gain_code":0,"analogue_gain_x1000":1000,"digital_gain_q8":256,
+"sensor_wb_q8_rgb":[830,256,357],"auto_exposure":true,"focus_mode":false,
+"color_chroma_denoise":true,"ccm_rgb":[2.22865418,-0.96141888,-0.26723530,-0.34682006,2.11994183,-0.77311898,-0.16134357,-0.44477620,1.60611617],
+"orientation":"sensor_native","aperture_f":null,"focal_length_mm":null
+}

@@ -1,0 +1,9 @@
+{
+  "original_page_sha256": "21dfbb5f4366e69e965e980516c022ed4ab371efc8012a78858b9067cdad2fd7",
+  "original_album_sha256": "cb53f89c9b9b6ca9fdfe3c45d2959ccd3ccf34392424b98e377da2c4a2daf2e9",
+  "helper_sha256": {
+    "merge_pages.py": "6736395b7b90e05540d0d738dc0893b95071646f53d8d1a54f73502613eda415",
+    "engrave.py": "4c9112b13cb678c3978494c51264c085036d261fe086bc3bc7fc34b28f409787"
+  },
+  "change": "Only HERE path and structured progress output; album helpers copied unchanged"
+}

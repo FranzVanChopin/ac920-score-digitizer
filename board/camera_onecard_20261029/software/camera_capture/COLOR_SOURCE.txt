@@ -1,0 +1,164 @@
+IMX477 initial white balance and colour matrix provenance
+========================================================
+Reviewed 2026-10-27. The values below are provisional starting parameters,
+not a measured calibration of this camera, lens, illumination or display.
+
+Pinned upstream source
+----------------------
+Repository: https://github.com/raspberrypi/libcamera
+Commit: 6c1dd9d55573010f710c9e190a73e7e76f0d9432
+Tuning: src/ipa/rpi/vc4/data/imx477.json
+https://github.com/raspberrypi/libcamera/blob/6c1dd9d55573010f710c9e190a73e7e76f0d9432/src/ipa/rpi/vc4/data/imx477.json
+
+Unmodified local reference files are retained in:
+build/camera_color_debug_20261027/references/libcamera_6c1dd9d55573010f710c9e190a73e7e76f0d9432/
+
+Original path -> snapshot name, SHA-256:
+
+src/ipa/rpi/vc4/data/imx477.json -> imx477.json
+ffa1be9ba87260d1e153f65511fe6ad9c3a8e0819927301115c75f438d03b9a8
+
+src/ipa/rpi/controller/rpi/awb.cpp -> awb.cpp
+aba706d1f4419222ce3b90cc1a8f9096b8d9ad0c7f13a2ff9c5250fcd10d1998
+
+src/ipa/rpi/controller/rpi/awb_bayes.cpp -> awb_bayes.cpp
+f291a4329888242ccdcf5a569b19301699dd509a06c84595fea94fd1e738fa65
+
+src/ipa/rpi/controller/rpi/ccm.cpp -> ccm.cpp
+b96f36e26e45573c2c444a0e1af52feb243f1f6d564ec43b5bd8d3a8d81de11e
+
+src/ipa/rpi/controller/rpi/ccm.h -> ccm.h
+a56db9086a392aacf3a4fe39e4fde71546b418607df62709d330bd984eea11fa
+
+src/ipa/rpi/vc4/vc4.cpp -> vc4.cpp
+d3868d9000448a1e7de9411a1908268b7b74012e3e17b72a6b35013886c85591
+
+REUSE.toml -> REUSE.toml
+0c75fd3c9d4602831820e66711850327032bffafd604c03e1fa705078b18fff2
+
+LICENSES/BSD-2-Clause.txt -> BSD-2-Clause.txt
+fd38b2c053c0cce46d9c5ef3545a6e34d157a240ba99c9b8dca5d37a8147da6c
+
+White balance at 6500 K
+----------------------
+Use the enabled rpi.awb algorithm's ct_curve, not the disabled rpi.nn.awb
+curve in the same JSON. The two enclosing samples are:
+
+  CT K    ctR       ctB
+  6125    0.3129    0.7100
+  6671    0.3065    0.7200
+
+Linear interpolation with t=(6500-6125)/(6671-6125)=375/546 gives:
+  ctR = 0.30850439560439563
+  ctB = 0.7168681318681318
+
+Awb::setColourTemperature in awb.cpp:232-246 applies reciprocal ratios:
+  R gain = 1/ctR = 3.2414449007797277
+  G gain = 1
+  B gain = 1/ctB = 1.3949566950256764
+
+Round 256 times each gain to nearest integer for the sensor interface:
+  R/G/B Q8 = 830 / 256 / 357 = 0x033e / 0x0100 / 0x0165
+  Applied R/G/B = 3.2421875 / 1 / 1.39453125.
+
+Do not multiply these fixed-temperature gains by sensitivity_r/b=1.05.
+Those factors participate in the Bayesian automatic algorithm's statistic
+normalization and fitted result; the upstream manual-temperature path above
+does not multiply them into its result. The current application does not run
+that Bayesian AWB algorithm.
+
+Raspberry Pi normally applies these balance gains in its ISP. Here the
+application uses the same provisional gain ratios in the IMX477's individual
+digital-gain controls. Register evidence, deliberately restricted range and
+readback/failure handling are documented in IMX477_COLOR_REGISTERS.txt.
+Moving gain to the sensor changes where clipping and quantization occur;
+these values alone do not guarantee identical Raspberry Pi image output.
+
+Colour correction matrix at 6500 K
+----------------------------------
+The rpi.ccm entries at 5881 K and 7600 K are:
+
+  M5881 = [ 2.18464  -0.95493  -0.22971
+           -0.36826   2.00298  -0.63471
+           -0.15219  -0.38055   1.53274 ]
+
+  M7600 = [ 2.30687  -0.97295  -0.33392
+           -0.30872   2.32779  -1.01908
+           -0.17761  -0.55891   1.73651 ]
+
+calculateCcm in ccm.cpp:114-128 linearly interpolates each coefficient.
+For t=(6500-5881)/(7600-5881)=619/1719, use M=(1-t)*M5881+t*M7600:
+
+  M6500 = [ 2.228654176847004    -0.9614188772542175  -0.2672352995927865
+           -0.3468200581733566    2.119941832460733   -0.7731189761489238
+           -0.16134356602675973  -0.4447762012798139   1.6061161663758 ]
+
+The array is RGB row-major, with column-vector multiplication:
+  output_linear_RGB = M6500 * input_white_balanced_linear_RGB.
+The first row computes output red from input R/G/B; do not transpose it.
+The row-major matrix storage is explicit in ccm.cpp:180-183, and vc4.cpp:
+387-394 forwards it to the ISP in the same order. RGB2Y and matrix composition
+in ccm.cpp:131-146 corroborate the forward multiplication convention.
+No additional saturation transform is included in this application's matrix.
+
+Implementation boundaries
+--------------------------
+The sensor applies white balance once. capture_color.c applies only this
+matrix after approximately decoding the existing PL gamma LUT, then clamps
+and gamma-encodes the result. Its BGR memory layout is converted to RGB for
+the calculation. Signed intermediate values are retained through the matrix;
+do not clamp each product or negative coefficient separately.
+
+The decoder models the PL's black removal, gamma-2.2 and 10-to-8-bit
+quantization. Do not remove the black pedestal a second time. Inverting an
+8-bit quantizer cannot recover lost precision, clipped sensor highlights or
+an incorrect physical black-level assumption. A future linear high-bit-depth
+ISP path would avoid this approximation.
+
+The fixed 6500 K profile is not a guarantee for an emissive display merely
+labelled 6500 K: display spectra, IR filter, lens and illumination all matter.
+Use an unclipped white/grey target under the actual light to set sensor gains
+once, then retain them while testing saturated colours. The 'w' command uses
+only the explicitly selected neutral central ROI; it must not be used on a
+solid-colour target. An accepted white measurement does not calibrate the
+full matrix. The application retains this fixed matrix after white balance
+calibration; that is a deliberate initial implementation limit.
+
+Do not infer an accurate profile from the earlier overexposed test photos.
+Near-clipping statistics and register readback support diagnosis but do not
+prove colour accuracy. Capture real unclipped neutral/colour targets on this
+unit before claiming the correction is physically verified.
+
+License and attribution for the tuning data
+-------------------------------------------
+REUSE.toml at the pinned commit assigns src/ipa/rpi/vc4/data/*.json:
+Copyright 2019-2020 Raspberry Pi Ltd
+SPDX-License-Identifier: BSD-2-Clause
+
+The accompanying algorithm reference sources carry their own BSD-2-Clause
+SPDX/copyright headers, preserved in the unmodified snapshots. The generic
+upstream license template is also preserved as BSD-2-Clause.txt. Retain this
+notice and the following conditions with redistributed derived parameters.
+
+Copyright (c) 2019-2020 Raspberry Pi Ltd. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

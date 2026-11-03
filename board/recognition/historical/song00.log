@@ -1,0 +1,266 @@
+sudo -p [sudo authentication] -- sh -c 'python3 -c '"'"'import json,os,sys,time,xml.etree.ElementTree as ET
+> from pathlib import Path
+> sys.path.insert(0,'"'"'"'"'"'"'"'"'/opt/ac920-panel'"'"'"'"'"'"'"'"')
+> from panel_ui import request
+> from onecard_common import write_json
+> E=Path('"'"'"'"'"'"'"'"'/home/fpga/claude-dp-stability-20261101'"'"'"'"'"'"'"'"')
+> state=request({'"'"'"'"'"'"'"'"'action'"'"'"'"'"'"'"'"':'"'"'"'"'"'"'"'"'state'"'"'"'"'"'"'"'"'},timeout=3);assert not state['"'"'"'"'"'"'"'"'busy'"'"'"'"'"'"'"'"'] and not state['"'"'"'"'"'"'"'"'return_pending'"'"'"'"'"'"'"'"']
+> if state['"'"'"'"'"'"'"'"'view'"'"'"'"'"'"'"'"']!='"'"'"'"'"'"'"'"'recognize'"'"'"'"'"'"'"'"':state=request(dict(action='"'"'"'"'"'"'"'"'key'"'"'"'"'"'"'"'"',key='"'"'"'"'"'"'"'"'S1'"'"'"'"'"'"'"'"',kind='"'"'"'"'"'"'"'"'long'"'"'"'"'"'"'"'"'))
+> for _ in range(len(state['"'"'"'"'"'"'"'"'songs'"'"'"'"'"'"'"'"'])+1):
+>     if state['"'"'"'"'"'"'"'"'selected'"'"'"'"'"'"'"'"']=='"'"'"'"'"'"'"'"'00'"'"'"'"'"'"'"'"':break
+>     state=request(dict(action='"'"'"'"'"'"'"'"'key'"'"'"'"'"'"'"'"',key='"'"'"'"'"'"'"'"'S2'"'"'"'"'"'"'"'"',kind='"'"'"'"'"'"'"'"'short'"'"'"'"'"'"'"'"'))
+> assert state['"'"'"'"'"'"'"'"'selected'"'"'"'"'"'"'"'"']=='"'"'"'"'"'"'"'"'00'"'"'"'"'"'"'"'"'
+> started=time.monotonic();request(dict(action='"'"'"'"'"'"'"'"'key'"'"'"'"'"'"'"'"',key='"'"'"'"'"'"'"'"'S2'"'"'"'"'"'"'"'"',kind='"'"'"'"'"'"'"'"'long'"'"'"'"'"'"'"'"'),timeout=3)
+> history=[];last=None
+> while time.monotonic()-started<180:
+>     state=request({'"'"'"'"'"'"'"'"'action'"'"'"'"'"'"'"'"':'"'"'"'"'"'"'"'"'state'"'"'"'"'"'"'"'"'},timeout=3)
+>     song=next(x for x in state['"'"'"'"'"'"'"'"'songs'"'"'"'"'"'"'"'"'] if x['"'"'"'"'"'"'"'"'id'"'"'"'"'"'"'"'"']=='"'"'"'"'"'"'"'"'00'"'"'"'"'"'"'"'"')
+>     change=dict(busy=state['"'"'"'"'"'"'"'"'busy'"'"'"'"'"'"'"'"'],message=state['"'"'"'"'"'"'"'"'message'"'"'"'"'"'"'"'"'],pages=song['"'"'"'"'"'"'"'"'pages'"'"'"'"'"'"'"'"'],xml=song.get('"'"'"'"'"'"'"'"'xml'"'"'"'"'"'"'"'"'))
+>     if change!=last:
+>         history.append(dict(seconds=round(time.monotonic()-started,2),**change));print(json.dumps(history[-1],ensure_ascii=False),flush=True)
+>         last=json.loads(json.dumps(change))
+>     if not state['"'"'"'"'"'"'"'"'busy'"'"'"'"'"'"'"'"']:break
+>     time.sleep(.5)
+> xml=Path('"'"'"'"'"'"'"'"'/mnt/ac920-onecard/Outputs/00.musicxml'"'"'"'"'"'"'"'"')
+> result=dict(seconds=round(time.monotonic()-started,2),state=state,history=history,export_exists=xml.is_file())
+> if xml.is_file():
+>     root=ET.fromstring(xml.read_bytes());result.update(measures=len(root.findall('"'"'"'"'"'"'"'"'.//measure'"'"'"'"'"'"'"'"')),notes=len(root.findall('"'"'"'"'"'"'"'"'.//note'"'"'"'"'"'"'"'"')))
+> result['"'"'"'"'"'"'"'"'passed'"'"'"'"'"'"'"'"']=not state['"'"'"'"'"'"'"'"'busy'"'"'"'"'"'"'"'"'] and xml.is_file() and next(x for x in state['"'"'"'"'"'"'"'"'songs'"'"'"'"'"'"'"'"'] if x['"'"'"'"'"'"'"'"'id'"'"'"'"'"'"'"'"']=='"'"'"'"'"'"'"'"'00'"'"'"'"'"'"'"'"').get('"'"'"'"'"'"'"'"'xml'"'"'"'"'"'"'"'"',False)
+> write_json(E/'"'"'"'"'"'"'"'"'song00_result.json'"'"'"'"'"'"'"'"',result);os.chmod(E/'"'"'"'"'"'"'"'"'song00_result.json'"'"'"'"'"'"'"'"',0o644)
+> print(json.dumps(result,ensure_ascii=False,indent=2),flush=True)
+> assert result['"'"'"'"'"'"'"'"'passed'"'"'"'"'"'"'"'"'],state['"'"'"'"'"'"'"'"'message'"'"'"'"'"'"'"'"']
+> '"'"''; printf "\n__CODEX_ROOT_DONE_fe7374a31df04326abf1409d42c42a33__ %s\n" $?
+[ 1399.324065] python3[33551]: [PANEL] S2 long: recognize; selected=00
+{"seconds": 0.01, "busy": true, "message": "加载识别引擎…", "pages": [{"id": "00-00", "status": "pending", "progress": 0, "stage": "等待识别"}], "xml": false}
+{"seconds": 8.55, "busy": true, "message": "加载识别引擎…", "pages": [{"id": "00-00", "status": "running", "progress": 2, "stage": "已送入识别流水线"}], "xml": false}
+{"seconds": 26.26, "busy": true, "message": "00-00 · 谱线与符号分割", "pages": [{"id": "00-00", "status": "running", "progress": 25, "stage": "谱线与符号分割"}], "xml": false}
+{"seconds": 30.29, "busy": true, "message": "00-00 · 谱号与调号", "pages": [{"id": "00-00", "status": "running", "progress": 65, "stage": "谱号与调号"}], "xml": false}
+{"seconds": 35.34, "busy": true, "message": "00-00 · 语义恢复", "pages": [{"id": "00-00", "status": "running", "progress": 80, "stage": "语义恢复"}], "xml": false}
+{"seconds": 38.9, "busy": true, "message": "00-00 · 写入 MusicXML", "pages": [{"id": "00-00", "status": "running", "progress": 98, "stage": "写入 MusicXML"}], "xml": false}
+{"seconds": 39.4, "busy": true, "message": "00-00 · 写入 MusicXML", "pages": [{"id": "00-00", "status": "ok", "progress": 100, "stage": "已完成"}], "xml": false}
+{"seconds": 40.41, "busy": true, "message": "00-00 · 写入 MusicXML", "pages": [{"id": "00-00", "status": "ok", "progress": 100, "stage": "已完成", "rotate_used": "ccw", "clef_ratio": 1.0, "orientation_suspect": false}], "xml": false}
+[ 1440.031071] python3[33551]: [PANEL] SONG 00 complete; staying in Linux
+{"seconds": 40.91, "busy": false, "message": "曲目 00 已完成；长按 S1 浏览乐谱", "pages": [{"id": "00-00", "status": "ok", "progress": 100, "stage": "已完成", "rotate_used": "ccw", "clef_ratio": 1.0, "orientation_suspect": false}], "xml": true}
+{
+  "seconds": 40.92,
+  "state": {
+    "view": "recognize",
+    "songs": [
+      {
+        "id": "00",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "ok",
+            "progress": 100,
+            "stage": "已完成",
+            "rotate_used": "ccw",
+            "clef_ratio": 1.0,
+            "orientation_suspect": false
+          }
+        ],
+        "xml": true
+      },
+      {
+        "id": "01",
+        "pages": [
+          {
+            "id": "01-00",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-01",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-02",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-03",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-04",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-05",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          }
+        ],
+        "xml": false
+      }
+    ],
+    "selected": "00",
+    "busy": false,
+    "message": "曲目 00 已完成；长按 S1 浏览乐谱",
+    "speed": 1.0,
+    "return_pending": false,
+    "play": {
+      "token": 0,
+      "song": null,
+      "directory": null,
+      "state": "stopped",
+      "error": null
+    },
+    "button_error": "",
+    "input_event": {
+      "sequence": 1,
+      "key": "S2",
+      "kind": "long",
+      "monotonic": 1399.32285552
+    }
+  },
+  "history": [
+    {
+      "seconds": 0.01,
+      "busy": true,
+      "message": "加载识别引擎…",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "pending",
+          "progress": 0,
+          "stage": "等待识别"
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 8.55,
+      "busy": true,
+      "message": "加载识别引擎…",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "running",
+          "progress": 2,
+          "stage": "已送入识别流水线"
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 26.26,
+      "busy": true,
+      "message": "00-00 · 谱线与符号分割",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "running",
+          "progress": 25,
+          "stage": "谱线与符号分割"
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 30.29,
+      "busy": true,
+      "message": "00-00 · 谱号与调号",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "running",
+          "progress": 65,
+          "stage": "谱号与调号"
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 35.34,
+      "busy": true,
+      "message": "00-00 · 语义恢复",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "running",
+          "progress": 80,
+          "stage": "语义恢复"
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 38.9,
+      "busy": true,
+      "message": "00-00 · 写入 MusicXML",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "running",
+          "progress": 98,
+          "stage": "写入 MusicXML"
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 39.4,
+      "busy": true,
+      "message": "00-00 · 写入 MusicXML",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "ok",
+          "progress": 100,
+          "stage": "已完成"
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 40.41,
+      "busy": true,
+      "message": "00-00 · 写入 MusicXML",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "ok",
+          "progress": 100,
+          "stage": "已完成",
+          "rotate_used": "ccw",
+          "clef_ratio": 1.0,
+          "orientation_suspect": false
+        }
+      ],
+      "xml": false
+    },
+    {
+      "seconds": 40.91,
+      "busy": false,
+      "message": "曲目 00 已完成；长按 S1 浏览乐谱",
+      "pages": [
+        {
+          "id": "00-00",
+          "status": "ok",
+          "progress": 100,
+          "stage": "已完成",
+          "rotate_used": "ccw",
+          "clef_ratio": 1.0,
+          "orientation_suspect": false
+        }
+      ],
+      "xml": true
+    }
+  ],
+  "export_exists": true,
+  "measures": 17,
+  "notes": 366,
+  "passed": true
+}
+RC: 0

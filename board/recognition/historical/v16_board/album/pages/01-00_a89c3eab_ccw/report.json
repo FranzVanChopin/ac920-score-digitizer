@@ -1,0 +1,89 @@
+{
+ "times": {
+  "segment": 11.277,
+  "relation": 5.394,
+  "headers": 0.134,
+  "redecode": 9.207,
+  "decode": 10.392,
+  "write": 0.103
+ },
+ "total_s": 36.463,
+ "peak_rss_mib": 1144.6,
+ "peak_rss_child_mib": 864.8,
+ "threads": 4,
+ "measures": 21,
+ "stats": {
+  "repitched_heads": 18,
+  "workers": 4,
+  "consensus_rewrites": 0,
+  "measures": 21
+ },
+ "photo": "/dev/shm/omr-album-1000/01-00.bmp",
+ "photo_sha256": "328cf1574bdee4fc973dbda100318c13bc677861b3226b6121f14dac8db9090a",
+ "reference_used": false,
+ "transformer_used": false,
+ "segnet": "small student (68,134 params)",
+ "decoder_stage_a": "c++",
+ "homr_fast": {
+  "installed": [
+   "_can_shapes_possibly_touch",
+   "StaffLineSegment.merge",
+   "StaffLineSegment.__init__",
+   "get_staff_for_anchor",
+   "find_raw_staffs_by_connecting_line_fragments",
+   "RawStaff.__init__",
+   "calculate_edges_of_rotated_rectangle",
+   "get_center_extrapolated",
+   "break_wide_fragments",
+   "do_polygons_overlap",
+   "Staff.get_at",
+   "create_noise_grid",
+   "connect_staff_lines",
+   "find_staff_anchors",
+   "resample_staff_segment",
+   "are_lines_crossing",
+   "combine_noteheads_with_stems",
+   "is_overlapping_with_any"
+  ],
+  "skipped": []
+ },
+ "relation_fast": {
+  "installed": [
+   "strokes",
+   "link_heads",
+   "beam_relations",
+   "assign_graph (distance table)",
+   "bar_bounds (cropped dilations)",
+   "recognize: stroke tiles first, strokes() overlapping the symbol tiles"
+  ],
+  "skipped": [],
+  "link_margin": 0.5
+ },
+ "redecode_fast": {
+  "installed": [
+   "_classify (0 bindings)",
+   "classify (0 bindings)",
+   "_stem_end (1 bindings)",
+   "continuous_beams (0 bindings)",
+   "head_width (0 bindings)",
+   "beam_chains (0 bindings)"
+  ],
+  "skipped": []
+ },
+ "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models",
+ "link_margin": 0.5,
+ "shared": "/home/fpga/claude-release-v16-20261030/shared",
+ "shared_prefetch_used": true,
+ "rss_now_mib": 878.0,
+ "rss_start_mib": 629.3,
+ "pil_resize": "installed",
+ "pipeline": {
+  "front_used": [
+   "autocrop",
+   "resize",
+   "clahe",
+   "network"
+  ],
+  "front_s": 20.168
+ }
+}

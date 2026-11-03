@@ -1,0 +1,16 @@
+# 本仓库带一份逐文件 SHA-256 清单（PACKAGE_MANIFEST.json），
+# 由 tools/verify_package.py 校验。任何换行符转换都会让清单失效，
+# 因此关闭 Git 的自动 EOL 规范化：文件按原字节存入、按原字节检出。
+* -text
+
+# 供 GitHub 语言统计与差异显示参考（不影响存储字节）。
+*.c     linguist-language=C
+*.h     linguist-language=C
+*.sv    linguist-language=SystemVerilog
+*.v     linguist-language=Verilog
+*.tcl   linguist-language=Tcl
+
+# 二进制与模型权重
+*.onnx  binary
+*.npz   binary
+*.musicxml -diff

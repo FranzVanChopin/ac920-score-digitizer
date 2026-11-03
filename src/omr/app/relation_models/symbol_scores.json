@@ -1,0 +1,85 @@
+{
+  "reports": {
+    "validation": {
+      "matched": 2128,
+      "reference": 2150,
+      "candidate": 2137,
+      "classes": {
+        "head_filled": {
+          "matched": 1468,
+          "reference": 1489,
+          "candidate": 1472,
+          "threshold": 0.6
+        },
+        "head_hollow": {
+          "matched": 87,
+          "reference": 87,
+          "candidate": 88,
+          "threshold": 0.55
+        },
+        "rest_whole": {
+          "matched": 102,
+          "reference": 102,
+          "candidate": 102,
+          "threshold": 0.5
+        },
+        "rest_half": {
+          "matched": 12,
+          "reference": 12,
+          "candidate": 12,
+          "threshold": 0.25
+        },
+        "rest_quarter": {
+          "matched": 92,
+          "reference": 92,
+          "candidate": 92,
+          "threshold": 0.3
+        },
+        "rest_eighth": {
+          "matched": 86,
+          "reference": 86,
+          "candidate": 86,
+          "threshold": 0.15
+        },
+        "rest_16th": {
+          "matched": 54,
+          "reference": 54,
+          "candidate": 54,
+          "threshold": 0.15
+        },
+        "rest_32nd": {
+          "matched": 0,
+          "reference": 0,
+          "candidate": 0,
+          "threshold": 0.15
+        },
+        "sharp": {
+          "matched": 102,
+          "reference": 102,
+          "candidate": 102,
+          "threshold": 0.35
+        },
+        "flat": {
+          "matched": 62,
+          "reference": 62,
+          "candidate": 62,
+          "threshold": 0.3
+        },
+        "natural": {
+          "matched": 34,
+          "reference": 34,
+          "candidate": 34,
+          "threshold": 0.4
+        },
+        "dot": {
+          "matched": 29,
+          "reference": 30,
+          "candidate": 33,
+          "threshold": 0.6
+        }
+      },
+      "recall": 0.9897674418604652,
+      "precision": 0.9957884885353299
+    }
+  }
+}

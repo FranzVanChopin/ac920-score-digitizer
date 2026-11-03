@@ -1,0 +1,49 @@
+{
+  "pages": {
+    "00-00": {
+      "song": 0,
+      "page": 0,
+      "grey": "/mnt/ac920-onecard/Grey/00-00.bmp",
+      "sha256": "213b3c38dbb514b5463e996bae4b6d88ddc57255d684de3d626ea2b2f27db068",
+      "size": 11633686,
+      "mtime": 1262304000.0,
+      "status": "ok",
+      "run": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw",
+      "meter_in": "",
+      "lines_horizontal": true,
+      "rotate_used": "ccw",
+      "attempts": {
+        "ccw": {
+          "run": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw",
+          "xml": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/page.musicxml",
+          "measures": 17,
+          "seconds": 30.482,
+          "notes": 347,
+          "meter": "4/4",
+          "clef_ratio": 1.0
+        }
+      },
+      "since_sent_s": 30.5,
+      "orientation_suspect": false,
+      "xml": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/page.musicxml",
+      "measures": 17,
+      "seconds": 30.482,
+      "notes": 347,
+      "meter": "4/4",
+      "clef_ratio": 1.0
+    }
+  },
+  "album": "/mnt/ac920-onecard",
+  "rotate": "ccw",
+  "songs": {
+    "00": {
+      "pages": [
+        0
+      ],
+      "measures": 17,
+      "measures_per_page": [
+        17
+      ]
+    }
+  }
+}

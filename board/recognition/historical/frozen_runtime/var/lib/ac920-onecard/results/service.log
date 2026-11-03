@@ -1,0 +1,278 @@
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 1482 staff line fragments
+Found 514 noteheads
+Average note head height: 12.020814895629883
+Found 75 bar lines
+Found 8 clefs
+Found 0 possible other clefs
+Found 228 staff anchors
+Found 14 staffs
+Found 543 notes during segmentation
+Found 40 notes during segmentation
+Found 7 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1, 1, 1]
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 1482 staff line fragments
+Found 507 noteheads
+Average note head height: 12.0
+Found 79 bar lines
+Found 12 clefs
+Found 0 possible other clefs
+Found 233 staff anchors
+Found 14 staffs
+Found 532 notes during segmentation
+Found 40 notes during segmentation
+Found 7 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1, 1, 1]
+homr_fast: {'installed': ['_can_shapes_possibly_touch', 'StaffLineSegment.merge', 'StaffLineSegment.__init__', 'get_staff_for_anchor', 'find_raw_staffs_by_connecting_line_fragments', 'RawStaff.__init__', 'calculate_edges_of_rotated_rectangle', 'get_center_extrapolated', 'break_wide_fragments', 'do_polygons_overlap', 'Staff.get_at', 'create_noise_grid', 'connect_staff_lines', 'find_staff_anchors', 'resample_staff_segment', 'are_lines_crossing', 'combine_noteheads_with_stems', 'is_overlapping_with_any'], 'skipped': []}
+relation_fast: {'installed': ['strokes', 'link_heads', 'beam_relations', 'assign_graph (distance table)', 'bar_bounds (cropped dilations)', 'recognize: stroke tiles first, strokes() overlapping the symbol tiles'], 'skipped': [], 'link_margin': 0.5}
+redecode_fast: {'installed': ['_classify (0 bindings)', 'classify (0 bindings)', '_stem_end (1 bindings)', 'continuous_beams (0 bindings)', 'head_width (0 bindings)', 'beam_chains (0 bindings)'], 'skipped': []}
+[    4.92s] imports 4.90s  rss_peak 104 MiB
+{"ready": true, "imports_s": 4.898}
+[   34.21s] segment 28.89s  rss_peak 1147 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+{"systems": 7, "staves": 14, "measures": 18, "symbol_nodes": 611, "stems": 471, "bar_strokes": 42, "head_stem_edges": 481, "rhythm_issues": 42, "elapsed_s": 5.556835386000017, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   40.34s] relation 6.14s  rss_peak 1147 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[   40.48s] headers 0.14s  rss_peak 1147 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+{"mode": "all", "measures": 18, "grace_heads": 0, "context_changes": 0, "rhythm_issues": 44, "elapsed_s": 9.007136166999999, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   49.65s] redecode 9.17s  rss_peak 1147 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[   67.26s] decode 17.61s  rss_peak 1147 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[   67.33s] write 0.07s  rss_peak 1147 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+{"times": {"segment": 28.886, "relation": 6.137, "headers": 0.135, "redecode": 9.169, "decode": 17.608, "write": 0.072}, "total_s": 61.999, "peak_rss_mib": 1146.7, "peak_rss_child_mib": 783.1, "threads": 4, "measures": 18, "stats": {"repitched_heads": 5, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 1, "measures": 18}, "photo": "/var/lib/ac920-onecard/work/00-00.bmp", "photo_sha256": "dd2123fc9bd33d5eeab3c31a7f607b5083921fb8727ac7285a883fedca49b913", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 835.1, "rss_start_mib": 104.0, "pil_resize": "installed", "pipeline": {"front_used": [], "front_s": null}}
+[   77.26s] segment 9.82s  rss_peak 1147 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/00-01.bmp"}
+{"systems": 7, "staves": 14, "measures": 21, "symbol_nodes": 615, "stems": 483, "bar_strokes": 40, "head_stem_edges": 491, "rhythm_issues": 49, "elapsed_s": 4.382201509999987, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   82.34s] relation 5.08s  rss_peak 1147 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/00-01.bmp"}
+[   82.44s] headers 0.11s  rss_peak 1147 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/00-01.bmp"}
+{"mode": "all", "measures": 21, "grace_heads": 0, "context_changes": 0, "rhythm_issues": 48, "elapsed_s": 7.847576333000006, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   90.45s] redecode 8.01s  rss_peak 1147 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/00-01.bmp"}
+[  103.79s] decode 13.34s  rss_peak 1147 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/00-01.bmp"}
+[  103.87s] write 0.08s  rss_peak 1147 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/00-01.bmp"}
+{"times": {"segment": 9.818, "relation": 5.075, "headers": 0.106, "redecode": 8.008, "decode": 13.342, "write": 0.076}, "total_s": 36.386, "peak_rss_mib": 1146.7, "peak_rss_child_mib": 783.1, "threads": 4, "measures": 21, "stats": {"repitched_heads": 8, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 0, "measures": 21}, "photo": "/var/lib/ac920-onecard/work/00-01.bmp", "photo_sha256": "081435736ec321084458f7e6882ec9fd7a30d0414273cd9a7f234e0985432e30", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 603.4, "rss_start_mib": 522.8, "pil_resize": "installed", "pipeline": {"front_used": ["autocrop", "resize", "clahe", "network"], "front_s": 23.905}}
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 1378 staff line fragments
+Found 492 noteheads
+Average note head height: 11.31370735168457
+Found 46 bar lines
+Found 45 clefs
+Found 0 possible other clefs
+Found 228 staff anchors
+Found 14 staffs
+Found 525 notes during segmentation
+Found 39 notes during segmentation
+Found 7 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1, 1, 1]
+homr_fast: {'installed': ['_can_shapes_possibly_touch', 'StaffLineSegment.merge', 'StaffLineSegment.__init__', 'get_staff_for_anchor', 'find_raw_staffs_by_connecting_line_fragments', 'RawStaff.__init__', 'calculate_edges_of_rotated_rectangle', 'get_center_extrapolated', 'break_wide_fragments', 'do_polygons_overlap', 'Staff.get_at', 'create_noise_grid', 'connect_staff_lines', 'find_staff_anchors', 'resample_staff_segment', 'are_lines_crossing', 'combine_noteheads_with_stems', 'is_overlapping_with_any'], 'skipped': []}
+relation_fast: {'installed': ['strokes', 'link_heads', 'beam_relations', 'assign_graph (distance table)', 'bar_bounds (cropped dilations)', 'recognize: stroke tiles first, strokes() overlapping the symbol tiles'], 'skipped': [], 'link_margin': 0.5}
+redecode_fast: {'installed': ['_classify (0 bindings)', 'classify (0 bindings)', '_stem_end (1 bindings)', 'continuous_beams (0 bindings)', 'head_width (0 bindings)', 'beam_chains (0 bindings)'], 'skipped': []}
+[    4.92s] imports 4.90s  rss_peak 104 MiB
+{"ready": true, "imports_s": 4.896}
+[   31.97s] segment 26.37s  rss_peak 639 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/02-00.bmp"}
+{"systems": 7, "staves": 14, "measures": 21, "symbol_nodes": 613, "stems": 465, "bar_strokes": 22, "head_stem_edges": 485, "rhythm_issues": 43, "elapsed_s": 3.7661475090000067, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   36.38s] relation 4.41s  rss_peak 646 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/02-00.bmp"}
+[   37.12s] headers 0.75s  rss_peak 646 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/02-00.bmp"}
+{"mode": "all", "measures": 21, "grace_heads": 0, "context_changes": 0, "rhythm_issues": 44, "elapsed_s": 8.982623973000003, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   46.26s] redecode 9.14s  rss_peak 646 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/02-00.bmp"}
+[   59.27s] decode 13.01s  rss_peak 646 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/02-00.bmp"}
+[   59.35s] write 0.08s  rss_peak 646 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/02-00.bmp"}
+{"times": {"segment": 26.371, "relation": 4.41, "headers": 0.746, "redecode": 9.137, "decode": 13.007, "write": 0.08}, "total_s": 53.743, "peak_rss_mib": 646.5, "peak_rss_child_mib": 496.5, "threads": 4, "measures": 21, "stats": {"repitched_heads": 14, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 0, "measures": 21}, "photo": "/var/lib/ac920-onecard/work/02-00.bmp", "photo_sha256": "26aabef30558708201aadb66b6b487354766f37531a18120e987a82a070c57b3", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 548.8, "rss_start_mib": 103.9, "pil_resize": "installed", "pipeline": {"front_used": [], "front_s": null}}
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 1423 staff line fragments
+Found 493 noteheads
+Average note head height: 11.31370735168457
+Found 46 bar lines
+Found 48 clefs
+Found 0 possible other clefs
+Found 233 staff anchors
+Found 14 staffs
+Found 525 notes during segmentation
+Found 7 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1, 1, 1]
+homr_fast: {'installed': ['_can_shapes_possibly_touch', 'StaffLineSegment.merge', 'StaffLineSegment.__init__', 'get_staff_for_anchor', 'find_raw_staffs_by_connecting_line_fragments', 'RawStaff.__init__', 'calculate_edges_of_rotated_rectangle', 'get_center_extrapolated', 'break_wide_fragments', 'do_polygons_overlap', 'Staff.get_at', 'create_noise_grid', 'connect_staff_lines', 'find_staff_anchors', 'resample_staff_segment', 'are_lines_crossing', 'combine_noteheads_with_stems', 'is_overlapping_with_any'], 'skipped': []}
+relation_fast: {'installed': ['strokes', 'link_heads', 'beam_relations', 'assign_graph (distance table)', 'bar_bounds (cropped dilations)', 'recognize: stroke tiles first, strokes() overlapping the symbol tiles'], 'skipped': [], 'link_margin': 0.5}
+redecode_fast: {'installed': ['_classify (0 bindings)', 'classify (0 bindings)', '_stem_end (1 bindings)', 'continuous_beams (0 bindings)', 'head_width (0 bindings)', 'beam_chains (0 bindings)'], 'skipped': []}
+[    4.87s] imports 4.84s  rss_peak 104 MiB
+{"ready": true, "imports_s": 4.841}
+[   32.57s] segment 27.31s  rss_peak 634 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/03-00.bmp"}
+{"systems": 7, "staves": 14, "measures": 21, "symbol_nodes": 615, "stems": 465, "bar_strokes": 22, "head_stem_edges": 494, "rhythm_issues": 39, "elapsed_s": 3.805707764999994, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   36.97s] relation 4.41s  rss_peak 634 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/03-00.bmp"}
+[   37.09s] headers 0.11s  rss_peak 634 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/03-00.bmp"}
+{"mode": "all", "measures": 21, "grace_heads": 0, "context_changes": 0, "rhythm_issues": 40, "elapsed_s": 8.610490291000005, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   45.85s] redecode 8.77s  rss_peak 634 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/03-00.bmp"}
+[   58.67s] decode 12.82s  rss_peak 634 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/03-00.bmp"}
+[   58.75s] write 0.08s  rss_peak 634 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/03-00.bmp"}
+{"times": {"segment": 27.311, "relation": 4.406, "headers": 0.111, "redecode": 8.766, "decode": 12.817, "write": 0.079}, "total_s": 53.481, "peak_rss_mib": 634.0, "peak_rss_child_mib": 420.6, "threads": 4, "measures": 21, "stats": {"repitched_heads": 16, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 0, "measures": 21}, "photo": "/var/lib/ac920-onecard/work/03-00.bmp", "photo_sha256": "b9855be5032510ffdf8626ebcf3f3789c50af23f2b348ca01aacbc92be2396be", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 473.0, "rss_start_mib": 103.8, "pil_resize": "installed", "pipeline": {"front_used": [], "front_s": null}}
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 975 staff line fragments
+Found 280 noteheads
+Average note head height: 15.0
+Found 34 bar lines
+Found 66 clefs
+Found 0 possible other clefs
+Found 214 staff anchors
+Found 10 staffs
+Found 346 notes during segmentation
+Found 40 notes during segmentation
+Found 5 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1]
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 1071 staff line fragments
+Found 269 noteheads
+Average note head height: 14.855627059936523
+Found 30 bar lines
+Found 72 clefs
+Found 0 possible other clefs
+Found 183 staff anchors
+Found 12 staffs
+Found 340 notes during segmentation
+Found 46 notes during segmentation
+Found 6 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1, 1]
+homr_fast: {'installed': ['_can_shapes_possibly_touch', 'StaffLineSegment.merge', 'StaffLineSegment.__init__', 'get_staff_for_anchor', 'find_raw_staffs_by_connecting_line_fragments', 'RawStaff.__init__', 'calculate_edges_of_rotated_rectangle', 'get_center_extrapolated', 'break_wide_fragments', 'do_polygons_overlap', 'Staff.get_at', 'create_noise_grid', 'connect_staff_lines', 'find_staff_anchors', 'resample_staff_segment', 'are_lines_crossing', 'combine_noteheads_with_stems', 'is_overlapping_with_any'], 'skipped': []}
+relation_fast: {'installed': ['strokes', 'link_heads', 'beam_relations', 'assign_graph (distance table)', 'bar_bounds (cropped dilations)', 'recognize: stroke tiles first, strokes() overlapping the symbol tiles'], 'skipped': [], 'link_margin': 0.5}
+redecode_fast: {'installed': ['_classify (0 bindings)', 'classify (0 bindings)', '_stem_end (1 bindings)', 'continuous_beams (0 bindings)', 'head_width (0 bindings)', 'beam_chains (0 bindings)'], 'skipped': []}
+[    6.39s] imports 6.37s  rss_peak 104 MiB
+{"ready": true, "imports_s": 6.369}
+[   33.65s] segment 26.85s  rss_peak 1118 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/04-00.bmp"}
+{"systems": 5, "staves": 10, "measures": 17, "symbol_nodes": 418, "stems": 220, "bar_strokes": 17, "head_stem_edges": 344, "rhythm_issues": 3, "elapsed_s": 2.9888249770000073, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   36.99s] relation 3.34s  rss_peak 1118 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/04-00.bmp"}
+[   37.11s] headers 0.12s  rss_peak 1118 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/04-00.bmp"}
+{"mode": "all", "measures": 17, "grace_heads": 0, "context_changes": 0, "rhythm_issues": 3, "elapsed_s": 7.9698744749999975, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   45.20s] redecode 8.09s  rss_peak 1118 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/04-00.bmp"}
+[   51.23s] decode 6.03s  rss_peak 1118 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/04-00.bmp"}
+[   51.28s] write 0.06s  rss_peak 1118 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/04-00.bmp"}
+{"times": {"segment": 26.847, "relation": 3.342, "headers": 0.119, "redecode": 8.085, "decode": 6.03, "write": 0.055}, "total_s": 44.472, "peak_rss_mib": 1118.4, "peak_rss_child_mib": 829.4, "threads": 4, "measures": 17, "stats": {"repitched_heads": 1, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 0, "measures": 17}, "photo": "/var/lib/ac920-onecard/work/04-00.bmp", "photo_sha256": "56ddf46e89c3965d1b91831a752017bff006102855f207e54e549eeec9986e42", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 813.5, "rss_start_mib": 103.6, "pil_resize": "installed", "pipeline": {"front_used": [], "front_s": null}}
+[   58.21s] segment 6.83s  rss_peak 1118 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/04-01.bmp"}
+{"systems": 6, "staves": 12, "measures": 14, "symbol_nodes": 371, "stems": 237, "bar_strokes": 14, "head_stem_edges": 302, "rhythm_issues": 7, "elapsed_s": 3.2229271580000045, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   62.03s] relation 3.82s  rss_peak 1118 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/04-01.bmp"}
+[   62.14s] headers 0.11s  rss_peak 1118 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/04-01.bmp"}
+{"mode": "all", "measures": 14, "grace_heads": 0, "context_changes": 1, "rhythm_issues": 7, "elapsed_s": 7.464156778000003, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   69.72s] redecode 7.58s  rss_peak 1118 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/04-01.bmp"}
+[   75.03s] decode 5.31s  rss_peak 1118 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/04-01.bmp"}
+[   75.08s] write 0.05s  rss_peak 1118 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/04-01.bmp"}
+{"times": {"segment": 6.827, "relation": 3.818, "headers": 0.11, "redecode": 7.576, "decode": 5.31, "write": 0.051}, "total_s": 23.647, "peak_rss_mib": 1118.4, "peak_rss_child_mib": 829.4, "threads": 4, "measures": 14, "stats": {"repitched_heads": 14, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 0, "measures": 14}, "photo": "/var/lib/ac920-onecard/work/04-01.bmp", "photo_sha256": "e1650cd2ffb5bb6606355dbd1f1b0fd8a5b427ed705febe4d054d5e206087e76", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 626.9, "rss_start_mib": 539.4, "pil_resize": "installed", "pipeline": {"front_used": ["autocrop", "resize", "clahe", "network"], "front_s": 25.895}}
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 998 staff line fragments
+Found 280 noteheads
+Average note head height: 14.849242210388184
+Found 34 bar lines
+Found 60 clefs
+Found 0 possible other clefs
+Found 209 staff anchors
+Found 10 staffs
+Found 346 notes during segmentation
+Found 40 notes during segmentation
+Found 5 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1]
+homr_fast: {'installed': ['_can_shapes_possibly_touch', 'StaffLineSegment.merge', 'StaffLineSegment.__init__', 'get_staff_for_anchor', 'find_raw_staffs_by_connecting_line_fragments', 'RawStaff.__init__', 'calculate_edges_of_rotated_rectangle', 'get_center_extrapolated', 'break_wide_fragments', 'do_polygons_overlap', 'Staff.get_at', 'create_noise_grid', 'connect_staff_lines', 'find_staff_anchors', 'resample_staff_segment', 'are_lines_crossing', 'combine_noteheads_with_stems', 'is_overlapping_with_any'], 'skipped': []}
+relation_fast: {'installed': ['strokes', 'link_heads', 'beam_relations', 'assign_graph (distance table)', 'bar_bounds (cropped dilations)', 'recognize: stroke tiles first, strokes() overlapping the symbol tiles'], 'skipped': [], 'link_margin': 0.5}
+redecode_fast: {'installed': ['_classify (0 bindings)', 'classify (0 bindings)', '_stem_end (1 bindings)', 'continuous_beams (0 bindings)', 'head_width (0 bindings)', 'beam_chains (0 bindings)'], 'skipped': []}
+[    5.61s] imports 5.58s  rss_peak 104 MiB
+{"ready": true, "imports_s": 5.581}
+[   30.66s] segment 24.66s  rss_peak 652 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/05-00.bmp"}
+{"systems": 5, "staves": 10, "measures": 17, "symbol_nodes": 418, "stems": 219, "bar_strokes": 17, "head_stem_edges": 346, "rhythm_issues": 2, "elapsed_s": 3.1292025609999996, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   34.14s] relation 3.47s  rss_peak 652 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/05-00.bmp"}
+[   34.24s] headers 0.10s  rss_peak 652 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/05-00.bmp"}
+{"mode": "all", "measures": 17, "grace_heads": 0, "context_changes": 0, "rhythm_issues": 2, "elapsed_s": 6.283450962000003, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   40.63s] redecode 6.39s  rss_peak 652 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/05-00.bmp"}
+[   44.77s] decode 4.14s  rss_peak 652 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/05-00.bmp"}
+[   44.83s] write 0.06s  rss_peak 652 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/05-00.bmp"}
+{"times": {"segment": 24.656, "relation": 3.474, "headers": 0.102, "redecode": 6.393, "decode": 4.139, "write": 0.055}, "total_s": 38.813, "peak_rss_mib": 652.1, "peak_rss_child_mib": 422.8, "threads": 4, "measures": 17, "stats": {"repitched_heads": 0, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 0, "measures": 17}, "photo": "/var/lib/ac920-onecard/work/05-00.bmp", "photo_sha256": "262da496ff1ff4f81a01fc8206487aa6381a28db17afe3e10fadde9f687d6110", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 475.1, "rss_start_mib": 103.9, "pil_resize": "installed", "pipeline": {"front_used": [], "front_s": null}}
+Creating bounds for noteheads
+Creating bounds for staff_fragments
+Creating bounds for clefs_keys
+Creating bounds for stems_rest
+Creating bounds for bar_lines
+Found 1002 staff line fragments
+Found 280 noteheads
+Average note head height: 15.0
+Found 37 bar lines
+Found 60 clefs
+Found 0 possible other clefs
+Found 202 staff anchors
+Found 11 staffs
+Removed 1 duplicate staffs
+Found 346 notes during segmentation
+Found 40 notes during segmentation
+Found 5 connected staffs (after merging grand staffs, multiple voices):  [1, 1, 1, 1, 1]
+homr_fast: {'installed': ['_can_shapes_possibly_touch', 'StaffLineSegment.merge', 'StaffLineSegment.__init__', 'get_staff_for_anchor', 'find_raw_staffs_by_connecting_line_fragments', 'RawStaff.__init__', 'calculate_edges_of_rotated_rectangle', 'get_center_extrapolated', 'break_wide_fragments', 'do_polygons_overlap', 'Staff.get_at', 'create_noise_grid', 'connect_staff_lines', 'find_staff_anchors', 'resample_staff_segment', 'are_lines_crossing', 'combine_noteheads_with_stems', 'is_overlapping_with_any'], 'skipped': []}
+relation_fast: {'installed': ['strokes', 'link_heads', 'beam_relations', 'assign_graph (distance table)', 'bar_bounds (cropped dilations)', 'recognize: stroke tiles first, strokes() overlapping the symbol tiles'], 'skipped': [], 'link_margin': 0.5}
+redecode_fast: {'installed': ['_classify (0 bindings)', 'classify (0 bindings)', '_stem_end (1 bindings)', 'continuous_beams (0 bindings)', 'head_width (0 bindings)', 'beam_chains (0 bindings)'], 'skipped': []}
+[    5.13s] imports 5.11s  rss_peak 104 MiB
+{"ready": true, "imports_s": 5.107}
+[   23.22s] segment 17.70s  rss_peak 650 MiB
+{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+{"systems": 5, "staves": 10, "measures": 17, "symbol_nodes": 418, "stems": 220, "bar_strokes": 17, "head_stem_edges": 345, "rhythm_issues": 2, "elapsed_s": 3.469540064000057, "reference_supplied_to_recognizer": false, "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only", "limitations": ["No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.", "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.", "No ARM64 or FPGA verification."], "inference_profile": {"mode": "shared", "graph_size": [2318, 3278], "frame_size": [1920, 2715], "frame_scale": [0.6694560669456067, 0.6693786982248521], "coordinate_space": "photograph pixels scaled by 16/19.8", "reference_supplied_to_recognizer": false}}
+[   27.02s] relation 3.81s  rss_peak 650 MiB
+{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[   27.13s] headers 0.10s  rss_peak 650 MiB
+{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+{"mode": "all", "measures": 17, "grace_heads": 0, "context_changes": 0, "rhythm_issues": 2, "elapsed_s": 4.977978336999968, "reference_supplied_to_recognizer": false, "inputs": "Cached image-predicted nodes/strokes/groups; SHA-guarded original photo and image staff polylines; predicted XML attributes. No reference labels or sequence.", "limits": ["Cue-sized notes untested; inline bass clefs visually verified, other predicted clefs remain a dependency.", "At most two voice lanes and 32 search states; no full tuplet/tie/cross-staff model.", "Desktop verification only, no ARM64/physical FPGA verification."]}
+[   32.21s] redecode 5.09s  rss_peak 650 MiB
+{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[   35.94s] decode 3.73s  rss_peak 650 MiB
+{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[   36.01s] write 0.07s  rss_peak 650 MiB
+{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+{"times": {"segment": 17.698, "relation": 3.805, "headers": 0.104, "redecode": 5.086, "decode": 3.727, "write": 0.072}, "total_s": 30.482, "peak_rss_mib": 649.8, "peak_rss_child_mib": 422.6, "threads": 4, "measures": 17, "stats": {"repitched_heads": 6, "meter_from_content": 1, "workers": 4, "consensus_rewrites": 0, "measures": 17}, "photo": "/var/lib/ac920-onecard/work/00-00.bmp", "photo_sha256": "b3a87c3020ac87f47bc1c43fa64ddac351bdb99a2b7bc7b7d1d288f95db0d2ab", "reference_used": false, "transformer_used": false, "segnet": "small student (68,134 params)", "decoder_stage_a": "c++", "homr_fast": {"installed": ["_can_shapes_possibly_touch", "StaffLineSegment.merge", "StaffLineSegment.__init__", "get_staff_for_anchor", "find_raw_staffs_by_connecting_line_fragments", "RawStaff.__init__", "calculate_edges_of_rotated_rectangle", "get_center_extrapolated", "break_wide_fragments", "do_polygons_overlap", "Staff.get_at", "create_noise_grid", "connect_staff_lines", "find_staff_anchors", "resample_staff_segment", "are_lines_crossing", "combine_noteheads_with_stems", "is_overlapping_with_any"], "skipped": []}, "relation_fast": {"installed": ["strokes", "link_heads", "beam_relations", "assign_graph (distance table)", "bar_bounds (cropped dilations)", "recognize: stroke tiles first, strokes() overlapping the symbol tiles"], "skipped": [], "link_margin": 0.5}, "redecode_fast": {"installed": ["_classify (0 bindings)", "classify (0 bindings)", "_stem_end (1 bindings)", "continuous_beams (0 bindings)", "head_width (0 bindings)", "beam_chains (0 bindings)"], "skipped": []}, "relation_models": "/home/fpga/claude-release-v16-20261030/shared/relation_models", "link_margin": 0.5, "shared": "/home/fpga/claude-release-v16-20261030/shared", "shared_prefetch_used": true, "rss_now_mib": 474.9, "rss_start_mib": 103.9, "pil_resize": "installed", "pipeline": {"front_used": [], "front_s": null}}

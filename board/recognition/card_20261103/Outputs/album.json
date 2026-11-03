@@ -1,0 +1,260 @@
+{
+ "pages": {
+  "00-00": {
+   "song": 0,
+   "page": 0,
+   "grey": "/mnt/ac920-onecard/Grey/00-00.bmp",
+   "sha256": "213b3c38dbb514b5463e996bae4b6d88ddc57255d684de3d626ea2b2f27db068",
+   "size": 11633686,
+   "mtime": 1262304000.0,
+   "status": "ok",
+   "run": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw",
+   "meter_in": "",
+   "lines_horizontal": true,
+   "rotate_used": "ccw",
+   "attempts": {
+    "ccw": {
+     "run": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw",
+     "xml": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/page.musicxml",
+     "measures": 17,
+     "seconds": 30.482,
+     "notes": 347,
+     "meter": "4/4",
+     "clef_ratio": 1.0
+    }
+   },
+   "since_sent_s": 30.5,
+   "orientation_suspect": false,
+   "xml": "/var/lib/ac920-onecard/results/pages/00-00_213b3c38_ccw/page.musicxml",
+   "measures": 17,
+   "seconds": 30.482,
+   "notes": 347,
+   "meter": "4/4",
+   "clef_ratio": 1.0
+  },
+  "01-00": {
+   "song": 1,
+   "page": 0,
+   "grey": "/mnt/ac920-onecard/Grey/01-00.bmp",
+   "sha256": "45ee37cc98b2b8cc5641ee7d254fba120f0b614fd754be92887a252b149e9559",
+   "size": 11633686,
+   "mtime": 1262304000.0,
+   "status": "ok",
+   "run": "/var/lib/ac920-onecard/results/pages/01-00_45ee37cc_ccw",
+   "meter_in": "",
+   "lines_horizontal": true,
+   "rotate_used": "ccw",
+   "attempts": {
+    "ccw": {
+     "run": "/var/lib/ac920-onecard/results/pages/01-00_45ee37cc_ccw",
+     "xml": "/var/lib/ac920-onecard/results/pages/01-00_45ee37cc_ccw/page.musicxml",
+     "measures": 17,
+     "seconds": 35.905,
+     "notes": 347,
+     "meter": "4/4",
+     "clef_ratio": 1.0
+    }
+   },
+   "since_sent_s": 36.0,
+   "orientation_suspect": false,
+   "xml": "/var/lib/ac920-onecard/results/pages/01-00_45ee37cc_ccw/page.musicxml",
+   "measures": 17,
+   "seconds": 35.905,
+   "notes": 347,
+   "meter": "4/4",
+   "clef_ratio": 1.0
+  },
+  "01-01": {
+   "song": 1,
+   "page": 1,
+   "grey": "/mnt/ac920-onecard/Grey/01-01.bmp",
+   "sha256": "f8698f950f5f75a9762c745f94be4c7e4f45d1cc5af7a46ec9df23b8909b254b",
+   "size": 11633686,
+   "mtime": 1262304000.0,
+   "status": "ok",
+   "run": "/var/lib/ac920-onecard/results/pages/01-01_f8698f95_ccw",
+   "meter_in": "@prev",
+   "lines_horizontal": true,
+   "rotate_used": "ccw",
+   "attempts": {
+    "ccw": {
+     "run": "/var/lib/ac920-onecard/results/pages/01-01_f8698f95_ccw",
+     "xml": "/var/lib/ac920-onecard/results/pages/01-01_f8698f95_ccw/page.musicxml",
+     "measures": 14,
+     "seconds": 26.366,
+     "notes": 309,
+     "meter": "4/4",
+     "clef_ratio": 1.0
+    }
+   },
+   "since_sent_s": 62.2,
+   "orientation_suspect": false,
+   "xml": "/var/lib/ac920-onecard/results/pages/01-01_f8698f95_ccw/page.musicxml",
+   "measures": 14,
+   "seconds": 26.366,
+   "notes": 309,
+   "meter": "4/4",
+   "clef_ratio": 1.0
+  },
+  "01-02": {
+   "song": 1,
+   "page": 2,
+   "grey": "/mnt/ac920-onecard/Grey/01-02.bmp",
+   "sha256": "d6bec9f2e2a8b555260d2d7d50e05dd77b2ab9c4b61dea531b6bd96e74c55b17",
+   "size": 11633686,
+   "mtime": 1262304000.0,
+   "status": "ok",
+   "run": "/var/lib/ac920-onecard/results/pages/01-02_d6bec9f2_ccw",
+   "meter_in": "@prev",
+   "lines_horizontal": true,
+   "rotate_used": "ccw",
+   "attempts": {
+    "ccw": {
+     "run": "/var/lib/ac920-onecard/results/pages/01-02_d6bec9f2_ccw",
+     "xml": "/var/lib/ac920-onecard/results/pages/01-02_d6bec9f2_ccw/page.musicxml",
+     "measures": 11,
+     "seconds": 38.124,
+     "notes": 385,
+     "meter": "4/4",
+     "clef_ratio": 1.0
+    }
+   },
+   "since_sent_s": 64.1,
+   "orientation_suspect": false,
+   "xml": "/var/lib/ac920-onecard/results/pages/01-02_d6bec9f2_ccw/page.musicxml",
+   "measures": 11,
+   "seconds": 38.124,
+   "notes": 385,
+   "meter": "4/4",
+   "clef_ratio": 1.0
+  },
+  "01-03": {
+   "song": 1,
+   "page": 3,
+   "grey": "/mnt/ac920-onecard/Grey/01-03.bmp",
+   "sha256": "31a11754adfd3a7ee4103aff69122f3b5c97d9466ff9951cc9e8dbc3ab64dd0a",
+   "size": 11633686,
+   "mtime": 1262304000.0,
+   "status": "ok",
+   "run": "/var/lib/ac920-onecard/results/pages/01-03_31a11754_ccw",
+   "meter_in": "@prev",
+   "lines_horizontal": true,
+   "rotate_used": "ccw",
+   "attempts": {
+    "ccw": {
+     "run": "/var/lib/ac920-onecard/results/pages/01-03_31a11754_ccw",
+     "xml": "/var/lib/ac920-onecard/results/pages/01-03_31a11754_ccw/page.musicxml",
+     "measures": 6,
+     "seconds": 25.518,
+     "notes": 136,
+     "meter": "4/4",
+     "clef_ratio": 1.0
+    }
+   },
+   "since_sent_s": 62.8,
+   "orientation_suspect": false,
+   "xml": "/var/lib/ac920-onecard/results/pages/01-03_31a11754_ccw/page.musicxml",
+   "measures": 6,
+   "seconds": 25.518,
+   "notes": 136,
+   "meter": "4/4",
+   "clef_ratio": 1.0
+  },
+  "01-04": {
+   "song": 1,
+   "page": 4,
+   "grey": "/mnt/ac920-onecard/Grey/01-04.bmp",
+   "sha256": "d3e222921284fffec987b2bb77c09aec82ae1c7c1dd25f03a858faa9ec987ace",
+   "size": 11633686,
+   "mtime": 1262304000.0,
+   "status": "ok",
+   "run": "/var/lib/ac920-onecard/results/pages/01-04_d3e22292_ccw",
+   "meter_in": "@prev",
+   "lines_horizontal": true,
+   "rotate_used": "ccw",
+   "attempts": {
+    "ccw": {
+     "run": "/var/lib/ac920-onecard/results/pages/01-04_d3e22292_ccw",
+     "xml": "/var/lib/ac920-onecard/results/pages/01-04_d3e22292_ccw/page.musicxml",
+     "measures": 10,
+     "seconds": 32.923,
+     "notes": 298,
+     "meter": "4/4",
+     "clef_ratio": 1.0
+    }
+   },
+   "since_sent_s": 57.1,
+   "orientation_suspect": false,
+   "xml": "/var/lib/ac920-onecard/results/pages/01-04_d3e22292_ccw/page.musicxml",
+   "measures": 10,
+   "seconds": 32.923,
+   "notes": 298,
+   "meter": "4/4",
+   "clef_ratio": 1.0
+  },
+  "01-05": {
+   "song": 1,
+   "page": 5,
+   "grey": "/mnt/ac920-onecard/Grey/01-05.bmp",
+   "sha256": "f0cef9cd6925a8b95f2e10f30ccf80f477b420fa277ad3a8aba86df5f3068b3c",
+   "size": 11633686,
+   "mtime": 1262304000.0,
+   "status": "ok",
+   "run": "/var/lib/ac920-onecard/results/pages/01-05_f0cef9cd_ccw",
+   "meter_in": "@prev",
+   "lines_horizontal": true,
+   "rotate_used": "ccw",
+   "attempts": {
+    "ccw": {
+     "run": "/var/lib/ac920-onecard/results/pages/01-05_f0cef9cd_ccw",
+     "xml": "/var/lib/ac920-onecard/results/pages/01-05_f0cef9cd_ccw/page.musicxml",
+     "measures": 13,
+     "seconds": 21.234,
+     "notes": 341,
+     "meter": "4/4",
+     "clef_ratio": 1.0
+    }
+   },
+   "since_sent_s": 52.6,
+   "orientation_suspect": false,
+   "xml": "/var/lib/ac920-onecard/results/pages/01-05_f0cef9cd_ccw/page.musicxml",
+   "measures": 13,
+   "seconds": 21.234,
+   "notes": 341,
+   "meter": "4/4",
+   "clef_ratio": 1.0
+  }
+ },
+ "album": "/mnt/ac920-onecard",
+ "rotate": "ccw",
+ "songs": {
+  "00": {
+   "pages": [
+    0
+   ],
+   "measures": 17,
+   "measures_per_page": [
+    17
+   ]
+  },
+  "01": {
+   "pages": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "measures": 71,
+   "measures_per_page": [
+    17,
+    14,
+    11,
+    6,
+    10,
+    13
+   ]
+  }
+ }
+}

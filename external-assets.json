@@ -1,0 +1,34 @@
+{
+  "excluded": [
+    {
+      "path": "segmentation/segnet_308-3296ccd40960f90ca6ab9c035cca945675d30a0f.onnx",
+      "bytes": 57311361,
+      "sha256": "6ed36640db4ef5d223098b6d5efe4eda97c66b24a2c72faab8a018c749003a8d",
+      "role": "Homr upstream full-size model; not the deployed v16 shared-network weights"
+    },
+    {
+      "path": "transformer/decoder_pytorch_model_396-f6feedb42ff90087d898b0941a55d040fa6b2903.onnx",
+      "bytes": 47299551,
+      "sha256": "3e10fd5ae52d0b86792721922fcd954c283a7ed365de7446425bdabe38f3e57d",
+      "role": "Homr upstream full-size model; not the deployed v16 shared-network weights"
+    },
+    {
+      "path": "transformer/encoder_pytorch_model_396-f6feedb42ff90087d898b0941a55d040fa6b2903.onnx",
+      "bytes": 52861122,
+      "sha256": "4c16df852b3789f2676b0d49f0545dab0740e4005f7b472c5252add642f5d5eb",
+      "role": "Homr upstream full-size model; not the deployed v16 shared-network weights"
+    }
+  ],
+  "soundfont": {
+    "name": "FluidR3_GM.sf2",
+    "bytes": 148398306,
+    "ubuntu_package": "fluid-soundfont-gm"
+  },
+  "omitted": [
+    "Ubuntu root filesystem",
+    "Python interpreter and virtual environment",
+    "Vivado/Vitis installation, BSP and generated IP",
+    "BOOT.BIN, bitstream, XSA and Linux boot images",
+    "Photos, captured results, video, AE/Blender projects, temporary files and logs"
+  ]
+}

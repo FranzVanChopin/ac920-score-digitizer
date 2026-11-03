@@ -1,0 +1,75 @@
+# Generated builds, runtime data and caches
+**/build/
+**/validation/
+**/__pycache__/
+*.py[cod]
+.Xil/
+**/.Xil/
+xsim.dir/
+**/xsim.dir/
+*.o
+*.obj
+*.so
+*.dll
+*.elf
+*.bit
+*.xsa
+*.bin
+*.BIN
+*.jou
+*.log
+*.pb
+*.wdb
+*.zip
+*.tar
+*.tar.gz
+*.7z
+.venv/
+venv/
+node_modules/
+outputs/
+captures/
+score-cache/
+Image/
+Grey/
+Binary/
+Meta/
+*.bmp
+*.mp4
+*.mov
+*.wav
+*.sf2
+*.blend
+*.aep
+*.prproj
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+src/ps/config/ac920-onecard.json
+
+# ---- 顶层 build/ 是构建脚本目录，必须入库 ----
+# 上面第 2 行的 **/build/ 会把它一起排除，这里解锁；随后再把真正的构建产物目录排掉。
+!/build/
+!/build/**
+build/*/
+!build/vivado/
+
+# ---- FPGA 报告与导出日志是提交材料，必须入库 ----
+# build/*/ 会把它们一并排掉，这里逐个解锁；导出日志还要抵掉上面的 *.log。
+!build/reports/
+!build/report_export_logs/
+!build/report_export_logs/*.log
+
+# ---- 上板实测证据必须入库 ----
+# 抵掉上面的 *.log、Meta/、outputs/（Windows 下大小写不敏感，Outputs/ 也要放行）。
+!board/recognition/**/*.log
+!board/recognition/**/Meta/
+!board/recognition/**/Meta/*.json
+!board/recognition/**/Outputs/
+!board/recognition/**/Outputs/*
+
+# ---- 复现样张必须入库（与上面的 *.bmp 排除相抵，后写的规则优先）----
+!data/samples/page/*.bmp
+!data/samples/page/*.png

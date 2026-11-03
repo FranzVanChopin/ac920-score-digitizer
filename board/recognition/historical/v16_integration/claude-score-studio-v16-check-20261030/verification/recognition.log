@@ -1,0 +1,10 @@
+12:24:02 recognizer ready
+12:24:02 00-00: sent (00-00.bmp, rotation ccw, meter auto)
+[UI_STAGE]{"ui_stage": "segment", "photo": "/home/fpga/claude-score-studio-v16-check-20261030/verification/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/home/fpga/claude-score-studio-v16-check-20261030/verification/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/home/fpga/claude-score-studio-v16-check-20261030/verification/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/home/fpga/claude-score-studio-v16-check-20261030/verification/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/home/fpga/claude-score-studio-v16-check-20261030/verification/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/home/fpga/claude-score-studio-v16-check-20261030/verification/work/00-00.bmp"}
+12:24:46 00-00: 21 measures, 509 notes, clefs on 100% of the systems, 43.572 s, rotation ccw -> 00.musicxml
+12:24:47 1 page(s) recognized; songs: 00

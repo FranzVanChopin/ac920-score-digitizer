@@ -1,0 +1,158 @@
+{
+ "checkpoint_step": 12000,
+ "reports": {
+  "validation": {
+   "classes": {
+    "head_filled": {
+     "matched": 18468,
+     "reference": 18492,
+     "candidate": 18489,
+     "threshold": 0.55
+    },
+    "head_hollow": {
+     "matched": 1616,
+     "reference": 1634,
+     "candidate": 1623,
+     "threshold": 0.55
+    },
+    "rest_whole": {
+     "matched": 208,
+     "reference": 208,
+     "candidate": 209,
+     "threshold": 0.55
+    },
+    "rest_half": {
+     "matched": 86,
+     "reference": 86,
+     "candidate": 86,
+     "threshold": 0.4
+    },
+    "rest_quarter": {
+     "matched": 546,
+     "reference": 548,
+     "candidate": 547,
+     "threshold": 0.3
+    },
+    "rest_eighth": {
+     "matched": 775,
+     "reference": 792,
+     "candidate": 775,
+     "threshold": 0.55
+    },
+    "rest_16th": {
+     "matched": 144,
+     "reference": 144,
+     "candidate": 145,
+     "threshold": 0.55
+    },
+    "rest_32nd": {
+     "matched": 0,
+     "reference": 0,
+     "candidate": 9,
+     "threshold": 0.15
+    },
+    "sharp": {
+     "matched": 1614,
+     "reference": 1614,
+     "candidate": 1615,
+     "threshold": 0.4
+    },
+    "flat": {
+     "matched": 1354,
+     "reference": 1354,
+     "candidate": 1361,
+     "threshold": 0.6
+    },
+    "natural": {
+     "matched": 412,
+     "reference": 412,
+     "candidate": 412,
+     "threshold": 0.4
+    },
+    "dot": {
+     "matched": 1003,
+     "reference": 1004,
+     "candidate": 1014,
+     "threshold": 0.6
+    }
+   }
+  },
+  "test": {
+   "classes": {
+    "head_filled": {
+     "matched": 22140,
+     "reference": 22204,
+     "candidate": 22145,
+     "threshold": 0.55
+    },
+    "head_hollow": {
+     "matched": 1631,
+     "reference": 1652,
+     "candidate": 1654,
+     "threshold": 0.55
+    },
+    "rest_whole": {
+     "matched": 80,
+     "reference": 80,
+     "candidate": 80,
+     "threshold": 0.55
+    },
+    "rest_half": {
+     "matched": 172,
+     "reference": 172,
+     "candidate": 173,
+     "threshold": 0.4
+    },
+    "rest_quarter": {
+     "matched": 418,
+     "reference": 418,
+     "candidate": 422,
+     "threshold": 0.3
+    },
+    "rest_eighth": {
+     "matched": 954,
+     "reference": 954,
+     "candidate": 958,
+     "threshold": 0.55
+    },
+    "rest_16th": {
+     "matched": 108,
+     "reference": 112,
+     "candidate": 108,
+     "threshold": 0.55
+    },
+    "rest_32nd": {
+     "matched": 0,
+     "reference": 0,
+     "candidate": 13,
+     "threshold": 0.15
+    },
+    "sharp": {
+     "matched": 1441,
+     "reference": 1442,
+     "candidate": 1450,
+     "threshold": 0.4
+    },
+    "flat": {
+     "matched": 1401,
+     "reference": 1402,
+     "candidate": 1403,
+     "threshold": 0.6
+    },
+    "natural": {
+     "matched": 713,
+     "reference": 716,
+     "candidate": 718,
+     "threshold": 0.4
+    },
+    "dot": {
+     "matched": 2357,
+     "reference": 2398,
+     "candidate": 2362,
+     "threshold": 0.6
+    }
+   }
+  }
+ },
+ "threshold_selected_on": "validation only (simulated photos, Homr frame)"
+}

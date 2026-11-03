@@ -1,0 +1,2 @@
+1 pages, 21 measures: sounding events identical in 21/21 measures
+   keys ['4'], clefs ['G2', 'F4'], added {'type': 522, 'dot': 12, 'accidental': 31, 'time-modification': 17, 'beam': 712}, broken beam groups 0

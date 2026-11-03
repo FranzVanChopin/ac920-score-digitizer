@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "disk_bytes": 512711720960,
+  "root_partuuid": "REPLACE_WITH_THIS_CARD_ROOT_PARTUUID",
+  "boot_partuuid": "REPLACE_WITH_THIS_CARD_BOOT_PARTUUID",
+  "boot_uuid": "REPLACE_WITH_THIS_CARD_BOOT_UUID",
+  "capture_sha256": "F855AB741399375A44189F2F9D6670AB5E56C19F02D4AD709149D721BAAF6CE8",
+  "recognizer": "/home/fpga/claude-release-v16-20261030",
+  "app": "/home/fpga/omr-transfer-20261024/sdcard_omr_ac920_20261024/app",
+  "python": "/home/fpga/ac920-omr-runtime/venv/bin/python",
+  "user": "fpga",
+  "rotate": "ccw",
+  "interface": "interactive-ui1",
+  "interface_version": "a4_interactive_ui1_light2",
+  "theme": "light2",
+  "piano_soundfont": "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+}

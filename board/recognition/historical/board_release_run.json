@@ -1,0 +1,238 @@
+{
+ "board_dir": "/home/fpga/claude-release-v16-20261030",
+ "deployed_from": "pkg_v16.tar.gz only (net.py push), MANIFEST.json checked on the board",
+ "tarball_sha256": "972201d224a823a7da7ae69462f86da640e8f406e4b830929964f9d97fd05dc4",
+ "runs": [
+  {
+   "run": "serve1",
+   "photo": "/Image/00-00.png",
+   "total_s": 30.362,
+   "times": {
+    "segment": 18.799,
+    "relation": 3.387,
+    "headers": 0.122,
+    "redecode": 4.587,
+    "decode": 3.432,
+    "write": 0.04
+   },
+   "pipeline": {
+    "front_used": [],
+    "front_s": null
+   },
+   "peak_rss_mib": 1096.1,
+   "musicxml_sha256": "f618b20b3230c7a8cb547ef3ed93adbec3aae9dd3ee457de72322e188390451c",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": true
+  },
+  {
+   "run": "serve2",
+   "photo": "/home/fpga/claude-routeA-pf-20261027-extra/cam_score02_p1.jpg",
+   "total_s": 13.811,
+   "times": {
+    "segment": 5.746,
+    "relation": 2.301,
+    "headers": 0.08,
+    "redecode": 3.285,
+    "decode": 2.378,
+    "write": 0.029
+   },
+   "pipeline": {
+    "front_used": [
+     "autocrop",
+     "resize",
+     "clahe",
+     "network"
+    ],
+    "front_s": 12.619
+   },
+   "peak_rss_mib": 1158.7,
+   "musicxml_sha256": "b7ce99b3f95de75f0621075bcdd58745c4c9437e543f83979d0593e76638f045",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": null
+  },
+  {
+   "run": "serve3",
+   "photo": "/Image/00-00.png",
+   "total_s": 20.585,
+   "times": {
+    "segment": 15.734,
+    "relation": 3.075,
+    "headers": 0.134,
+    "redecode": 4.202,
+    "decode": 3.213,
+    "write": 0.041
+   },
+   "pipeline": {
+    "front_used": [
+     "autocrop",
+     "resize",
+     "clahe",
+     "network"
+    ],
+    "front_s": 19.397
+   },
+   "peak_rss_mib": 1158.7,
+   "musicxml_sha256": "f618b20b3230c7a8cb547ef3ed93adbec3aae9dd3ee457de72322e188390451c",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": true
+  },
+  {
+   "run": "serve4",
+   "photo": "/home/fpga/claude-routeA-pf-20261027-extra/cam_score02_p1.jpg",
+   "total_s": 14.42,
+   "times": {
+    "segment": 6.225,
+    "relation": 2.123,
+    "headers": 0.084,
+    "redecode": 3.566,
+    "decode": 2.4,
+    "write": 0.032
+   },
+   "pipeline": {
+    "front_used": [
+     "autocrop",
+     "resize",
+     "clahe",
+     "network"
+    ],
+    "front_s": 12.711
+   },
+   "peak_rss_mib": 1158.7,
+   "musicxml_sha256": "b7ce99b3f95de75f0621075bcdd58745c4c9437e543f83979d0593e76638f045",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": null
+  },
+  {
+   "run": "serve5",
+   "photo": "/Image/00-00.png",
+   "total_s": 20.972,
+   "times": {
+    "segment": 14.984,
+    "relation": 3.105,
+    "headers": 0.116,
+    "redecode": 4.518,
+    "decode": 3.219,
+    "write": 0.051
+   },
+   "pipeline": {
+    "front_used": [
+     "autocrop",
+     "resize",
+     "clahe",
+     "network"
+    ],
+    "front_s": 19.239
+   },
+   "peak_rss_mib": 1158.7,
+   "musicxml_sha256": "f618b20b3230c7a8cb547ef3ed93adbec3aae9dd3ee457de72322e188390451c",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": true
+  },
+  {
+   "run": "serve6",
+   "photo": "/home/fpga/claude-routeA-pf-20261027-extra/cam_score02_p1.jpg",
+   "total_s": 10.308,
+   "times": {
+    "segment": 4.386,
+    "relation": 1.828,
+    "headers": 0.074,
+    "redecode": 2.387,
+    "decode": 1.616,
+    "write": 0.026
+   },
+   "pipeline": {
+    "front_used": [
+     "autocrop",
+     "resize",
+     "clahe",
+     "network"
+    ],
+    "front_s": 12.014
+   },
+   "peak_rss_mib": 1158.7,
+   "musicxml_sha256": "b7ce99b3f95de75f0621075bcdd58745c4c9437e543f83979d0593e76638f045",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": null
+  },
+  {
+   "run": "single_a",
+   "photo": "/Image/00-00.png",
+   "total_s": 35.64,
+   "times": {
+    "imports": 6.915,
+    "segment": 17.664,
+    "relation": 2.864,
+    "headers": 0.129,
+    "redecode": 4.404,
+    "decode": 3.591,
+    "write": 0.038
+   },
+   "pipeline": null,
+   "peak_rss_mib": 658.4,
+   "musicxml_sha256": "f618b20b3230c7a8cb547ef3ed93adbec3aae9dd3ee457de72322e188390451c",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": true
+  },
+  {
+   "run": "single_b",
+   "photo": "/Image/00-00.png",
+   "total_s": 30.954,
+   "times": {
+    "imports": 2.776,
+    "segment": 17.486,
+    "relation": 2.863,
+    "headers": 0.111,
+    "redecode": 4.193,
+    "decode": 3.464,
+    "write": 0.038
+   },
+   "pipeline": null,
+   "peak_rss_mib": 652.7,
+   "musicxml_sha256": "f618b20b3230c7a8cb547ef3ed93adbec3aae9dd3ee457de72322e188390451c",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": true
+  },
+  {
+   "run": "single_cam",
+   "photo": "/home/fpga/claude-routeA-pf-20261027-extra/cam_score02_p1.jpg",
+   "total_s": 19.848,
+   "times": {
+    "imports": 2.763,
+    "segment": 11.028,
+    "relation": 1.775,
+    "headers": 0.071,
+    "redecode": 2.391,
+    "decode": 1.772,
+    "write": 0.025
+   },
+   "pipeline": null,
+   "peak_rss_mib": 651.3,
+   "musicxml_sha256": "b7ce99b3f95de75f0621075bcdd58745c4c9437e543f83979d0593e76638f045",
+   "same_as_board_single_run": true,
+   "same_as_desktop_ignoring_crlf": null
+  }
+ ],
+ "libraries": {
+  "libdecoder.so": {
+   "board_sha256": "be513a44fd66ee1c71ec008be0905adf1d2050fe25aa59843770ca3d34256ef8",
+   "prebuilt_sha256": "be513a44fd66ee1c71ec008be0905adf1d2050fe25aa59843770ca3d34256ef8",
+   "identical": true
+  },
+  "libhomrgeo.so": {
+   "board_sha256": "4ab21a2d6fafa1d13b8856b99e609aa72be9de4583d58a11bfee54aab34a4166",
+   "prebuilt_sha256": "4ab21a2d6fafa1d13b8856b99e609aa72be9de4583d58a11bfee54aab34a4166",
+   "identical": true
+  },
+  "librelgeo.so": {
+   "board_sha256": "1e9177591cb50e25bbd36e2371e707aface398d9e1c87220294fab3658f5de96",
+   "prebuilt_sha256": "1e9177591cb50e25bbd36e2371e707aface398d9e1c87220294fab3658f5de96",
+   "identical": true
+  },
+  "libpilresize.so": {
+   "board_sha256": "89e7d85669d41fccdfcad720c74062d95de90014dd16141fe6fb3da7f21220df",
+   "prebuilt_sha256": "89e7d85669d41fccdfcad720c74062d95de90014dd16141fe6fb3da7f21220df",
+   "identical": true
+  }
+ },
+ "desktop_reference": "lab/route_a/eval_pages/sh8s020_board/page.musicxml (= v15)"
+}

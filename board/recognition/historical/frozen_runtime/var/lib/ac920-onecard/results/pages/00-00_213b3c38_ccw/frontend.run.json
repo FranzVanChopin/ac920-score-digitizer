@@ -1,0 +1,35 @@
+{
+  "systems": 5,
+  "staves": 10,
+  "measures": 17,
+  "symbol_nodes": 418,
+  "stems": 220,
+  "bar_strokes": 17,
+  "head_stem_edges": 345,
+  "rhythm_issues": 2,
+  "elapsed_s": 3.469540064000057,
+  "reference_supplied_to_recognizer": false,
+  "scaffold": "Frozen image-derived staff polylines and predicted first header of each system only",
+  "limitations": [
+    "No trained voice continuity model; voice inference requires local opposed-stem or rest-note evidence.",
+    "Inline clef/key/meter changes, tuplets, grace notes, ties and cross-staff beams not yet fully decoded.",
+    "No ARM64 or FPGA verification."
+  ],
+  "inference_profile": {
+    "mode": "shared",
+    "graph_size": [
+      2318,
+      3278
+    ],
+    "frame_size": [
+      1920,
+      2715
+    ],
+    "frame_scale": [
+      0.6694560669456067,
+      0.6693786982248521
+    ],
+    "coordinate_space": "photograph pixels scaled by 16/19.8",
+    "reference_supplied_to_recognizer": false
+  }
+}

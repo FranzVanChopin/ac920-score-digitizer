@@ -1,0 +1,1622 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date              : Tue Nov  3 11:57:34 2026
+| Host              : DESKTOP-0VLPHNT running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -delay_type min_max -check_timing_verbose -file F:/Documents/Codex/FPGA/Music_Score_Recognization/release/AC920_Handoff_Evidence_20261103/build/reports/synthesis_timing.rpt
+| Design            : camera_capture_wrapper
+| Device            : xczu4ev-sfvc784
+| Speed File        : -1L  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : I
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (8)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (4)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (8)
+------------------------
+ There are 8 register/latch pins with no clock (HIGH)
+
+camera_capture_i/ps/inst/PS8_i/EMIOENET0MDIOMDC
+camera_capture_i/ps/inst/PS8_i/EMIOENET1MDIOMDC
+camera_capture_i/ps/inst/PS8_i/EMIOENET2MDIOMDC
+camera_capture_i/ps/inst/PS8_i/EMIOENET3MDIOMDC
+camera_capture_i/ps/inst/PS8_i/EMIOSDIO0CLKOUT
+camera_capture_i/ps/inst/PS8_i/EMIOSDIO1CLKOUT
+camera_capture_i/ps/inst/PS8_i/EMIOSPI0SCLKO
+camera_capture_i/ps/inst/PS8_i/EMIOSPI1SCLKO
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (4)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+camera_mipi_data_p[0]
+camera_mipi_data_p[1]
+
+ There are 2 input ports with no input delay but user has a false path constraint. (MEDIUM)
+
+key_s2_n
+key_s3_n
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+camera_enable[0]
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.871        0.000                      0                46426       -0.447    -1014.791                  20115                45810       -0.832       -1.665                       2                 20571  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                               Waveform(ns)           Period(ns)      Frequency(MHz)
+-----                               ------------           ----------      --------------
+camera_mipi_clk_p                   {0.000 1.111}          2.222           450.045         
+  camera_mipi_clk_p_FIFO_WRCLK_OUT  {0.000 4.444}          8.888           112.511         
+clk_pl_0                            {0.000 5.000}          10.000          100.000         
+clk_pl_1                            {0.000 2.500}          5.000           200.000         
+  GEN_PLL_IN_IP_USP.pll0_clkout0    {0.000 2.667}          5.333           187.500         
+  clkoutphy_out                     {0.000 0.333}          0.667           1499.999        
+    clkoutphy_out_DIV               {0.000 2.667}          5.333           187.500         
+  pll0_clkout1                      {0.000 0.333}          0.667           1499.999        
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                   WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                   -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+camera_mipi_clk_p                                                                                                                                                                     0.773        0.000                       0                     1  
+  camera_mipi_clk_p_FIFO_WRCLK_OUT        7.089        0.000                      0                 1344       -0.100      -53.502                    850                 1344        3.668        0.000                       0                   565  
+clk_pl_0                                  7.071        0.000                      0                 6430       -0.069     -142.851                   2765                 6430        3.500        0.000                       0                  3598  
+clk_pl_1                                  1.871        0.000                      0                37888       -0.099     -815.584                  16476                37888        0.750        0.000                       0                 16347  
+  GEN_PLL_IN_IP_USP.pll0_clkout0          4.098        0.000                      0                   27       -0.066       -1.099                     20                   27        2.392        0.000                       0                    56  
+  clkoutphy_out                                                                                                                                                                       0.145        0.000                       0                     2  
+  pll0_clkout1                                                                                                                                                                       -0.832       -1.665                       2                     2  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock                        To Clock                              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------                        --------                              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+clk_pl_1                          camera_mipi_clk_p_FIFO_WRCLK_OUT        4.727        0.000                      0                   11                                                                        
+clk_pl_1                          clk_pl_0                                4.385        0.000                      0                  295                                                                        
+camera_mipi_clk_p_FIFO_WRCLK_OUT  clk_pl_1                                8.273        0.000                      0                   53                                                                        
+clk_pl_0                          clk_pl_1                                4.727        0.000                      0                  325                                                                        
+GEN_PLL_IN_IP_USP.pll0_clkout0    clkoutphy_out_DIV                       4.211        0.000                      0                    4       -0.447       -1.754                      4                    4  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group                        From Clock                        To Clock                              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------                        ----------                        --------                              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**                 camera_mipi_clk_p_FIFO_WRCLK_OUT  camera_mipi_clk_p_FIFO_WRCLK_OUT        8.069        0.000                      0                   36        0.030        0.000                      0                   36  
+**async_default**                 clk_pl_1                          clk_pl_1                                3.920        0.000                      0                   81        0.032        0.000                      0                   81  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  camera_mipi_clk_p
+  To Clock:  camera_mipi_clk_p
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        0.773ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         camera_mipi_clk_p
+Waveform(ns):       { 0.000 1.111 }
+Period(ns):         2.222
+Sources:            { camera_mipi_clk_p }
+
+Check Type        Corner  Lib Pin                         Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location               Pin
+Min Period        n/a     RX_BITSLICE/RX_BIT_CTRL_IN[20]  n/a            0.750         2.222       1.472      BITSLICE_RX_TX_X0Y104  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_IN[20]
+Low Pulse Width   Slow    RX_BITSLICE/RX_BIT_CTRL_IN[20]  n/a            0.338         1.111       0.773      BITSLICE_RX_TX_X0Y104  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_IN[20]
+High Pulse Width  Slow    RX_BITSLICE/RX_BIT_CTRL_IN[20]  n/a            0.338         1.111       0.773      BITSLICE_RX_TX_X0Y104  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_IN[20]
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  camera_mipi_clk_p_FIFO_WRCLK_OUT
+  To Clock:  camera_mipi_clk_p_FIFO_WRCLK_OUT
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.089ns,  Total Violation        0.000ns
+Hold  :          850  Failing Endpoints,  Worst Slack       -0.100ns,  Total Violation      -53.502ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.668ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.089ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Path Group:             camera_mipi_clk_p_FIFO_WRCLK_OUT
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.888ns  (camera_mipi_clk_p_FIFO_WRCLK_OUT rise@8.888ns - camera_mipi_clk_p_FIFO_WRCLK_OUT rise@0.000ns)
+  Data Path Delay:        1.646ns  (logic 0.492ns (29.891%)  route 1.154ns (70.109%))
+  Logic Levels:           5  (LUT2=1 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.513ns = ( 12.401 - 8.888 ) 
+    Source Clock Delay      (SCD):    4.809ns
+    Clock Pessimism Removal (CPR):    1.151ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      0.000     0.000 r  
+    W8                                                0.000     0.000 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.415     0.415 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.050     0.465    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.465 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.003     0.468    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.050     0.518 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.006     0.524    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.727     1.251 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.013     1.264    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.805     2.069 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.551     2.620    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.028     2.648 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       2.161     4.809    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.096     4.905 f  <hidden>
+                         net (fo=1, unplaced)         0.177     5.082    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.178     5.260 f  <hidden>
+                         net (fo=5, unplaced)         0.177     5.437    <hidden>
+                         LUT5 (Prop_LUT5_I2_O)        0.100     5.537 f  <hidden>
+                         net (fo=5, unplaced)         0.232     5.769    <hidden>
+                         LUT2 (Prop_LUT2_I0_O)        0.040     5.809 f  <hidden>
+                         net (fo=9, unplaced)         0.245     6.054    <hidden>
+                         LUT4 (Prop_LUT4_I2_O)        0.039     6.093 f  <hidden>
+                         net (fo=22, unplaced)        0.265     6.358    <hidden>
+                         LUT5 (Prop_LUT5_I3_O)        0.039     6.397 r  <hidden>
+                         net (fo=1, unplaced)         0.058     6.455    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      8.888     8.888 r  
+    W8                                                0.000     8.888 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     8.888    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.332     9.220 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.040     9.260    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     9.260 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.000     9.260    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.025     9.285 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.003     9.288    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.242     9.530 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.006     9.536    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.382     9.918 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.443    10.361    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.024    10.385 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       2.016    12.401    <hidden>
+                         FDRE                                         r  <hidden>
+                         clock pessimism              1.151    13.552    
+                         clock uncertainty           -0.035    13.516    
+                         FDRE (Setup_FDRE_C_D)        0.027    13.543    <hidden>
+  -------------------------------------------------------------------
+                         required time                         13.543    
+                         arrival time                          -6.455    
+  -------------------------------------------------------------------
+                         slack                                  7.089    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.100ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell RAMD32 clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Path Group:             camera_mipi_clk_p_FIFO_WRCLK_OUT
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (camera_mipi_clk_p_FIFO_WRCLK_OUT rise@0.000ns - camera_mipi_clk_p_FIFO_WRCLK_OUT rise@0.000ns)
+  Data Path Delay:        0.107ns  (logic 0.039ns (36.449%)  route 0.068ns (63.551%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.835ns
+    Source Clock Delay      (SCD):    2.049ns
+    Clock Pessimism Removal (CPR):    0.641ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      0.000     0.000 r  
+    W8                                                0.000     0.000 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.186     0.186 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.040     0.226    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.226 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.000     0.226    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.022     0.248 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.003     0.251    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.196     0.447 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.006     0.453    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.166     0.619 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.309     0.928    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.017     0.945 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       1.104     2.049    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.039     2.088 r  <hidden>
+                         net (fo=19, unplaced)        0.068     2.156    <hidden>
+                         RAMD32                                       r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      0.000     0.000 r  
+    W8                                                0.000     0.000 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.285     0.285 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.050     0.335    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.335 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.002     0.337    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.037     0.374 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.005     0.379    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.484     0.863 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.011     0.874    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.318     1.192 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.375     1.567    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.019     1.586 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       1.249     2.835    <hidden>
+                         RAMD32                                       r  <hidden>
+                         clock pessimism             -0.641     2.194    
+                         RAMD32 (Hold_RAMD32_CLK_WADR3)
+                                                      0.062     2.256    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -2.256    
+                         arrival time                           2.156    
+  -------------------------------------------------------------------
+                         slack                                 -0.100    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         camera_mipi_clk_p_FIFO_WRCLK_OUT
+Waveform(ns):       { 0.000 4.444 }
+Period(ns):         8.888
+Sources:            { camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT }
+
+Check Type        Corner  Lib Pin                  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location               Pin
+Min Period        n/a     RX_BITSLICE/FIFO_RD_CLK  n/a            1.724         8.888       7.164      BITSLICE_RX_TX_X0Y104  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_RD_CLK
+Low Pulse Width   Slow    RX_BITSLICE/FIFO_RD_CLK  n/a            0.776         4.444       3.668      BITSLICE_RX_TX_X0Y104  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_RD_CLK
+High Pulse Width  Slow    RX_BITSLICE/FIFO_RD_CLK  n/a            0.776         4.444       3.668      BITSLICE_RX_TX_X0Y104  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_RD_CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_0
+  To Clock:  clk_pl_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.071ns,  Total Violation        0.000ns
+Hold  :         2765  Failing Endpoints,  Worst Slack       -0.069ns,  Total Violation     -142.851ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.071ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        2.637ns  (logic 1.119ns (42.435%)  route 1.518ns (57.565%))
+  Logic Levels:           10  (CARRY8=4 LUT2=1 LUT3=1 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.606ns = ( 12.606 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.791ns
+    Clock Pessimism Removal (CPR):    0.040ns
+  Clock Uncertainty:      0.174ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.340ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.178     0.178    camera_capture_i/ps/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.029     0.207 r  camera_capture_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3598, unplaced)      2.584     2.791    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.096     2.887 r  <hidden>
+                         net (fo=4, unplaced)         0.120     3.007    <hidden>
+                         CARRY8 (Prop_CARRY8_S[0]_O[4])
+                                                      0.257     3.264 r  <hidden>
+                         net (fo=1, unplaced)         0.212     3.476    <hidden>
+                         LUT2 (Prop_LUT2_I1_O)        0.039     3.515 r  <hidden>
+                         net (fo=1, unplaced)         0.022     3.537    <hidden>
+                         CARRY8 (Prop_CARRY8_S[4]_CO[7])
+                                                      0.205     3.742 r  <hidden>
+                         net (fo=1, unplaced)         0.007     3.749    <hidden>
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.072     3.821 r  <hidden>
+                         net (fo=3, unplaced)         0.220     4.041    <hidden>
+                         LUT3 (Prop_LUT3_I1_O)        0.039     4.080 r  <hidden>
+                         net (fo=2, unplaced)         0.214     4.294    <hidden>
+                         LUT5 (Prop_LUT5_I4_O)        0.039     4.333 r  <hidden>
+                         net (fo=2, unplaced)         0.214     4.547    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.039     4.586 r  <hidden>
+                         net (fo=1, unplaced)         0.025     4.611    <hidden>
+                         CARRY8 (Prop_CARRY8_S[1]_O[4])
+                                                      0.255     4.866 r  <hidden>
+                         net (fo=1, unplaced)         0.212     5.078    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.039     5.117 r  <hidden>
+                         net (fo=1, unplaced)         0.214     5.331    <hidden>
+                         LUT5 (Prop_LUT5_I0_O)        0.039     5.370 r  <hidden>
+                         net (fo=1, unplaced)         0.058     5.428    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+                         PS8                          0.000    10.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.140    10.140    camera_capture_i/ps/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.027    10.167 r  camera_capture_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3598, unplaced)      2.439    12.606    <hidden>
+                         FDRE                                         r  <hidden>
+                         clock pessimism              0.040    12.646    
+                         clock uncertainty           -0.174    12.472    
+                         FDRE (Setup_FDRE_C_D)        0.027    12.499    <hidden>
+  -------------------------------------------------------------------
+                         required time                         12.499    
+                         arrival time                          -5.428    
+  -------------------------------------------------------------------
+                         slack                                  7.071    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.069ns  (arrival time - required time)
+  Source:                 camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/lpf_exr_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.122ns  (logic 0.060ns (49.180%)  route 0.062ns (50.820%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.397ns
+    Source Clock Delay      (SCD):    1.225ns
+    Clock Pessimism Removal (CPR):    0.027ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.094     0.094    camera_capture_i/ps/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  camera_capture_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3598, unplaced)      1.114     1.225    camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/aclk
+                         FDRE                                         r  camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.038     1.263 r  camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4/Q
+                         net (fo=2, unplaced)         0.046     1.309    camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/scndry_out
+                         LUT5 (Prop_LUT5_I3_O)        0.022     1.331 r  camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/lpf_exr_i_1/O
+                         net (fo=1, unplaced)         0.016     1.347    camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT_n_0
+                         FDRE                                         r  camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/lpf_exr_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[0]
+                         net (fo=1, unplaced)         0.120     0.120    camera_capture_i/ps/inst/pl_clk_unbuffered[0]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.018     0.138 r  camera_capture_i/ps/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=3598, unplaced)      1.259     1.397    camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/aclk
+                         FDRE                                         r  camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/lpf_exr_reg/C
+                         clock pessimism             -0.027     1.370    
+                         FDRE (Hold_FDRE_C_D)         0.046     1.416    camera_capture_i/control_axi/inst/clk_map/psr_aclk/U0/EXT_LPF/lpf_exr_reg
+  -------------------------------------------------------------------
+                         required time                         -1.416    
+                         arrival time                           1.347    
+  -------------------------------------------------------------------
+                         slack                                 -0.069    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_pl_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { camera_capture_i/ps/inst/PS8_i/PLCLK[0] }
+
+Check Type        Corner  Lib Pin          Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     PS8/MAXIGP2ACLK  n/a            3.000         10.000      7.000                camera_capture_i/ps/inst/PS8_i/MAXIGP2ACLK
+Low Pulse Width   Slow    PS8/MAXIGP2ACLK  n/a            1.500         5.000       3.500                camera_capture_i/ps/inst/PS8_i/MAXIGP2ACLK
+High Pulse Width  Slow    PS8/MAXIGP2ACLK  n/a            1.500         5.000       3.500                camera_capture_i/ps/inst/PS8_i/MAXIGP2ACLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_1
+  To Clock:  clk_pl_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.871ns,  Total Violation        0.000ns
+Hold  :        16476  Failing Endpoints,  Worst Slack       -0.099ns,  Total Violation     -815.584ns
+PW    :            0  Failing Endpoints,  Worst Slack        0.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.871ns  (required time - arrival time)
+  Source:                 camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CASDINB[0]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_pl_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (clk_pl_1 rise@5.000ns - clk_pl_1 rise@0.000ns)
+  Data Path Delay:        2.769ns  (logic 2.552ns (92.163%)  route 0.217ns (7.837%))
+  Logic Levels:           6  (RAMB36E2=6)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.606ns = ( 7.606 - 5.000 ) 
+    Source Clock Delay      (SCD):    2.791ns
+    Clock Pessimism Removal (CPR):    0.040ns
+  Clock Uncertainty:      0.137ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.266ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_1 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.178     0.178    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.029     0.207 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.584     2.791    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/clka
+                         RAMB36E2                                     r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_CASDOUTB[0])
+                                                      1.232     4.023 r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0/CASDOUTB[0]
+                         net (fo=1, unplaced)         0.031     4.054    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0_n_67
+                         RAMB36E2 (Prop_RAMB36E2_CASDINB[0]_CASDOUTB[0])
+                                                      0.220     4.274 r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1/CASDOUTB[0]
+                         net (fo=1, unplaced)         0.031     4.305    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1_n_67
+                         RAMB36E2 (Prop_RAMB36E2_CASDINB[0]_CASDOUTB[0])
+                                                      0.220     4.525 r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2/CASDOUTB[0]
+                         net (fo=1, unplaced)         0.031     4.556    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_67
+                         RAMB36E2 (Prop_RAMB36E2_CASDINB[0]_CASDOUTB[0])
+                                                      0.220     4.776 r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3/CASDOUTB[0]
+                         net (fo=1, unplaced)         0.031     4.807    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3_n_67
+                         RAMB36E2 (Prop_RAMB36E2_CASDINB[0]_CASDOUTB[0])
+                                                      0.220     5.027 r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_4/CASDOUTB[0]
+                         net (fo=1, unplaced)         0.031     5.058    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_4_n_67
+                         RAMB36E2 (Prop_RAMB36E2_CASDINB[0]_CASDOUTB[0])
+                                                      0.220     5.278 r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_5/CASDOUTB[0]
+                         net (fo=1, unplaced)         0.031     5.309    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_5_n_67
+                         RAMB36E2 (Prop_RAMB36E2_CASDINB[0]_CASDOUTB[0])
+                                                      0.220     5.529 r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_6/CASDOUTB[0]
+                         net (fo=1, unplaced)         0.031     5.560    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_6_n_67
+                         RAMB36E2                                     r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CASDINB[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_1 rise edge)
+                                                      5.000     5.000 r  
+                         PS8                          0.000     5.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.140     5.140    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.027     5.167 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.439     7.606    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/clka
+                         RAMB36E2                                     r  camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7/CLKBWRCLK
+                         clock pessimism              0.040     7.646    
+                         clock uncertainty           -0.137     7.509    
+                         RAMB36E2 (Setup_RAMB36E2_CLKBWRCLK_CASDINB[0])
+                                                     -0.078     7.431    camera_capture_i/vdma/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7
+  -------------------------------------------------------------------
+                         required time                          7.431    
+                         arrival time                          -5.560    
+  -------------------------------------------------------------------
+                         slack                                  1.871    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.099ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell RAMD32 clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_pl_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pl_1 rise@0.000ns - clk_pl_1 rise@0.000ns)
+  Data Path Delay:        0.108ns  (logic 0.039ns (36.111%)  route 0.069ns (63.889%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.397ns
+    Source Clock Delay      (SCD):    1.225ns
+    Clock Pessimism Removal (CPR):    0.027ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_1 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.094     0.094    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.114     1.225    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.039     1.264 r  <hidden>
+                         net (fo=21, unplaced)        0.069     1.333    <hidden>
+                         RAMD32                                       r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_1 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.120     0.120    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.018     0.138 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.259     1.397    <hidden>
+                         RAMD32                                       r  <hidden>
+                         clock pessimism             -0.027     1.370    
+                         RAMD32 (Hold_RAMD32_CLK_WADR3)
+                                                      0.062     1.432    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -1.432    
+                         arrival time                           1.333    
+  -------------------------------------------------------------------
+                         slack                                 -0.099    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_pl_1
+Waveform(ns):       { 0.000 2.500 }
+Period(ns):         5.000
+Sources:            { camera_capture_i/ps/inst/PS8_i/PLCLK[1] }
+
+Check Type        Corner  Lib Pin                   Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     BITSLICE_CONTROL/RIU_CLK  n/a            3.846         5.000       1.154                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RIU_CLK
+Max Period        n/a     PLLE4_ADV/CLKIN           n/a            14.286        5.000       9.286                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKIN
+Low Pulse Width   Slow    PLLE4_ADV/CLKIN           n/a            1.750         2.500       0.750                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKIN
+High Pulse Width  Slow    PLLE4_ADV/CLKIN           n/a            1.750         2.500       0.750                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  GEN_PLL_IN_IP_USP.pll0_clkout0
+  To Clock:  GEN_PLL_IN_IP_USP.pll0_clkout0
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.098ns,  Total Violation        0.000ns
+Hold  :           20  Failing Endpoints,  Worst Slack       -0.066ns,  Total Violation       -1.099ns
+PW    :            0  Failing Endpoints,  Worst Slack        2.392ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.098ns  (required time - arrival time)
+  Source:                 camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by GEN_PLL_IN_IP_USP.pll0_clkout0  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Destination:            camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by GEN_PLL_IN_IP_USP.pll0_clkout0  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Path Group:             GEN_PLL_IN_IP_USP.pll0_clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.333ns  (GEN_PLL_IN_IP_USP.pll0_clkout0 rise@5.333ns - GEN_PLL_IN_IP_USP.pll0_clkout0 rise@0.000ns)
+  Data Path Delay:        0.962ns  (logic 0.313ns (32.536%)  route 0.649ns (67.464%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.722ns = ( 11.055 - 5.333 ) 
+    Source Clock Delay      (SCD):    5.695ns
+    Clock Pessimism Removal (CPR):    -0.172ns
+  Clock Uncertainty:      0.056ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.087ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock GEN_PLL_IN_IP_USP.pll0_clkout0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.178     0.178    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.029     0.207 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.584     2.791    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUT0)
+                                                      0.054     2.845 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT0
+                         net (fo=1, unplaced)         0.238     3.083    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.028     3.111 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0_buf/O
+                         net (fo=54, unplaced)        2.584     5.695    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/CLK
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.096     5.791 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[3]/Q
+                         net (fo=5, unplaced)         0.195     5.986    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg__0[3]
+                         LUT6 (Prop_LUT6_I0_O)        0.178     6.164 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr[6]_i_3/O
+                         net (fo=1, unplaced)         0.214     6.378    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/sync_cell_start_fab_cntr_pll0_inst/pll0_fab_clk_cntr_reg[0]
+                         LUT3 (Prop_LUT3_I2_O)        0.039     6.417 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/sync_cell_start_fab_cntr_pll0_inst/pll0_fab_clk_cntr[6]_i_1/O
+                         net (fo=7, unplaced)         0.240     6.657    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/sync_cell_start_fab_cntr_pll0_inst_n_0
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock GEN_PLL_IN_IP_USP.pll0_clkout0 rise edge)
+                                                      5.333     5.333 r  
+                         PS8                          0.000     5.333 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.140     5.473    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.027     5.500 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.439     7.939    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUT0)
+                                                      0.444     8.383 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT0
+                         net (fo=1, unplaced)         0.209     8.592    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.024     8.616 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0_buf/O
+                         net (fo=54, unplaced)        2.439    11.055    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/CLK
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[0]/C
+                         clock pessimism             -0.172    10.883    
+                         clock uncertainty           -0.056    10.827    
+                         FDRE (Setup_FDRE_C_R)       -0.072    10.755    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.755    
+                         arrival time                          -6.657    
+  -------------------------------------------------------------------
+                         slack                                  4.098    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.066ns  (arrival time - required time)
+  Source:                 camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by GEN_PLL_IN_IP_USP.pll0_clkout0  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Destination:            camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by GEN_PLL_IN_IP_USP.pll0_clkout0  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Path Group:             GEN_PLL_IN_IP_USP.pll0_clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (GEN_PLL_IN_IP_USP.pll0_clkout0 rise@0.000ns - GEN_PLL_IN_IP_USP.pll0_clkout0 rise@0.000ns)
+  Data Path Delay:        0.125ns  (logic 0.061ns (48.800%)  route 0.064ns (51.200%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.693ns
+    Source Clock Delay      (SCD):    2.538ns
+    Clock Pessimism Removal (CPR):    0.010ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock GEN_PLL_IN_IP_USP.pll0_clkout0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.094     0.094    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.114     1.225    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUT0)
+                                                      0.050     1.275 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT0
+                         net (fo=1, unplaced)         0.132     1.407    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.017     1.424 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0_buf/O
+                         net (fo=54, unplaced)        1.114     2.538    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/CLK
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.039     2.577 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]/Q
+                         net (fo=3, unplaced)         0.048     2.625    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]
+                         LUT3 (Prop_LUT3_I2_O)        0.022     2.647 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr[6]_i_2/O
+                         net (fo=1, unplaced)         0.016     2.663    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/p_0_in[6]
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock GEN_PLL_IN_IP_USP.pll0_clkout0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.120     0.120    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.018     0.138 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.259     1.397    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUT0)
+                                                     -0.130     1.267 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT0
+                         net (fo=1, unplaced)         0.148     1.415    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.019     1.434 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0_buf/O
+                         net (fo=54, unplaced)        1.259     2.693    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/CLK
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]/C
+                         clock pessimism             -0.010     2.683    
+                         FDRE (Hold_FDRE_C_D)         0.046     2.729    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/rst_scheme_inst/pll0_fab_clk_cntr_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -2.729    
+                         arrival time                           2.663    
+  -------------------------------------------------------------------
+                         slack                                 -0.066    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         GEN_PLL_IN_IP_USP.pll0_clkout0
+Waveform(ns):       { 0.000 2.667 }
+Period(ns):         5.333
+Sources:            { camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin   Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     BUFGCE/I  n/a            1.499         5.333       3.834                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0_buf/I
+Low Pulse Width   Slow    FDRE/C    n/a            0.275         2.667       2.392                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[0]/C
+High Pulse Width  Slow    FDRE/C    n/a            0.275         2.667       2.392                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkoutphy_out
+  To Clock:  clkoutphy_out
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        0.145ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkoutphy_out
+Waveform(ns):       { 0.000 0.333 }
+Period(ns):         0.667
+Sources:            { camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUTPHY }
+
+Check Type        Corner  Lib Pin                   Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     BITSLICE_CONTROL/PLL_CLK  n/a            0.400         0.667       0.267                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/PLL_CLK
+Low Pulse Width   Slow    BITSLICE_CONTROL/PLL_CLK  n/a            0.188         0.333       0.145                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/PLL_CLK
+High Pulse Width  Slow    BITSLICE_CONTROL/PLL_CLK  n/a            0.188         0.333       0.145                camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/PLL_CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  pll0_clkout1
+  To Clock:  pll0_clkout1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            2  Failing Endpoints,  Worst Slack       -0.832ns,  Total Violation       -1.665ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         pll0_clkout1
+Waveform(ns):       { 0.000 0.333 }
+Period(ns):         0.667
+Sources:            { camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT1 }
+
+Check Type  Corner  Lib Pin   Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period  n/a     BUFGCE/I  n/a            1.499         0.667       -0.832               camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout1_buf/I
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_1
+  To Clock:  camera_mipi_clk_p_FIFO_WRCLK_OUT
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.727ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.727ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Path Group:             camera_mipi_clk_p_FIFO_WRCLK_OUT
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        0.300ns  (logic 0.096ns (32.000%)  route 0.204ns (68.000%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  <hidden>
+                         FDRE (Prop_FDRE_C_Q)         0.096     0.096 r  <hidden>
+                         net (fo=1, unplaced)         0.204     0.300    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         FDRE (Setup_FDRE_C_D)        0.027     5.027    <hidden>
+  -------------------------------------------------------------------
+                         required time                          5.027    
+                         arrival time                          -0.300    
+  -------------------------------------------------------------------
+                         slack                                  4.727    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_1
+  To Clock:  clk_pl_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.385ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.385ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMD32 clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        0.642ns  (logic 0.380ns (59.190%)  route 0.262ns (40.810%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  <hidden>
+                         RAMD32 (Prop_RAMD32_CLK_O)
+                                                      0.380     0.380 r  <hidden>
+                         net (fo=1, unplaced)         0.262     0.642    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         FDRE (Setup_FDRE_C_D)        0.027     5.027    <hidden>
+  -------------------------------------------------------------------
+                         required time                          5.027    
+                         arrival time                          -0.642    
+  -------------------------------------------------------------------
+                         slack                                  4.385    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  camera_mipi_clk_p_FIFO_WRCLK_OUT
+  To Clock:  clk_pl_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        8.273ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             8.273ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMD32 clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_pl_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.888ns  (MaxDelay Path 8.888ns)
+  Data Path Delay:        0.642ns  (logic 0.380ns (59.190%)  route 0.262ns (40.810%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 8.888ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  <hidden>
+                         RAMD32 (Prop_RAMD32_CLK_O)
+                                                      0.380     0.380 r  <hidden>
+                         net (fo=1, unplaced)         0.262     0.642    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    8.888     8.888    
+                         FDRE (Setup_FDRE_C_D)        0.027     8.915    <hidden>
+  -------------------------------------------------------------------
+                         required time                          8.915    
+                         arrival time                          -0.642    
+  -------------------------------------------------------------------
+                         slack                                  8.273    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_0
+  To Clock:  clk_pl_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.727ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.727ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_pl_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        0.300ns  (logic 0.096ns (32.000%)  route 0.204ns (68.000%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  <hidden>
+                         FDRE (Prop_FDRE_C_Q)         0.096     0.096 r  <hidden>
+                         net (fo=1, unplaced)         0.204     0.300    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         FDRE (Setup_FDRE_C_D)        0.027     5.027    <hidden>
+  -------------------------------------------------------------------
+                         required time                          5.027    
+                         arrival time                          -0.300    
+  -------------------------------------------------------------------
+                         slack                                  4.727    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  GEN_PLL_IN_IP_USP.pll0_clkout0
+  To Clock:  clkoutphy_out_DIV
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.211ns,  Total Violation        0.000ns
+Hold  :            4  Failing Endpoints,  Worst Slack       -0.447ns,  Total Violation       -1.754ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.211ns  (required time - arrival time)
+  Source:                 camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by GEN_PLL_IN_IP_USP.pll0_clkout0  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Destination:            camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TBYTE_IN[0]
+                            (rising edge-triggered cell BITSLICE_CONTROL clocked by clkoutphy_out_DIV  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Path Group:             clkoutphy_out_DIV
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.333ns  (clkoutphy_out_DIV rise@5.333ns - GEN_PLL_IN_IP_USP.pll0_clkout0 rise@0.000ns)
+  Data Path Delay:        0.483ns  (logic 0.096ns (19.876%)  route 0.387ns (80.124%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.400ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.135ns = ( 8.468 - 5.333 ) 
+    Source Clock Delay      (SCD):    5.695ns
+    Clock Pessimism Removal (CPR):    2.160ns
+  Clock Uncertainty:      0.175ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.084ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock GEN_PLL_IN_IP_USP.pll0_clkout0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.178     0.178    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.029     0.207 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.584     2.791    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUT0)
+                                                      0.054     2.845 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT0
+                         net (fo=1, unplaced)         0.238     3.083    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.028     3.111 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0_buf/O
+                         net (fo=54, unplaced)        2.584     5.695    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst_n_7
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.096     5.791 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[0]/Q
+                         net (fo=1, unplaced)         0.387     6.178    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/out[0]
+                         BITSLICE_CONTROL                             r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TBYTE_IN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkoutphy_out_DIV rise edge)
+                                                      5.333     5.333 f  
+                         PS8                          0.000     5.333 f  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.140     5.473    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.027     5.500 f  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.439     7.939    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUTPHY)
+                                                      0.244     8.183 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUTPHY
+                         net (fo=1, unplaced)         0.104     8.287    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/shared_pll0_clkoutphy_out
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_PLL_CLK_TX_DIV2_CLK_Q)
+                                                      0.106     8.393 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TX_DIV2_CLK_Q
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_TX_DIV2_CLK_Q_TX_DIV4_CLK_Q)
+                                                      0.075     8.468 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TX_DIV4_CLK_Q
+                         clock pessimism              2.160    10.628    
+                         clock uncertainty           -0.175    10.453    
+                         BITSLICE_CONTROL (Setup_BITSLICE_CONTROL_TX_DIV4_CLK_Q_TBYTE_IN[0])
+                                                     -0.064    10.389    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst
+  -------------------------------------------------------------------
+                         required time                         10.389    
+                         arrival time                          -6.178    
+  -------------------------------------------------------------------
+                         slack                                  4.211    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.447ns  (arrival time - required time)
+  Source:                 camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by GEN_PLL_IN_IP_USP.pll0_clkout0  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Destination:            camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TBYTE_IN[2]
+                            (rising edge-triggered cell BITSLICE_CONTROL clocked by clkoutphy_out_DIV  {rise@0.000ns fall@2.667ns period=5.333ns})
+  Path Group:             clkoutphy_out_DIV
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkoutphy_out_DIV rise@0.000ns - GEN_PLL_IN_IP_USP.pll0_clkout0 rise@0.000ns)
+  Data Path Delay:        0.191ns  (logic 0.039ns (20.419%)  route 0.152ns (79.581%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.400ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.461ns
+    Source Clock Delay      (SCD):    2.538ns
+    Clock Pessimism Removal (CPR):    -1.477ns
+  Clock Uncertainty:      0.175ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.084ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock GEN_PLL_IN_IP_USP.pll0_clkout0 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.094     0.094    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.114     1.225    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUT0)
+                                                      0.050     1.275 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUT0
+                         net (fo=1, unplaced)         0.132     1.407    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0
+                         BUFGCE (Prop_BUFGCE_I_O)     0.017     1.424 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.pll0_clkout0_buf/O
+                         net (fo=54, unplaced)        1.114     2.538    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst_n_7
+                         FDRE                                         r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.039     2.577 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/GEN_NIB0_TBYTE.n0_tbyte_d_reg[2]/Q
+                         net (fo=1, unplaced)         0.152     2.729    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/out[2]
+                         BITSLICE_CONTROL                             r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TBYTE_IN[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkoutphy_out_DIV rise edge)
+                                                      0.000     0.000 f  
+                         PS8                          0.000     0.000 f  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.120     0.120    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.018     0.138 f  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.259     1.397    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/clk
+                         PLLE4_ADV (Prop_PLLE4_ADV_CLKIN_CLKOUTPHY)
+                                                     -0.247     1.150 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst/CLKOUTPHY
+                         net (fo=1, unplaced)         0.115     1.265    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/shared_pll0_clkoutphy_out
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_PLL_CLK_TX_DIV2_CLK_Q)
+                                                      0.114     1.379 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TX_DIV2_CLK_Q
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_TX_DIV2_CLK_Q_TX_DIV4_CLK_Q)
+                                                      0.082     1.461 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/TX_DIV4_CLK_Q
+                         clock pessimism              1.477     2.938    
+                         clock uncertainty            0.175     3.113    
+                         BITSLICE_CONTROL (Hold_BITSLICE_CONTROL_TX_DIV4_CLK_Q_TBYTE_IN[2])
+                                                      0.063     3.176    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst
+  -------------------------------------------------------------------
+                         required time                         -3.176    
+                         arrival time                           2.729    
+  -------------------------------------------------------------------
+                         slack                                 -0.447    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  camera_mipi_clk_p_FIFO_WRCLK_OUT
+  To Clock:  camera_mipi_clk_p_FIFO_WRCLK_OUT
+
+Setup :            0  Failing Endpoints,  Worst Slack        8.069ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.030ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             8.069ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDCE clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Destination:            <hidden>
+                            (recovery check against rising-edge clock camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            8.888ns  (camera_mipi_clk_p_FIFO_WRCLK_OUT rise@8.888ns - camera_mipi_clk_p_FIFO_WRCLK_OUT rise@0.000ns)
+  Data Path Delay:        0.567ns  (logic 0.132ns (23.280%)  route 0.435ns (76.720%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.513ns = ( 12.401 - 8.888 ) 
+    Source Clock Delay      (SCD):    4.809ns
+    Clock Pessimism Removal (CPR):    1.151ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      0.000     0.000 r  
+    W8                                                0.000     0.000 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.415     0.415 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.050     0.465    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.465 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.003     0.468    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.050     0.518 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.006     0.524    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.727     1.251 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.013     1.264    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.805     2.069 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.551     2.620    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.028     2.648 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       2.161     4.809    <hidden>
+                         FDCE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_FDCE_C_Q)         0.093     4.902 r  <hidden>
+                         net (fo=2, unplaced)         0.158     5.060    <hidden>
+                         LUT1 (Prop_LUT1_I0_O)        0.039     5.099 f  <hidden>
+                         net (fo=35, unplaced)        0.277     5.376    <hidden>
+                         FDPE                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      8.888     8.888 r  
+    W8                                                0.000     8.888 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     8.888    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.332     9.220 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.040     9.260    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     9.260 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.000     9.260    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.025     9.285 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.003     9.288    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.242     9.530 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.006     9.536    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.382     9.918 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.443    10.361    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.024    10.385 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       2.016    12.401    <hidden>
+                         FDPE                                         r  <hidden>
+                         clock pessimism              1.151    13.552    
+                         clock uncertainty           -0.035    13.516    
+                         FDPE (Recov_FDPE_C_PRE)     -0.072    13.444    <hidden>
+  -------------------------------------------------------------------
+                         required time                         13.444    
+                         arrival time                          -5.376    
+  -------------------------------------------------------------------
+                         slack                                  8.069    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Destination:            <hidden>
+                            (removal check against rising-edge clock camera_mipi_clk_p_FIFO_WRCLK_OUT  {rise@0.000ns fall@4.444ns period=8.888ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (camera_mipi_clk_p_FIFO_WRCLK_OUT rise@0.000ns - camera_mipi_clk_p_FIFO_WRCLK_OUT rise@0.000ns)
+  Data Path Delay:        0.155ns  (logic 0.038ns (24.516%)  route 0.117ns (75.484%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.835ns
+    Source Clock Delay      (SCD):    2.049ns
+    Clock Pessimism Removal (CPR):    0.641ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      0.000     0.000 r  
+    W8                                                0.000     0.000 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.186     0.186 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.040     0.226    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.226 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.000     0.226    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.022     0.248 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.003     0.251    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.196     0.447 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.006     0.453    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.166     0.619 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.309     0.928    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.017     0.945 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       1.104     2.049    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.038     2.087 f  <hidden>
+                         net (fo=5, unplaced)         0.117     2.204    <hidden>
+                         FDCE                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock camera_mipi_clk_p_FIFO_WRCLK_OUT rise edge)
+                                                      0.000     0.000 r  
+    W8                                                0.000     0.000 r  camera_mipi_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/I
+    HPIOBDIFFINBUF_X0Y48 DPHY_DIFFINBUF (Prop_DPHY_DIFFINBUF_HPIOBDIFFINBUF_I_HSRX_O)
+                                                      0.285     0.285 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/DIFFINBUF_INST/HSRX_O
+                         net (fo=1, estimated)        0.050     0.335    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/OUT
+    W8                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.335 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/iobuf_top_inst/io_gen[0].ibufds_dphy/IBUFCTRL_INST/O
+                         net (fo=1, estimated)        0.002     0.337    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/data_to_bs_out[0]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_DATAIN_RX_BIT_CTRL_OUT[9])
+                                                      0.037     0.374 f  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/RX_BIT_CTRL_OUT[9]
+                         net (fo=1, unplaced)         0.005     0.379    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/rx_bs0_rx_bit_ctrl_out[9]
+                         BITSLICE_CONTROL (Prop_BITSLICE_CONTROL_RX_BIT_CTRL_IN0[9]_RX_BIT_CTRL_OUT0[20])
+                                                      0.484     0.863 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_ctrl_top_inst/BITSLICE_CTRL[0].bs_ctrl_inst/RX_BIT_CTRL_OUT0[20]
+                         net (fo=1, unplaced)         0.011     0.874    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/rx_bs0_rx_bit_ctrl_in[20]
+    BITSLICE_RX_TX_X0Y104
+                         RX_BITSLICE (Prop_RX_BITSLICE_BITSLICE_RXTX_RX_RX_BIT_CTRL_IN[20]_FIFO_WRCLK_OUT)
+                                                      0.318     1.192 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.bd_f1a9_phy_0_rx_hssio_i/inst/top_inst/bs_top_inst/u_rx_bs/RX_BS[0].rx_bitslice_if_bs/FIFO_WRCLK_OUT
+                         net (fo=1, unplaced)         0.375     1.567    camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/div4_clk_t
+                         BUFGCE (Prop_BUFGCE_I_O)     0.019     1.586 r  camera_capture_i/csi_rx/inst/phy/inst/inst/bd_f1a9_phy_0_rx_support_i/slave_rx.rxbyteclkhs_buf/O
+                         net (fo=564, unplaced)       1.249     2.835    <hidden>
+                         FDCE                                         r  <hidden>
+                         clock pessimism             -0.641     2.194    
+                         FDCE (Remov_FDCE_C_CLR)     -0.020     2.174    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -2.174    
+                         arrival time                           2.204    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_pl_1
+  To Clock:  clk_pl_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.920ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.032ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.920ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDCE clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            <hidden>
+                            (recovery check against rising-edge clock clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            5.000ns  (clk_pl_1 rise@5.000ns - clk_pl_1 rise@0.000ns)
+  Data Path Delay:        0.726ns  (logic 0.132ns (18.182%)  route 0.594ns (81.818%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.606ns = ( 7.606 - 5.000 ) 
+    Source Clock Delay      (SCD):    2.791ns
+    Clock Pessimism Removal (CPR):    0.040ns
+  Clock Uncertainty:      0.137ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.266ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_1 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.178     0.178    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.029     0.207 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.584     2.791    <hidden>
+                         FDCE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_FDCE_C_Q)         0.093     2.884 r  <hidden>
+                         net (fo=123, unplaced)       0.248     3.132    <hidden>
+                         LUT1 (Prop_LUT1_I0_O)        0.039     3.171 f  <hidden>
+                         net (fo=748, unplaced)       0.346     3.517    <hidden>
+                         FDPE                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_1 rise edge)
+                                                      5.000     5.000 r  
+                         PS8                          0.000     5.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.140     5.140    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.027     5.167 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     2.439     7.606    <hidden>
+                         FDPE                                         r  <hidden>
+                         clock pessimism              0.040     7.646    
+                         clock uncertainty           -0.137     7.509    
+                         FDPE (Recov_FDPE_C_PRE)     -0.072     7.437    <hidden>
+  -------------------------------------------------------------------
+                         required time                          7.437    
+                         arrival time                          -3.517    
+  -------------------------------------------------------------------
+                         slack                                  3.920    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.032ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            <hidden>
+                            (removal check against rising-edge clock clk_pl_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_pl_1 rise@0.000ns - clk_pl_1 rise@0.000ns)
+  Data Path Delay:        0.157ns  (logic 0.038ns (24.204%)  route 0.119ns (75.796%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.397ns
+    Source Clock Delay      (SCD):    1.225ns
+    Clock Pessimism Removal (CPR):    0.027ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_1 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.094     0.094    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.017     0.111 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.114     1.225    <hidden>
+                         FDRE                                         r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.038     1.263 f  <hidden>
+                         net (fo=6, unplaced)         0.119     1.382    <hidden>
+                         FDCE                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_1 rise edge)
+                                                      0.000     0.000 r  
+                         PS8                          0.000     0.000 r  camera_capture_i/ps/inst/PS8_i/PLCLK[1]
+                         net (fo=1, unplaced)         0.120     0.120    camera_capture_i/ps/inst/pl_clk_unbuffered[1]
+                         BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.018     0.138 r  camera_capture_i/ps/inst/buffer_pl_clk_1.PL_CLK_1_BUFG/O
+                         net (fo=16381, unplaced)     1.259     1.397    <hidden>
+                         FDCE                                         r  <hidden>
+                         clock pessimism             -0.027     1.370    
+                         FDCE (Remov_FDCE_C_CLR)     -0.020     1.350    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -1.350    
+                         arrival time                           1.382    
+  -------------------------------------------------------------------
+                         slack                                  0.032    
+
+
+
+
+

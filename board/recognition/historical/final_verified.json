@@ -1,0 +1,395 @@
+{
+  "profile": "DP_STABLE720_RESPONSE1",
+  "app": "/opt/ac920-panel-responsive1",
+  "linux_mode": "1280x720@60",
+  "capture_mode": "1280x720@60",
+  "state": {
+    "view": "recognize",
+    "songs": [
+      {
+        "id": "00",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "ok",
+            "progress": 100,
+            "stage": "已完成",
+            "rotate_used": "ccw",
+            "clef_ratio": 1.0,
+            "orientation_suspect": false
+          }
+        ],
+        "xml": true
+      },
+      {
+        "id": "01",
+        "pages": [
+          {
+            "id": "01-00",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-01",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-02",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-03",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-04",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          },
+          {
+            "id": "01-05",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          }
+        ],
+        "xml": false
+      }
+    ],
+    "selected": "00",
+    "busy": false,
+    "message": "请选择曲目，长按 S2 开始识别",
+    "speed": 1.0,
+    "return_pending": false,
+    "play": {
+      "token": 0,
+      "song": null,
+      "directory": null,
+      "state": "stopped",
+      "error": null
+    },
+    "button_error": "",
+    "input_event": {
+      "sequence": 0
+    },
+    "revision": 0
+  },
+  "xrandr": "Screen 0: minimum 320 x 200, current 1280 x 720, maximum 4096 x 4096\nDP-1 connected primary 1280x720+0+0 344mm x 195mm\n   1280x720      60.00*+  50.00    30.00    25.00    59.94    29.97    24.00    23.98  \n   3840x2160     30.00    25.00    24.00    29.97    23.98    30.00  \n   1920x1080     60.00    60.00    50.00    59.94    30.00    25.00    24.00    29.97    23.98  \n   1400x1050     59.95  \n   1280x1024     60.02  \n   1440x900      59.90  \n   1280x960      60.00  \n   1024x768      60.00  \n   800x600       60.32  \n   720x480       60.00    59.94  \n   640x480       60.00    59.94",
+  "windows": "xwininfo: Window id: 0x14f (the root window) (has no name)\n\n  Root window id: 0x14f (the root window) (has no name)\n  Parent window id: 0x0 (none)\n     27 children:\n     0x1000001 \"gsd-power\": (\"gsd-power\" \"Gsd-power\")  10x10+10+10  +10+10\n     0x1e00001 \"update-notifier\": (\"update-notifier\" \"Update-notifier\")  10x10+10+10  +10+10\n     0x1c00008 (has no name): ()  1x1+-1+-1  +-1+-1\n     0x60000a \"gnome-shell\": (\"gnome-shell\" \"Gnome-shell\")  1x1+-200+-200  +-200+-200\n        1 child:\n        0x60000b (has no name): ()  1x1+-1+-1  +-201+-201\n     0x600022 (has no name): ()  1280x720+0+0  +0+0\n        1 child:\n        0x1800003 \"AC920 Score Studio\": (\"panel_ui.py\" \"Panel_ui.py\")  1280x720+0+0  +0+0\n           1 child:\n           0x1800004 (has no name): ()  1x1+-1+-1  +-1+-1\n     0x1c00003 \"@!0,0;BDHF\": (\"gjs\" \"Gjs\")  1280x720+0+0  +0+0\n        1 child:\n        0x1c00004 (has no name): ()  1x1+-1+-1  +-1+-1\n     0x1c00001 \"gjs\": (\"gjs\" \"Gjs\")  10x10+10+10  +10+10\n     0x1800008 (has no name): ()  1x1+-1+-1  +-1+-1\n     0x1800001 \"panel_ui.py\": (\"panel_ui.py\" \"\")  10x10+10+10  +10+10\n     0x1a00001 \"evolution-alarm-notify\": (\"evolution-alarm-notify\" \"Evolution-alarm-notify\")  10x10+10+10  +10+10\n     0x1600001 \"gsd-color\": (\"gsd-color\" \"Gsd-color\")  10x10+10+10  +10+10\n     0x1200001 \"gsd-media-keys\": (\"gsd-media-keys\" \"Gsd-media-keys\")  10x10+10+10  +10+10\n     0xe00001 \"gsd-wacom\": (\"gsd-wacom\" \"Gsd-wacom\")  10x10+10+10  +10+10\n     0xc00002 (has no name): ()  10x10+0+0  +0+0\n     0xc00001 \"gsd-xsettings\": (\"gsd-xsettings\" \"Gsd-xsettings\")  10x10+10+10  +10+10\n     0xa00001 \"gsd-keyboard\": (\"gsd-keyboard\" \"Gsd-keyboard\")  10x10+10+10  +10+10\n     0x60001a (has no name): ()  1x1+-1+-1  +-1+-1\n     0x600013 \"gnome-shell\": ()  10x10+-100+-100  +-100+-100\n     0x600011 (has no name): ()  1x1+-100+-100  +-100+-100\n     0x60000f (has no name): ()  1x1+-100+-100  +-100+-100\n     0x60000e (has no name): ()  1x1+-1+-1  +-1+-1\n     0x600008 (has no name): ()  1x1+-100+-100  +-100+-100\n     0x600007 (has no name): ()  1x1+-100+-100  +-100+-100\n     0x600006 \"GNOME Shell\": ()  1x1+-100+-100  +-100+-100\n     0x600001 \"gnome-shell\": (\"gnome-shell\" \"Gnome-shell\")  10x10+10+10  +10+10\n     0x40000b (has no name): ()  1x1+-100+-100  +-100+-100\n     0x600010 \"mutter guard window\": ()  1280x720+0+0  +0+0",
+  "compositor_property": "_NET_WM_BYPASS_COMPOSITOR(CARDINAL) = 2",
+  "cmdline": "console=ttyPS0,115200 earlyprintk root=PARTUUID=d3c4cd8d-02 rw rootwait video=DP-1:1280x720@60\n",
+  "registers": {
+    "afi": 0,
+    "gpio": 784,
+    "vdma": 1644167248
+  },
+  "metadata": {
+    "uid": 1000,
+    "gid": 1000,
+    "mode": "0o600"
+  },
+  "protected_files": 22,
+  "old_photo_hashes_unchanged": true,
+  "added_photo_files": [],
+  "fat_scores": {
+    "00.musicxml": "C07B6C955FBCF8B9BD5306D0F5465F7E77142C3C4122E787B345E0DE29EF66E7"
+  },
+  "recognition": {
+    "seconds": 40.92,
+    "state": {
+      "view": "recognize",
+      "songs": [
+        {
+          "id": "00",
+          "pages": [
+            {
+              "id": "00-00",
+              "status": "ok",
+              "progress": 100,
+              "stage": "已完成",
+              "rotate_used": "ccw",
+              "clef_ratio": 1.0,
+              "orientation_suspect": false
+            }
+          ],
+          "xml": true
+        },
+        {
+          "id": "01",
+          "pages": [
+            {
+              "id": "01-00",
+              "status": "pending",
+              "progress": 0,
+              "stage": "等待识别"
+            },
+            {
+              "id": "01-01",
+              "status": "pending",
+              "progress": 0,
+              "stage": "等待识别"
+            },
+            {
+              "id": "01-02",
+              "status": "pending",
+              "progress": 0,
+              "stage": "等待识别"
+            },
+            {
+              "id": "01-03",
+              "status": "pending",
+              "progress": 0,
+              "stage": "等待识别"
+            },
+            {
+              "id": "01-04",
+              "status": "pending",
+              "progress": 0,
+              "stage": "等待识别"
+            },
+            {
+              "id": "01-05",
+              "status": "pending",
+              "progress": 0,
+              "stage": "等待识别"
+            }
+          ],
+          "xml": false
+        }
+      ],
+      "selected": "00",
+      "busy": false,
+      "message": "曲目 00 已完成；长按 S1 浏览乐谱",
+      "speed": 1.0,
+      "return_pending": false,
+      "play": {
+        "token": 0,
+        "song": null,
+        "directory": null,
+        "state": "stopped",
+        "error": null
+      },
+      "button_error": "",
+      "input_event": {
+        "sequence": 1,
+        "key": "S2",
+        "kind": "long",
+        "monotonic": 1399.32285552
+      }
+    },
+    "history": [
+      {
+        "seconds": 0.01,
+        "busy": true,
+        "message": "加载识别引擎…",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "pending",
+            "progress": 0,
+            "stage": "等待识别"
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 8.55,
+        "busy": true,
+        "message": "加载识别引擎…",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "running",
+            "progress": 2,
+            "stage": "已送入识别流水线"
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 26.26,
+        "busy": true,
+        "message": "00-00 · 谱线与符号分割",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "running",
+            "progress": 25,
+            "stage": "谱线与符号分割"
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 30.29,
+        "busy": true,
+        "message": "00-00 · 谱号与调号",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "running",
+            "progress": 65,
+            "stage": "谱号与调号"
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 35.34,
+        "busy": true,
+        "message": "00-00 · 语义恢复",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "running",
+            "progress": 80,
+            "stage": "语义恢复"
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 38.9,
+        "busy": true,
+        "message": "00-00 · 写入 MusicXML",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "running",
+            "progress": 98,
+            "stage": "写入 MusicXML"
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 39.4,
+        "busy": true,
+        "message": "00-00 · 写入 MusicXML",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "ok",
+            "progress": 100,
+            "stage": "已完成"
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 40.41,
+        "busy": true,
+        "message": "00-00 · 写入 MusicXML",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "ok",
+            "progress": 100,
+            "stage": "已完成",
+            "rotate_used": "ccw",
+            "clef_ratio": 1.0,
+            "orientation_suspect": false
+          }
+        ],
+        "xml": false
+      },
+      {
+        "seconds": 40.91,
+        "busy": false,
+        "message": "曲目 00 已完成；长按 S1 浏览乐谱",
+        "pages": [
+          {
+            "id": "00-00",
+            "status": "ok",
+            "progress": 100,
+            "stage": "已完成",
+            "rotate_used": "ccw",
+            "clef_ratio": 1.0,
+            "orientation_suspect": false
+          }
+        ],
+        "xml": true
+      }
+    ],
+    "export_exists": true,
+    "measures": 17,
+    "notes": 366,
+    "passed": true
+  },
+  "permission_regression": {
+    "passed": true,
+    "test_song": "99",
+    "metadata_uid": 1000,
+    "real_scores_unchanged": {
+      "00.musicxml": "C07B6C955FBCF8B9BD5306D0F5465F7E77142C3C4122E787B345E0DE29EF66E7"
+    }
+  },
+  "silent_open": {
+    "cold_seconds": 7.828079107999997,
+    "warm_seconds": 0.0033652529999699254,
+    "stages": [
+      {
+        "seconds": 2.0193573329999595,
+        "state": "preparing"
+      },
+      {
+        "seconds": 7.827675453999973,
+        "state": "ready"
+      },
+      {
+        "seconds": 7.831260549999968,
+        "state": "ready"
+      }
+    ],
+    "audio_output_started": false
+  },
+  "sources": {
+    "prepare_dtb.py": "B4AFDAF2A1952295401FB3EEDB563B7FBF91D72C92FCD852CB1C61A864E45BD9",
+    "collect_final.py": "16A2D5874B907C5BDEB3B8FDFFE0D308510ADF0F4DBD7344E04B7E6436E7906D",
+    "launch_dp_ui.py": "CB6D8D65808EF0DF3828D7932F323BD52738D3D694080AF1223197CA1C8B65B1",
+    "validate_review.py": "3A75619DDEC8073DA89A738EC7A3D8F4ACABA0492D428B4E82BCCFF711728F11",
+    "score_assets.py": "39CC56EDAD7566C3AB691F0CA3639DF6C8032795496173A90C3CD8F46661C43E",
+    "render_light_preview.py": "90CDF6AE2273EF7538C6F92B46DA75FE4C14E311359A4899C2A79B3EE6B30950",
+    "display_policy.py": "D0549C6DDC649E7203B17CDE3853942874195363E980AA8C5AD0D646297555F7",
+    "dp_mode.py": "54765EE8F20CE590419A86C7CE466D472A72601D8A492C1BC9EFB3ACD80F0D9E",
+    "update_review.py": "D78AD9E0E431B647D42C3ED52367EBD89D89A2D273062F02598B407C70B57914",
+    "install_interactive.py": "118CE1F04BB925DFBD56A14E3767A89A58926C157866EFB4535486E10C6BEA18",
+    "update_runtime.py": "BC8F54E0137D5981F576F0E793E6BF74010A6FFF5976A84B0F33FF4E0387FBB9",
+    "onecard_common.py": "917FE8CA0E985E784D73F85375FB91B283703FE319F34B973E24E4B18760D325",
+    "render_score.py": "D108580C76B5523A6324AD49D52E48C2144EAA0E22D5C0F111D79CD2D32EAAA4",
+    "interactive_service.py": "CB78EB72D53BECAF3BEEB75E0C4F8863B58F4BD9BEC2D4D4261377D2D41EF075",
+    "panel_client.py": "362D3C60FA08E207B0036C9F71D538E48C58665AD786FDBAB680A72263D351E4",
+    "headless_check.py": "4DA4B751D86529B93D9B6CFA73956517D9349A8FCA98A1A094742F0C51C5CC8D",
+    "update_light_theme.py": "F940187FA7BDCFE559814F00E39C55A28BA1A6F949AA610BF1CC0E267DA8E6E5",
+    "notation_view.py": "A7E78B1792BA7691FEE0C8F35B8F4BEE7DC458B096D91F4B35B161566342C491",
+    "panel_model.py": "7E6E3899E0678A8EAD3988AD07588B03E3258C929CCB839F5DDEE3DE6556D07F",
+    "patch_progress.py": "11D78BC1C8BF5700B984A4557B4A39762B6D8F45158EAF0645D33C491E8DB8C8",
+    "service.py": "5096D646976BD7BE7DB4C5F490C07248BE0ECF92AC35129C8EB1F1C7D319A92A",
+    "fat_library.py": "BCCDB22D32D1B0E19018708FBE12EA8060BA9426E4EAC420C3FB350621772572",
+    "buttons_linux.py": "D0F57615194B813E03125950364E080501E7BDED38AA9E6B30BAB2C0E8B35E4B",
+    "boot_script.py": "A553475375F02B98353D0E626C10025ECAAB4325917AC85CA9BB8C9CC2AA9360",
+    "check_notation_render.py": "0683007CD23D5286FA80908D66DA5C652DBF88579BE8B318B74C58795692C9AC",
+    "provision_card.py": "E0DB182E84FDB8BEF2C64F4DC98C04D0DEE20E0BC3AA8F19365643B699F1689D",
+    "smoke_test.py": "F53F1D54399C83A024320868F07F72A290FCFB13BEFDCC256B6FB556CF8199E1",
+    "panel_ui.py": "2C3BC2856439F2B16AC9778A5E89FE9D665DE58736B1EC2DDD16A3420174A52F"
+  },
+  "engine_unchanged": true,
+  "boot_files": {
+    "BOOT.BIN": "F855AB741399375A44189F2F9D6670AB5E56C19F02D4AD709149D721BAAF6CE8",
+    "boot.scr": "E6EA757A667C3576A818A15CB8A10DA6295CCF8BAAE9510EB6E8A60232DEA33E",
+    "linux/system.bit": "1B63ED3C42CB904CF27BED8185756A74AE6507BB6103C4A714F3F2C02B85E823",
+    "linux/system.dtb": "6EF2BB30DD0C6537D29F6642D2564FBAB421A67F1D1D29E4A884FCB7FFA22223"
+  },
+  "service": "NRestarts=0\nExecMainStatus=0\nActiveState=active",
+  "alsa": " 0 [mon            ]: DP_mon - DP mon\n                      DP mon\n",
+  "audio_tests": "After user requested no surprise audio, subsequent automated checks were silent.",
+  "xorg_log": "[    15.927] \nX.Org X Server 1.21.1.4\nX Protocol Version 11, Revision 0\n[    15.927] Current Operating System: Linux ubuntu-fpga 6.6.40 #62 SMP Fri Sep 19 16:59:10 CST 2025 aarch64\n[    15.927] Kernel command line: console=ttyPS0,115200 earlyprintk root=PARTUUID=d3c4cd8d-02 rw rootwait video=DP-1:1280x720@60\n[    15.927] xorg-server 2:21.1.4-2ubuntu1.7~22.04.5 (For technical support please see http://www.ubuntu.com/support) \n[    15.927] Current version of pixman: 0.40.0\n[    15.927] \tBefore reporting problems, check http://wiki.x.org\n\tto make sure that you have the latest version.\n[    15.927] Markers: (--) probed, (**) from config file, (==) default setting,\n\t(++) from command line, (!!) notice, (II) informational,\n\t(WW) warning, (EE) error, (NI) not implemented, (??) unknown.\n[    15.927] (==) Log file: \"/var/log/Xorg.0.log\", Time: Sat May 16 09:34:57 2026\n[    15.930] (==) Using config file: \"/etc/X11/xorg.conf\"\n[    15.930] (==) Using system config directory \"/usr/share/X11/xorg.conf.d\"\n[    15.933] (==) No Layout section.  Using the first Screen section.\n[    15.933] (**) |-->Screen \"DefaultScreen\" (0)\n[    15.933] (**) |   |-->Monitor \"<default monitor>\"\n[    15.939] (**) |   |-->Device \"ZynqMP\"\n[    15.939] (==) No monitor specified for screen \"DefaultScreen\".\n\tUsing a default monitor configuration.\n[    15.939] (==) Automatically adding devices\n[    15.939] (==) Automatically enabling devices\n[    15.939] (==) Automatically adding GPU devices\n[    15.939] (==) Automatically binding GPU devices\n[    15.939] (==) Max clients allowed: 256, resource mask: 0x1fffff\n[    15.957] (WW) The directory \"/usr/share/fonts/X11/cyrillic\" does not exist.\n[    15.957] \tEntry deleted from font path.\n[    15.957] (WW) The directory \"/usr/share/fonts/X11/100dpi/\" does not exist.\n[    15.957] \tEntry deleted from font path.\n[    15.957] (WW) The directory \"/usr/share/fonts/X11/75dpi/\" does not exist.\n[    15.957] \tEntry deleted from font path.\n[    15.957] (WW) The directory \"/usr/share/fonts/X11/Type1\" does not exist.\n[    15.957] \tEntry deleted from font path.\n[    15.957] (WW) The directory \"/usr/share/fonts/X11/100dpi\" does not exist.\n[    15.957] \tEntry deleted from font path.\n[    15.957] (WW) The directory \"/usr/share/fonts/X11/75dpi\" does not exist.\n[    15.957] \tEntry deleted from font path.\n[    15.957] (==) FontPath set to:\n\t/usr/share/fonts/X11/misc,\n\tbuilt-ins\n[    15.957] (==) ModulePath set to \"/usr/lib/xorg/modules\"\n[    15.957] (II) The server relies on udev to provide the list of input devices.\n\tIf no devices become available, reconfigure udev or disable AutoAddDevices.\n[    15.957] (II) Loader magic: 0x5578d25010\n[    15.957] (II) Module ABI versions:\n[    15.957] \tX.Org ANSI C Emulation: 0.4\n[    15.957] \tX.Org Video Driver: 25.2\n[    15.957] \tX.Org XInput driver : 24.4\n[    15.957] \tX.Org Server Extension : 10.0\n[    15.959] (++) using VT number 7\n\n[    15.959] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration\n[    15.961] (II) xfree86: Adding drm device (/dev/dri/card0)\n[    15.961] (II) Platform probe for /sys/devices/platform/axi/fd4a0000.display/drm/card0\n[    15.970] (II) xfree86: Adding drm device (/dev/dri/card1)\n[    15.971] (II) Platform probe for /sys/devices/platform/axi/fd4b0000.gpu/drm/card1\n[    15.971] (II) no primary bus or device found\n[    15.971] \tfalling back to /sys/devices/platform/axi/fd4a0000.display/drm/card0\n[    15.971] (II) LoadModule: \"glx\"\n[    15.974] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so\n[    16.054] (II) Module glx: vendor=\"X.Org Foundation\"\n[    16.054] \tcompiled for 1.21.1.4, module version = 1.0.0\n[    16.054] \tABI class: X.Org Server Extension, version 10.0\n[    16.054] (II) LoadModule: \"armsoc\"\n[    16.054] (II) Loading /usr/lib/xorg/modules/drivers/armsoc_drv.so\n[    16.060] (II) Module armsoc: vendor=\"X.Org Foundation\"\n[    16.060] \tcompiled for 1.21.1.3, module version = 1.4.1\n[    16.060] \tModule class: X.Org Video Driver\n[    16.060] \tABI class: X.Org Video Driver, version 25.2\n[    16.060] (II) ARMSOC: Driver for ARM Mali compatible chipsets\n[    16.074] (WW) Falling back to old probe method for armsoc\n[    16.074] (II) No BusID or DriverName specified - opening /dev/dri/card0\n[    16.074] (II) Try set DRM interface version.\n[    16.074] (II) Got BusID fd4a0000.display\n[    16.087] (II) Opened DRM\n[    16.087] (II)    DeviceName is [/dev/dri/card0]\n[    16.087] (II)    bus_id is [fd4a0000.display]\n[    16.087] (II)    DriverName is [xlnx]\n[    16.087] (II)    version is [1.1.0]\n[    16.087] (II) Screen:0,  CRTC:-1\n[    16.103] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support\n[    16.103] (**) ARMSOC(0): Depth 24, (--) framebuffer bpp 32\n[    16.103] (==) ARMSOC(0): RGB weight 888\n[    16.103] (==) ARMSOC(0): Using gamma correction (1.0, 1.0, 1.0)\n[    16.103] (==) ARMSOC(0): Default visual is TrueColor\n[    16.103] (II) No BusID or DriverName specified - opening /dev/dri/card0\n[    16.103] (II) Try set DRM interface version.\n[    16.103] (II) Got BusID fd4a0000.display\n[    16.120] (II) Opened DRM\n[    16.120] (II)    DeviceName is [/dev/dri/card0]\n[    16.120] (II)    bus_id is [fd4a0000.display]\n[    16.120] (II)    DriverName is [xlnx]\n[    16.120] (II)    version is [1.1.0]\n[    16.120] (II) ARMSOC(0): Chipset: Mali\n[    16.120] (DB) xf86MergeOutputClassOptions unsupported bus type 0\n[    16.120] (**) ARMSOC(0): Option \"Debug\" \"false\"\n[    16.120] (**) ARMSOC(0): Option \"DRI\" \"3\"\n[    16.120] (II) ARMSOC(0): Buffer Flipping is Enabled\n[    16.120] (II) ARMSOC(0): umplock is Enabled\n[    16.120] (II) ARMSOC(0): Setting the video modes ...\n[    16.120] (II) ARMSOC(0): Adding all CRTCs\n[    16.120] (II) ARMSOC(0): Got CRTC: 0 (id: 43)\n[    16.156] (II) ARMSOC(0): Output DP-1 has no monitor section\n[    16.192] (II) ARMSOC(0): EDID for output DP-1\n[    16.192] (II) ARMSOC(0): Manufacturer: APG  Model: 1323  Serial#: 0\n[    16.192] (II) ARMSOC(0): Year: 2022  Week: 49\n[    16.192] (II) ARMSOC(0): EDID Version: 1.3\n[    16.192] (II) ARMSOC(0): Digital Display Input\n[    16.192] (II) ARMSOC(0): Max Image Size [cm]: horiz.: 34  vert.: 19\n[    16.192] (II) ARMSOC(0): Gamma: 2.20\n[    16.192] (II) ARMSOC(0): DPMS capabilities: Off\n[    16.192] (II) ARMSOC(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 \n[    16.192] (II) ARMSOC(0): Default color space is primary color space\n[    16.192] (II) ARMSOC(0): First detailed timing is preferred mode\n[    16.192] (II) ARMSOC(0): redX: 0.640 redY: 0.330   greenX: 0.300 greenY: 0.600\n[    16.192] (II) ARMSOC(0): blueX: 0.150 blueY: 0.060   whiteX: 0.312 whiteY: 0.329\n[    16.192] (II) ARMSOC(0): Supported established timings:\n[    16.192] (II) ARMSOC(0): 640x480@60Hz\n[    16.192] (II) ARMSOC(0): 800x600@60Hz\n[    16.192] (II) ARMSOC(0): 1024x768@60Hz\n[    16.192] (II) ARMSOC(0): Manufacturer's mask: 0\n[    16.192] (II) ARMSOC(0): Supported standard timings:\n[    16.192] (II) ARMSOC(0): #0: hsize: 1920  vsize 1080  refresh: 60  vid: 49361\n[    16.192] (II) ARMSOC(0): #3: hsize: 1440  vsize 900  refresh: 60  vid: 149\n[    16.192] (II) ARMSOC(0): #4: hsize: 1400  vsize 1050  refresh: 60  vid: 16528\n[    16.192] (II) ARMSOC(0): #5: hsize: 1280  vsize 1024  refresh: 60  vid: 32897\n[    16.192] (II) ARMSOC(0): #6: hsize: 1280  vsize 960  refresh: 60  vid: 16513\n[    16.192] (II) ARMSOC(0): #7: hsize: 1280  vsize 720  refresh: 60  vid: 49281\n[    16.192] (II) ARMSOC(0): Supported detailed timing:\n[    16.192] (II) ARMSOC(0): clock: 533.1 MHz   Image Size:  344 x 195 mm\n[    16.193] (II) ARMSOC(0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0\n[    16.193] (II) ARMSOC(0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2222 v_border: 0\n[    16.193] (II) ARMSOC(0): Monitor name: HDMI\n[    16.193] (II) ARMSOC(0): Serial No: demoset-1\n[    16.193] (II) ARMSOC(0): Ranges: V min: 48 V max: 75 Hz, H min: 15 H max: 222 kHz, PixClock max 705 MHz\n[    16.193] (II) ARMSOC(0): Supported detailed timing:\n[    16.193] (II) ARMSOC(0): clock: 148.5 MHz   Image Size:  344 x 194 mm\n[    16.193] (II) ARMSOC(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0\n[    16.193] (II) ARMSOC(0): v_active: 1080  v_sync: 1082  v_sync_end 1087 v_blanking: 1125 v_border: 0\n[    16.193] (II) ARMSOC(0): Supported detailed timing:\n[    16.193] (II) ARMSOC(0): clock: 266.6 MHz   Image Size:  344 x 194 mm\n[    16.193] (II) ARMSOC(0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0\n[    16.193] (II) ARMSOC(0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2222 v_border: 0\n[    16.193] (II) ARMSOC(0): Number of EDID sections to follow: 1\n[    16.193] (II) ARMSOC(0): EDID (in hex):\n[    16.193] (II) ARMSOC(0): \t00ffffffffffff000607231300000000\n[    16.193] (II) ARMSOC(0): \t31200103802213782eee91a3544c9926\n[    16.193] (II) ARMSOC(0): \t0f5054210800d1c00101010195009040\n[    16.193] (II) ARMSOC(0): \t8180814081c040d000a0f0703e803020\n[    16.193] (II) ARMSOC(0): \t350058c31000001a000000fc0048444d\n[    16.193] (II) ARMSOC(0): \t490a2020202020202020000000ff0064\n[    16.193] (II) ARMSOC(0): \t656d6f7365742d310a203020000000fd\n[    16.193] (II) ARMSOC(0): \t00304b0fde46000a20202020202001bb\n[    16.193] (II) ARMSOC(0): \t02034df253901405030410131f202122\n[    16.193] (II) ARMSOC(0): \t3c3d3e5d5e5f6061e200d5e305c00023\n[    16.193] (II) ARMSOC(0): \t097f0783010000e50f00000c0067030c\n[    16.193] (II) ARMSOC(0): \t001000187867d85dc401788801e60605\n[    16.193] (II) ARMSOC(0): \t01626200681a00000101304be6023a80\n[    16.193] (II) ARMSOC(0): \t1871382d40582c250058c21000001e28\n[    16.193] (II) ARMSOC(0): \t6800a0f0703e803020350058c2100000\n[    16.193] (II) ARMSOC(0): \t1e0000000000000000000000000000e4\n[    16.193] (II) ARMSOC(0): EDID vendor \"APG\", prod id 4899\n[    16.193] (II) ARMSOC(0): Using EDID range info for horizontal sync\n[    16.194] (II) ARMSOC(0): Using EDID range info for vertical refresh\n[    16.194] (II) ARMSOC(0): Printing DDC gathered Modelines:\n[    16.194] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  533.12  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"720x480\"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"800x600\"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"640x480\"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1024x768\"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1440x900\"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1400x1050\"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1280x1024\"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    16.194] (II) ARMSOC(0): Modeline \"1280x960\"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    16.195] (--) ARMSOC(0): HDMI max TMDS frequency 600000KHz\n[    16.195] (II) ARMSOC(0): Printing probed modes for output DP-1\n[    16.195] (II) ARMSOC(0): Modeline \"1280x720\"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz UeP)\n[    16.195] (II) ARMSOC(0): Modeline \"3840x2160\"x30.0  297.00  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (67.5 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"3840x2160\"x25.0  297.00  3840 4896 4984 5280  2160 2168 2178 2250 +hsync +vsync (56.2 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"3840x2160\"x24.0  297.00  3840 5116 5204 5500  2160 2168 2178 2250 +hsync +vsync (54.0 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"3840x2160\"x30.0  296.70  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (67.4 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"3840x2160\"x24.0  296.70  3840 5116 5204 5500  2160 2168 2178 2250 +hsync +vsync (53.9 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"3840x2160\"x30.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x60.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x30.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x25.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x24.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x30.0   74.18  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.7 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1920x1080\"x24.0   74.18  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1400x1050\"x59.9  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1280x1024\"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1440x900\"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1280x960\"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1280x720\"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1280x720\"x30.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1280x720\"x25.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1280x720\"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    16.195] (II) ARMSOC(0): Modeline \"1280x720\"x30.0   74.18  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"1280x720\"x24.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"1280x720\"x24.0   59.34  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"1024x768\"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"800x600\"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"720x480\"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"720x480\"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"640x480\"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    16.196] (II) ARMSOC(0): Modeline \"640x480\"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    16.196] (II) ARMSOC(0): Output DP-1 connected\n[    16.196] (II) ARMSOC(0): Using user preference for initial modes\n[    16.196] (II) ARMSOC(0): Output DP-1 using initial mode 1280x720 +0+0\n[    16.196] (II) ARMSOC(0): Got KMS resources\n[    16.196] (**) ARMSOC(0): Display dimensions: (340, 190) mm\n[    16.196] (**) ARMSOC(0): DPI set to (95, 96)\n[    16.196] (II) Loading sub module \"exa\"\n[    16.196] (II) LoadModule: \"exa\"\n[    16.196] (II) Loading /usr/lib/xorg/modules/libexa.so\n[    16.201] (II) Module exa: vendor=\"X.Org Foundation\"\n[    16.201] \tcompiled for 1.21.1.4, module version = 2.6.0\n[    16.201] \tABI class: X.Org Video Driver, version 25.2\n[    16.201] (II) Loading sub module \"fb\"\n[    16.202] (II) LoadModule: \"fb\"\n[    16.202] (II) Module \"fb\" already built-in\n[    16.202] (II) Loading sub module \"dri3\"\n[    16.202] (II) LoadModule: \"dri3\"\n[    16.202] (II) Module \"dri3\" already built-in\n[    16.202] (II) ARMSOC(0): LoadModule: dri3 success\n[    16.202] (II) Loading sub module \"dri2\"\n[    16.202] (II) LoadModule: \"dri2\"\n[    16.202] (II) Module \"dri2\" already built-in\n[    16.202] (II) ARMSOC(0): LoadModule: dri2 success\n[    16.202] (II) drmmode_xilinx initialized\n[    16.220] (II) ARMSOC(0): Soft EXA mode\n[    16.220] (II) EXA(0): Driver allocated offscreen pixmaps\n[    16.220] (II) EXA(0): Driver registered support for the following operations:\n[    16.220] (II)         Solid\n[    16.220] (II)         Copy\n[    16.220] (II)         Composite (RENDER acceleration)\n[    16.220] (II) ARMSOC(0): Setting swap chain size: 2 \n[    16.220] (II) ARMSOC(0): [DRI2] Setup complete\n[    16.220] (II) ARMSOC(0): [DRI2]   DRI driver: xlnx\n[    16.220] (II) ARMSOC(0): direct rendering: DRI2 DRI3 enabled\n[    16.220] (==) ARMSOC(0): Backing store enabled\n[    16.220] (==) ARMSOC(0): Silken mouse enabled\n[    16.223] (II) ARMSOC(0): HW cursor init()\n[    16.258] (==) ARMSOC(0): DPMS enabled\n[    16.258] (II) Initializing extension Generic Event Extension\n[    16.259] (II) Initializing extension SHAPE\n[    16.259] (II) Initializing extension MIT-SHM\n[    16.260] (II) Initializing extension XInputExtension\n[    16.264] (II) Initializing extension XTEST\n[    16.265] (II) Initializing extension BIG-REQUESTS\n[    16.265] (II) Initializing extension SYNC\n[    16.266] (II) Initializing extension XKEYBOARD\n[    16.267] (II) Initializing extension XC-MISC\n[    16.267] (II) Initializing extension SECURITY\n[    16.268] (II) Initializing extension XFIXES\n[    16.269] (II) Initializing extension RENDER\n[    16.269] (II) Initializing extension RANDR\n[    16.271] (II) Initializing extension COMPOSITE\n[    16.271] (II) Initializing extension DAMAGE\n[    16.272] (II) Initializing extension MIT-SCREEN-SAVER\n[    16.273] (II) Initializing extension DOUBLE-BUFFER\n[    16.273] (II) Initializing extension RECORD\n[    16.274] (II) Initializing extension DPMS\n[    16.274] (II) Initializing extension Present\n[    16.275] (II) Initializing extension DRI3\n[    16.276] (II) Initializing extension X-Resource\n[    16.276] (II) Initializing extension XVideo\n[    16.277] (II) Initializing extension XVideo-MotionCompensation\n[    16.277] (II) Initializing extension SELinux\n[    16.277] (II) SELinux: Disabled on system\n[    16.277] (II) Initializing extension GLX\n[    21.239] (II) AIGLX: Loaded and initialized xlnx\n[    21.239] (II) GLX: Initialized DRI2 GL provider for screen 0\n[    21.239] (II) Initializing extension XFree86-VidModeExtension\n[    21.240] (II) Initializing extension XFree86-DGA\n[    21.240] (II) Initializing extension XFree86-DRI\n[    21.240] (II) Initializing extension DRI2\n[    21.241] (II) ARMSOC(0): Setting screen physical size to 338 x 190\n[    22.103] (II) config/udev: Adding input device ac920-panel (/dev/input/event0)\n[    22.103] (**) ac920-panel: Applying InputClass \"libinput keyboard catchall\"\n[    22.103] (II) LoadModule: \"libinput\"\n[    22.104] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so\n[    22.136] (II) Module libinput: vendor=\"X.Org Foundation\"\n[    22.136] \tcompiled for 1.20.14, module version = 1.2.1\n[    22.136] \tModule class: X.Org XInput Driver\n[    22.136] \tABI class: X.Org XInput driver, version 24.1\n[    22.136] (II) Using input driver 'libinput' for 'ac920-panel'\n[    22.136] (**) ac920-panel: always reports core events\n[    22.136] (**) Option \"Device\" \"/dev/input/event0\"\n[    22.192] (II) event0  - ac920-panel: is tagged by udev as: Keyboard\n[    22.192] (II) event0  - ac920-panel: device is a keyboard\n[    22.193] (II) event0  - ac920-panel: device removed\n[    22.212] (**) Option \"config_info\" \"udev:/sys/devices/platform/ac920-panel/input/input1/event0\"\n[    22.212] (II) XINPUT: Adding extended input device \"ac920-panel\" (type: KEYBOARD, id 6)\n[    22.212] (**) Option \"xkb_model\" \"pc105\"\n[    22.212] (**) Option \"xkb_layout\" \"us\"\n[    22.215] (II) event0  - ac920-panel: is tagged by udev as: Keyboard\n[    22.215] (II) event0  - ac920-panel: device is a keyboard\n[    28.048] (II) ARMSOC(0): EDID vendor \"APG\", prod id 4899\n[    28.048] (II) ARMSOC(0): Using hsync ranges from config file\n[    28.048] (II) ARMSOC(0): Using vrefresh ranges from config file\n[    28.048] (II) ARMSOC(0): Printing DDC gathered Modelines:\n[    28.048] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  533.12  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)\n[    28.048] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    28.048] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    28.048] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    28.048] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)\n[    28.048] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)\n[    28.048] (II) ARMSOC(0): Modeline \"720x480\"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    28.048] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    28.048] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"800x600\"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"640x480\"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1024x768\"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1440x900\"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1400x1050\"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1280x1024\"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    28.049] (II) ARMSOC(0): Modeline \"1280x960\"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    28.050] (II) ARMSOC(0): EDID vendor \"APG\", prod id 4899\n[    28.050] (II) ARMSOC(0): Using hsync ranges from config file\n[    28.050] (II) ARMSOC(0): Using vrefresh ranges from config file\n[    28.050] (II) ARMSOC(0): Printing DDC gathered Modelines:\n[    28.050] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  533.12  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"720x480\"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"800x600\"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"640x480\"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1024x768\"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    28.050] (II) ARMSOC(0): Modeline \"1440x900\"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    28.051] (II) ARMSOC(0): Modeline \"1400x1050\"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    28.051] (II) ARMSOC(0): Modeline \"1280x1024\"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    28.051] (II) ARMSOC(0): Modeline \"1280x960\"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    28.051] (--) ARMSOC(0): HDMI max TMDS frequency 600000KHz\n[    28.675] (II) ARMSOC(0): EDID vendor \"APG\", prod id 4899\n[    28.675] (II) ARMSOC(0): Using hsync ranges from config file\n[    28.675] (II) ARMSOC(0): Using vrefresh ranges from config file\n[    28.675] (II) ARMSOC(0): Printing DDC gathered Modelines:\n[    28.675] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  533.12  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)\n[    28.675] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    28.675] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    28.675] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    28.675] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)\n[    28.675] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)\n[    28.675] (II) ARMSOC(0): Modeline \"720x480\"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"800x600\"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"640x480\"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1024x768\"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1440x900\"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1400x1050\"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1280x1024\"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    28.676] (II) ARMSOC(0): Modeline \"1280x960\"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    28.677] (II) ARMSOC(0): EDID vendor \"APG\", prod id 4899\n[    28.677] (II) ARMSOC(0): Using hsync ranges from config file\n[    28.677] (II) ARMSOC(0): Using vrefresh ranges from config file\n[    28.677] (II) ARMSOC(0): Printing DDC gathered Modelines:\n[    28.677] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  533.12  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"720x480\"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"800x600\"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    28.677] (II) ARMSOC(0): Modeline \"640x480\"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    28.678] (II) ARMSOC(0): Modeline \"1024x768\"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    28.678] (II) ARMSOC(0): Modeline \"1440x900\"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    28.678] (II) ARMSOC(0): Modeline \"1400x1050\"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    28.678] (II) ARMSOC(0): Modeline \"1280x1024\"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    28.678] (II) ARMSOC(0): Modeline \"1280x960\"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    28.678] (--) ARMSOC(0): HDMI max TMDS frequency 600000KHz\n[    36.347] (II) ARMSOC(0): EDID vendor \"APG\", prod id 4899\n[    36.347] (II) ARMSOC(0): Using hsync ranges from config file\n[    36.347] (II) ARMSOC(0): Using vrefresh ranges from config file\n[    36.347] (II) ARMSOC(0): Printing DDC gathered Modelines:\n[    36.348] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  533.12  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"720x480\"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"800x600\"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"640x480\"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1024x768\"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1440x900\"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1400x1050\"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1280x1024\"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    36.348] (II) ARMSOC(0): Modeline \"1280x960\"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    36.349] (II) ARMSOC(0): EDID vendor \"APG\", prod id 4899\n[    36.349] (II) ARMSOC(0): Using hsync ranges from config file\n[    36.349] (II) ARMSOC(0): Using vrefresh ranges from config file\n[    36.349] (II) ARMSOC(0): Printing DDC gathered Modelines:\n[    36.349] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  533.12  3840 3888 3920 4000  2160 2163 2168 2222 +hsync -vsync (133.3 kHz eP)\n[    36.349] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1082 1087 1125 +hsync +vsync (67.5 kHz e)\n[    36.349] (II) ARMSOC(0): Modeline \"3840x2160\"x0.0  266.64  3840 3888 3920 4000  2160 2163 2168 2222 +hsync +vsync (66.7 kHz e)\n[    36.349] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)\n[    36.349] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)\n[    36.349] (II) ARMSOC(0): Modeline \"1920x1080i\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)\n[    36.349] (II) ARMSOC(0): Modeline \"720x480\"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)\n[    36.355] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)\n[    36.355] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)\n[    36.355] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)\n[    36.355] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)\n[    36.355] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (28.1 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1920x1080\"x0.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   59.40  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (18.0 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3700 3740 3960  720 725 730 750 +hsync +vsync (18.8 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1280x720\"x0.0   74.25  1280 3040 3080 3300  720 725 730 750 +hsync +vsync (22.5 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"800x600\"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"640x480\"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1024x768\"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1440x900\"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1400x1050\"x0.0  101.00  1400 1448 1480 1560  1050 1053 1057 1080 +hsync -vsync (64.7 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1280x1024\"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)\n[    36.356] (II) ARMSOC(0): Modeline \"1280x960\"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)\n[    36.357] (--) ARMSOC(0): HDMI max TMDS frequency 600000KHz\n[    46.362] (II) DRM_IOCTL_PRIME_HANDLE_TO_FD(handle:0x8) return: 39\n"
+}

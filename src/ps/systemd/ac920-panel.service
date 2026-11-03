@@ -1,0 +1,18 @@
+[Unit]
+Description=AC920 interactive score controller
+After=local-fs.target
+ConditionPathExists=/etc/ac920-onecard.json
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/ac920-panel/interactive_service.py
+KillMode=control-group
+TimeoutStopSec=60
+StandardOutput=journal+console
+StandardError=journal+console
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

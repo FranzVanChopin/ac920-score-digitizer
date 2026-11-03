@@ -1,0 +1,10 @@
+09:17:48 recognizer ready
+09:17:49 00-00: sent (00-00.bmp, rotation ccw, meter auto)
+[UI_STAGE]{"ui_stage": "segment", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "relation", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "headers", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "redecode", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "decode", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+[UI_STAGE]{"ui_stage": "write", "photo": "/var/lib/ac920-onecard/work/00-00.bmp"}
+09:18:20 00-00: 17 measures, 347 notes, clefs on 100% of the systems, 30.482 s, rotation ccw -> 00.musicxml
+09:18:21 1 page(s) recognized; songs: 00

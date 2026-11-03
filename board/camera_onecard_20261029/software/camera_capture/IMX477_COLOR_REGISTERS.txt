@@ -1,0 +1,111 @@
+IMX477 sensor-side colour gain evidence and implementation limits
+==============================================================
+Reviewed 2026-10-27. This note distinguishes the public Sony specification,
+the Raspberry Pi driver, and independent experiments on this exact sensor.
+It does not claim access to Sony's full software/register reference manual.
+
+1. Sony specification: gain capability, not the register map
+----------------------------------------------------------
+Sony IMX477-AACK-C Data Sheet, revision 0.2.0, 2016-10-11, section 6-7,
+printed page 26, Table 6:
+https://developer.quectel.com/wp-content/uploads/2025/11/IMX477-AACK-C_Data-Sheet0.2.0_161011.pdf
+
+This specifies analogue gain up to 27 dB and post-ADC digital gain up to
+24 dB (about 15.85 times signal amplitude). It does not identify the colour
+registers, their bit fields, or group-hold semantics. The adjacent section
+refers to a separate Software Reference Manual. That manual was not obtained.
+
+2. IMX477-specific experimental register evidence
+------------------------------------------------
+Technical University of Munich, mediaTUM document 1718172, section 4.4.3
+"Sony IMX477", printed pages 52-53, Table 4.7 and following gain discussion:
+https://mediatum.ub.tum.de/doc/1718172/1718172.pdf
+
+The author's IMX477 experiments identify the following two-byte gains,
+listed by their first register address:
+
+  0x020e / 0x020f: green gain (global gain when global mode is selected)
+  0x0210 / 0x0211: red gain
+  0x0212 / 0x0213: blue gain
+  0x3ff9:          DPGA_USE_GLOBAL_GAIN, usual value 0x01
+
+The page 53 discussion says that the global selector overrides separate
+colour gains with the green-register value for all pixels. Page 52 explicitly
+acknowledges missing public register appendices and describes collecting
+information from sources, I2C observation and reverse engineering. The
+author disabled digital gain for the subsequent characterization experiments;
+this is not a characterization of every colour-gain setting.
+
+The search service exposed these pages as indexed text. Direct PDF retrieval
+returned a website challenge instead of the PDF; that download must not be
+treated as a verified local copy of the thesis.
+
+3. Official Raspberry Pi driver corroboration
+---------------------------------------------
+Repository: raspberrypi/linux
+Commit: 5bd564aaa8dc4b1b8ed11733c19ec8ece63a72cc
+Path: drivers/media/i2c/imx477.c
+https://github.com/raspberrypi/linux/blob/5bd564aaa8dc4b1b8ed11733c19ec8ece63a72cc/drivers/media/i2c/imx477.c
+SHA-256: 1e767f1c056791d4dd1040fba26dc757803e2a6a16d86f0dc3e3480c6c39fcaa
+Copyright (C) 2020 Raspberry Pi (Trading) Ltd.; GPL-2.0-only.
+
+Lines 102-107 define a 16-bit digital control at 0x020e with default/minimum
+0x0100. The IMX477 common table at line 501 selects 0x3ff9 = 1. The control
+handler at lines 1225-1227 updates only 0x020e in this global configuration.
+The 0x3ff9 = 0 entry at line 2095 belongs to imx378_regs: it is NOT IMX477
+colour-gain evidence and was not used to infer the per-colour register map.
+
+Taken together, the IMX477 experimental description of an asserted global
+selector, its usual 0x01 value, and the official IMX477 global-mode table
+support 1 = global and 0 = individual. This remains an integration using
+experimental register evidence, pending readback and image tests on this unit.
+The Linux control's permitted 0xffff is not evidence that all 16 bits give
+usable 255-times gain; our colour interface deliberately allows only 1..8x.
+No IMX477-specific evidence was found for 0x0214; it is never written here.
+
+4. Operation and failure behavior
+--------------------------------
+imx477_set_colour_gains(dev, red_q8, green_q8, blue_q8) accepts 0x0100..0x0800
+inclusive and requires an initialized, configured device in standby.
+Gain values use Q8 encoding, with 0x0100 = unity. The sequence is:
+
+  0x3ff9 = 1; G high, G low; R high, R low; B high, B low; 0x3ff9 = 0.
+
+Each byte write is immediately read back. The routine stops on the first
+write/read failure or mismatch, preserves that address and error information,
+attempts standby, and invalidates configuration. A cleanup failure does not
+replace the original error. imx477_start then refuses to stream until a full
+successful configuration. The gain fields are published only after success.
+Those fields are meaningful only when configured is true.
+
+No group-hold sequence is used. The caller must stop the stream and let the
+existing stop delay drain it before changing gains, then restart reception.
+All three gains and both selector writes are checked even when an atomic
+16-bit bus callback is available. The legacy global digital-gain setter is
+rejected after individual colour mode is enabled, so it cannot silently alter
+only green. A successful reconfiguration restores global unity gain.
+
+Host mock-bus tests cover all eight write failures, all eight read failures,
+all eight mismatches, failing cleanup, streaming rejection, range limits,
+byte order, selector order, untouched 0x0214, and reconfiguration. These tests
+validate software behavior, not physical gain response or final image colour.
+
+5. Scope of sensor white balance
+-------------------------------
+Per-colour gains rescale sensor channels and can neutralize a known neutral
+target under fixed illumination. They do not supply a 3x3 colour-correction
+matrix, nor establish a standard RGB colour space. No verified IMX477 colour
+matrix register interface was found in these sources. Excess gain can clip
+the sensor output; reduce exposure as necessary before calibrating or judging
+colour. A clipped channel cannot be repaired by a later matrix.
+
+For a white/grey reference, measure unclipped neutral pixels, set gains once,
+then retain them when photographing saturated colours. Do not reinterpret a
+solid red/blue display as a neutral target. The sensor itself does not decide
+which pixels are white; automatic selection or explicit calibration belongs
+to the host application. A white target calibrates balance, not spectral
+cross-talk or the complete colour-correction matrix.
+
+This file summarizes facts and implementation decisions; it does not include
+or relicense the Sony document or university thesis. The portable driver
+and tests retain their GPL-2.0-only source headers.

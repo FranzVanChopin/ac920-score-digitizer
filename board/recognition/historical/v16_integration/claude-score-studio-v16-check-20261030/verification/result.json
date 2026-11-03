@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "recognizer": "/home/fpga/claude-release-v16-20261030",
+  "fixture": "independent reference card, page00-00",
+  "recognition_s": 49.29614517999971,
+  "stages": [
+    "segment",
+    "relation",
+    "headers",
+    "redecode",
+    "decode",
+    "write"
+  ],
+  "rotate_used": "ccw",
+  "clef_ratio": 1.0,
+  "orientation_suspect": false,
+  "page_matches_published_board_reference": true,
+  "page_xml_normalized_sha256": "032543f81bda1de7d6818ef3961da2164adb429ce54ebd741db56140e005014e",
+  "notation": {
+    "key": 1,
+    "clef": 2,
+    "beam": 712,
+    "accidental": 31
+  },
+  "svg_notation": {
+    "keySig": 4,
+    "beam": 49
+  },
+  "engrave_check": "1 pages, 21 measures: sounding events identical in 21/21 measures\n   keys ['4'], clefs ['G2', 'F4'], added {'type': 522, 'dot': 12, 'accidental': 31, 'time-modification': 17, 'beam': 712}, broken beam groups 0",
+  "rendered_pages": 3,
+  "notes": 509,
+  "score_duration_s": 42.49583333333333,
+  "source_xml_unchanged": true,
+  "live_album_and_fat_untouched": true,
+  "audio_played": false,
+  "physical_dp_test": false,
+  "new_camera_photo": false
+}

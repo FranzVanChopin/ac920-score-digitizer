@@ -1,0 +1,104 @@
+IMX477 source and integration notes
+==================================
+
+imx477_registers.h contains byte-for-byte register address/value sequences from
+the official Raspberry Pi Linux driver, preserving their ordering:
+
+  Repository: https://github.com/raspberrypi/linux
+  Commit: 5bd564aaa8dc4b1b8ed11733c19ec8ece63a72cc
+  Path: drivers/media/i2c/imx477.c
+  URL: https://raw.githubusercontent.com/raspberrypi/linux/5bd564aaa8dc4b1b8ed11733c19ec8ece63a72cc/drivers/media/i2c/imx477.c
+  Downloaded source SHA-256:
+    1e767f1c056791d4dd1040fba26dc757803e2a6a16d86f0dc3e3480c6c39fcaa
+  Copyright (C) 2020 Raspberry Pi (Trading) Ltd.
+  Upstream SPDX identifier: GPL-2.0 (GPL version 2 only).
+
+Retained tables:
+  mode_common_regs       -> imx477_common_regs        (346 entries)
+  mode_4056x3040_regs     -> imx477_4056x3040_regs      (59 entries)
+  mode_2028x1520_regs     -> imx477_2028x1520_regs      (48 entries)
+
+The Linux CCI_REG8 wrappers and named constants were expanded into unsigned
+16-bit register addresses and unsigned 8-bit values. No writes were removed or
+reordered inside these tables. The final RAW12, DPC, standalone trigger, PLL,
+test-pattern and exposure controls in imx477.c follow the same driver's
+imx477_start_streaming()/imx477_set_ctrl() implementation. The portable wrapper
+replaces Linux/V4L2/regmap dependencies with caller-owned bus callbacks. Source
+files carrying these adaptations are licensed GPL-2.0-only. COPYING.imx477
+contains the upstream license. Retain the corresponding source and license
+when redistributing a linked firmware image subject to this license.
+
+Fixed electrical configuration
+------------------------------
+Official Raspberry Pi HQ Camera (IMX477, not IMX378), slave address 0x1a (7-bit),
+24 MHz module oscillator, two CSI-2 D-PHY lanes at 900 Mbps each, link frequency
+450 MHz. Register 0x0101 is explicitly zero: no mirror/flip, RGGB Bayer order.
+The driver's codes[] array identifies RGGB as the no-flip format. RAW12 has
+CSI-2 data type 0x2c. Configure the CSI receiver for VC0 / RAW12 image packets;
+embedded metadata packets must not become image rows. The upstream driver
+describes one embedded line of 16384 bytes. The receiver is responsible for
+packet filtering and RAW12 unpacking; this I2C driver does not do either.
+
+The board support code owns 3.3 V and the module ENABLE pin. Raise ENABLE before
+imx477_init(); init waits 500 ms to cover the module's reset supervisor, then
+probes chip ID 0x0477 at 0x0016/0x0017. No external sensor clock output is needed
+for the official HQ module. Both sensor and FPGA must already be wired for the
+approved 3.3-V control interface and native MIPI D-PHY I/O supply.
+
+Timing choices
+--------------
+The upstream timing pixel clock is 840 MHz, distinct from the CSI payload rate.
+Its RAW12 minimum line length at 450-MHz link frequency is computed as:
+
+  floor(width * 12 * 840000000 / (450000000 * 2 * 2)) + 500
+
+For 4056 pixels this is 23213 clocks; the selected 24000 clocks exceeds that
+minimum. With 3500 lines/frame (the upstream full-mode default), the exact frame
+rate is 840000000 / (24000 * 3500) = 10 fps. Initial exposure is 350 lines = 10 ms.
+
+For 2028 pixels the minimum is 11856 clocks. The selected 12000 clocks and 2334
+lines/frame give 29.9914 fps. Initial exposure is 700 lines = 10 ms. The full
+active area is binned 2x2 into 2028x1520. This preview is still RAW12; the comment
+"40fps" in the upstream binned table must not be taken as RAW12 at this timing.
+
+Both modes have unity analogue/digital gains, no test pattern by default,
+on-sensor defect pixel correction enabled, and no external trigger. Exposure
+updates must stay between 4 and frame_length-22 lines. Analogue gain register
+codes 0..978 and digital gain 0x0100..0xffff follow upstream control bounds.
+The analogue gain relation 1024/(1024-code) is also documented by the official
+libcamera camera helper:
+https://github.com/raspberrypi/libcamera/blob/main/src/ipa/rpi/cam_helper/cam_helper_imx477.cpp
+
+Call order and failure handling
+-------------------------------
+1. Platform raises ENABLE; initialize bounded-timeout I2C callbacks.
+2. imx477_init() waits and probes the module, leaving it in standby.
+3. imx477_configure() programs tables and controls, leaving standby.
+4. Initialize/start CSI receiver and downstream frame buffers.
+5. imx477_start() starts the sensor stream.
+6. Stop/drain sensor before reconfiguring downstream geometry or power-off.
+
+All I2C callbacks return zero on success and must implement timeouts. Reads send
+the big-endian 16-bit register address followed by repeated START and an 8-bit
+read. Optional write16addr16 sends the two-byte address followed by both data
+bytes in the same transaction. This callback is required for live exposure,
+gain or test-pattern updates; byte-only callbacks are accepted in standby.
+No unverified group-hold register is used.
+
+An I/O failure invalidates the current configuration and attempts standby;
+hardware stopping cannot be guaranteed while the bus is failing. Inspect
+last_failed_register and last_bus_result, restore the bus, and reconfigure.
+init must be repeated after a camera power cycle. Successful I2C programming
+does not itself prove valid CSI reception: validate frames with the colour-bar
+test pattern before evaluating lens, focus and exposure. This source has host
+mock-bus tests but has not been verified on the user's physical hardware.
+
+Low-gain still exposure extension (2026-10-28)
+-------------------------------------------
+Reference: https://raw.githubusercontent.com/raspberrypi/linux/rpi-6.6.y/drivers/media/i2c/imx477.c
+Upstream imx477_set_frame_length() uses0x0340, max0xffdc; exposure0x0202
+must stay at least22 lines below it. Local still extension is stricter:
+only full-resolution standby, exposure4..35000, frame=max(3500,exposure+22),
+analogue0x0204=0. All six bytes are read back. White-balance gains and
+0x3100=0 remain unchanged. Runtime frame_length_lines tracks actual timing
+for drain, settling and conversion back to preview. No electrical changes.

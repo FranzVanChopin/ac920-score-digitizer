@@ -1,0 +1,31 @@
+{
+  "sensor_resolution": [4056, 3040],
+  "capture_orientation": "portrait_sensor",
+  "a4_output_resolution": [2868, 4056],
+  "lens_focal_length_mm": 25,
+  "quoted_distortion_percent": -0.01,
+  "aperture_range": [2.4, 16],
+  "light": "ample_and_even",
+  "processing_policy": {
+    "preserve_original_capture": true,
+    "native_a4_crop_without_resampling": true,
+    "prepared_encoding": "lossless grayscale PNG",
+    "global_layout_model_width_px": 1920,
+    "local_symbol_tile_width_height_px": [320, 160],
+    "local_symbol_overlap_px": 32,
+    "supplementary_target_staff_space_px": 16,
+    "maximum_photo_pixels": 16000000,
+    "maximum_photo_dimension_px": 8192,
+    "processing_device": "PS CPU, sequential; no new PL or model"
+  },
+  "simulation_assumptions": {
+    "radial_displacement_at_corner_fraction": -0.0001,
+    "paper_margin_fraction": 0.025,
+    "rotation_degrees": 0.08,
+    "blur_sigma_pixels": 0.2,
+    "noise_sigma_gray_levels": 0.5,
+    "illumination_variation_fraction": 0.02,
+    "jpeg_quality": 98
+  },
+  "note": "The sensor is held in portrait orientation. This is a clear-photo simulation, not a lens calibration or a camera input implementation."
+}

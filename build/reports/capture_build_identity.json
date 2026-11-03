@@ -1,0 +1,186 @@
+{
+  "version": "a4_interactive_ui1_light2",
+  "boot_bytes": 8457224,
+  "boot_sha256": "F855AB741399375A44189F2F9D6670AB5E56C19F02D4AD709149D721BAAF6CE8",
+  "xsa_sha256": "DFEB73F143F5CE5231C153D938FA5E70CAAAEC153560F643ED2F92DEB5737AEF",
+  "bitstream_sha256": "1B63ED3C42CB904CF27BED8185756A74AE6507BB6103C4A714F3F2C02B85E823",
+  "sources": [
+    {
+      "file": "capture_binary.c",
+      "sha256": "3A6A85C4917076C0177459606D0E9A09846CE7BE0582FC9F39E8F7FBFF2278B3"
+    },
+    {
+      "file": "capture_binary.h",
+      "sha256": "86931CAA9C4C463698CA7830C18F6D2906A1290DD6D387E47C3EA53E9ACAD5A1"
+    },
+    {
+      "file": "capture_button.c",
+      "sha256": "F12DE693AAC4871D55AE426BD5B730E7DF8F43FB7E1EE843019924DFA3E3AEBF"
+    },
+    {
+      "file": "capture_button.h",
+      "sha256": "C12CFBA645D6A3122247BD4A14F4BB373CB6452F56D947B81ECE5A56FDECEE88"
+    },
+    {
+      "file": "capture_color.c",
+      "sha256": "400407B42D02F81C1DF54EB0E9749C11C7837F1508A516659795A8CE50674C60"
+    },
+    {
+      "file": "capture_color.h",
+      "sha256": "585DB1C3DE48BF61385F90867CC29476A7CEFF014F0C407802021CADDF1F200D"
+    },
+    {
+      "file": "capture_denoise.c",
+      "sha256": "B8E9A0E000214B7B9F32A8F2F8898428AFC71BD9828192DEEBB8DF50DFFEB481"
+    },
+    {
+      "file": "capture_denoise.h",
+      "sha256": "2181E4779DEA34BCFF61A6A8A439690386FF2842EDA232044E42AFB1EDEA2475"
+    },
+    {
+      "file": "capture_dp.c",
+      "sha256": "42C776C758333C82ED189D615882DF5B5C05104DD3B0F989B815DB1FF4BBFBA2"
+    },
+    {
+      "file": "capture_dp.h",
+      "sha256": "6E621BC84D72939EDB1C045D8EE759620E56F755F024E6EB4AB9F8EFEEE5E231"
+    },
+    {
+      "file": "capture_exposure.c",
+      "sha256": "9BACFE0378DDB9D03D7E5340C20F01ED31F6A057FF62F3F5F3BB69DFB51F0B2D"
+    },
+    {
+      "file": "capture_exposure.h",
+      "sha256": "7DFA9702CA8AD634E4F75BAF8A3B887D6509B96BA6F84281E8278BFD25966FA3"
+    },
+    {
+      "file": "capture_fatfs.c",
+      "sha256": "F5E47D4D5004BFC4CF45FCE7A3283DC002E9E1BC314A8B94FE8829AC85DEBBFD"
+    },
+    {
+      "file": "capture_fatfs.h",
+      "sha256": "CFA0E47F8F97BD319F71B3740E9A589A4F5B07D23EF8447033EED8023621320F"
+    },
+    {
+      "file": "capture_focus.c",
+      "sha256": "D1D23BB343E32B0B49E25710B481847C2D222425BEE25524452C37CAF4C9C88C"
+    },
+    {
+      "file": "capture_focus.h",
+      "sha256": "7BE73C9C8B52EEE0F12A2ABF3FA9248FC413C7C06023015B5B63D1F147E3CECF"
+    },
+    {
+      "file": "capture_onecard.c",
+      "sha256": "B8207D7467A6E42D2C8CF21C4A38BB847BAEBEE83D2D95719920E5EF0AB53954"
+    },
+    {
+      "file": "capture_onecard.h",
+      "sha256": "E5B22E739D9062FFF20066C45A2D18CA4C5BA4726E6189806740DBFAB6D7AFFC"
+    },
+    {
+      "file": "capture_pair.c",
+      "sha256": "91F03CB02251AFD53E4E19777FCF6CA4A39D04359CFF5721FFCFB85BCC00D0B9"
+    },
+    {
+      "file": "capture_pair.h",
+      "sha256": "B69DA6E0A34BE90D81E654AD52C11AE158443FDF25119AEBCC2D60C62B1151FA"
+    },
+    {
+      "file": "capture_panel.c",
+      "sha256": "2199E82456257FF5E771A6953B807C55DE758A1368984146A941D74CE1D70DEE"
+    },
+    {
+      "file": "capture_panel.h",
+      "sha256": "AB5AD0097604F4133A0E37F2717CF716AECCE0B7533079A0DAAF1D44A899C301"
+    },
+    {
+      "file": "capture_settle.c",
+      "sha256": "64D8494932BE3F9AA98C8EF1674BDB4AACF2DFDC290C8B98693A0B091EAD08C7"
+    },
+    {
+      "file": "capture_settle.h",
+      "sha256": "9BF328C52BE2AF3C306055E57FB92D6E9EF20F8434320FA9F514F84B9E358D8C"
+    },
+    {
+      "file": "capture_still.c",
+      "sha256": "036CC657D45D28FC79E60449F7E67D212D39189FD5F8790490CF37E22C6689DE"
+    },
+    {
+      "file": "capture_still.h",
+      "sha256": "530DB14D585C5B4B74632E66697C35282469F68DA4DA908B59BB977D71A07D87"
+    },
+    {
+      "file": "capture_store.c",
+      "sha256": "87B3C87FED284CC0D3BBD632DAE2EDD43D1FF4FA403AF301E26F558BC71C8BD5"
+    },
+    {
+      "file": "capture_store.h",
+      "sha256": "D10D821AC0BD6F7CC95C9E0751C802CBE355D2307A4C9325F264FA4B38EBCBA3"
+    },
+    {
+      "file": "dp_pixels.c",
+      "sha256": "1C833EB8CAC5E4F0837B3ECD515A68BE944313F3DED6BB34889844B7DB93952A"
+    },
+    {
+      "file": "dp_pixels.h",
+      "sha256": "94E64B500E4DA1EFAF78E4C2E963BAB0D6AD26113EE3C24CF75EC46FFDCB68D5"
+    },
+    {
+      "file": "ff_contiguous.c",
+      "sha256": "1080A23F29A58B8A1CCB6D40392C8E73AFCED6ACB09E22336AF9EBB3166F59C4"
+    },
+    {
+      "file": "imx477.c",
+      "sha256": "0A5EBE18AA0748733CF3315D4C02ADF8E2A538693B719C17B1FEB40CE927BDD8"
+    },
+    {
+      "file": "imx477.h",
+      "sha256": "468AC6162E3855B9AA1389DD33962A34682206C84AAD27F778095F2038A64BEB"
+    },
+    {
+      "file": "imx477_registers.h",
+      "sha256": "904AB0E431D2FCB048A30CE7591C35ED46841CB05D609DD90BF98EA76A47DCBD"
+    },
+    {
+      "file": "lscript.ld",
+      "sha256": "78D8D1AE4E8DAA9571E549A2D89EA16039E495BB5D8010EDB58DC772CE1E5759"
+    },
+    {
+      "file": "main.c",
+      "sha256": "75E596842AFC4726349BD73D4A43377F40A1EE1032FE079EDAC25BFDC4F136D1"
+    },
+    {
+      "file": "onecard_platform.h",
+      "sha256": "E655E57270B7F07CDB88D79653193BF9C92F2A02ED4383173D3863ADD6FBA0C5"
+    },
+    {
+      "file": "platform_i2c.c",
+      "sha256": "B6EACB8992A0352BB3D4B063974D37AEA69635D3052432C7D9C8FA956F05BA0B"
+    },
+    {
+      "file": "platform_i2c.h",
+      "sha256": "2A5BB45A724962DAF70BB17571D7A8A91C156B8E3FCC40AC5A97C5045B8DE99D"
+    },
+    {
+      "file": "preview.c",
+      "sha256": "587876D5E9FA42BF6C628E8AFC4F32CEC96E8B12E3E7F970E99A346387F9A62A"
+    },
+    {
+      "file": "preview.h",
+      "sha256": "8A979AA08F4A9F5973228782C34AD752BA84495CA7BFDB0CB344375145FEB887"
+    },
+    {
+      "file": "studio_font.c",
+      "sha256": "1548C26FCCE0342854740C5B913C368635B75EBB09278B39E911265E8C42B118"
+    },
+    {
+      "file": "studio_font.h",
+      "sha256": "A5E48C6256D1CC7C633102892BFB292A7E508F8EF8029A0F5796857DE1FCF8B9"
+    }
+  ],
+  "application_size": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n 406564\t   3776\t145491340\t145901680\t8b24870\tF:\\Documents\\Codex\\FPGA\\Music_Score_Recognization\\lab\\camera_interactive_20261030\\build\\camera_capture.elf\n",
+  "build": "PASS: A53 -Wall -Wextra -Werror",
+  "physical_board_test": "pending",
+  "display": "PS DP 1280x720 RGB8, polled VSYNC, double RGBA buffers",
+  "capture": "native Image/Grey/Meta retained; pure DP; S1 unchanged, S2 focus, S3 safe Ubuntu handoff"
+}

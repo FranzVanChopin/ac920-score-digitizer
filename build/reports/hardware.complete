@@ -1,0 +1,8 @@
+Camera hardware accepted by Vivado 2024.2
+Completed UTC: 2026-10-29T11:10:41Z
+Part: xczu4ev-sfvc784-1L-i
+Checks: setup, hold, pulse width, bus skew, DRC, methodology, CDC, internal timing coverage
+Bitstream: camera_capture.runs/impl_1/camera_capture_wrapper.bit
+XSA: camera_capture.xsa (includes bitstream)
+Bitstream SHA256: 1B63ED3C42CB904CF27BED8185756A74AE6507BB6103C4A714F3F2C02B85E823
+XSA SHA256: DFEB73F143F5CE5231C153D938FA5E70CAAAEC153560F643ED2F92DEB5737AEF

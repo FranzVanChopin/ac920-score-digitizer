@@ -1,0 +1,48 @@
+{
+  "reports": {
+    "validation": {
+      "stem": {
+        "intersection": 266433,
+        "reference_pixels": 314516,
+        "candidate_pixels": 331432,
+        "pixel_f1": 0.824936372587267,
+        "threshold": 0.7
+      },
+      "beam": {
+        "intersection": 266089,
+        "reference_pixels": 288722,
+        "candidate_pixels": 299492,
+        "pixel_f1": 0.9047353514197214,
+        "threshold": 0.3
+      },
+      "barline": {
+        "intersection": 200350,
+        "reference_pixels": 225013,
+        "candidate_pixels": 229096,
+        "pixel_f1": 0.8823872682549785,
+        "threshold": 0.7
+      },
+      "flag_1": {
+        "intersection": 11318,
+        "reference_pixels": 14032,
+        "candidate_pixels": 15480,
+        "pixel_f1": 0.767010029818379,
+        "threshold": 0.2
+      },
+      "flag_2": {
+        "intersection": 1901,
+        "reference_pixels": 2473,
+        "candidate_pixels": 2688,
+        "pixel_f1": 0.7366789381902732,
+        "threshold": 0.7
+      },
+      "flag_3": {
+        "intersection": 0,
+        "reference_pixels": 0,
+        "candidate_pixels": 0,
+        "pixel_f1": 0.0,
+        "threshold": 0.2
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "status": "success_read_only_FAT",
+  "collected_jst": "2026-11-03T12:03:36.409417+09:00",
+  "card": {
+    "disk_number": 4,
+    "disk_bytes": 512711720960,
+    "boot_partition_bytes": 17179869184,
+    "filesystem": "FAT32",
+    "label": "AC920_BOOT",
+    "linux_partition_bytes": 68719476736
+  },
+  "boot_sha256": "f855ab741399375a44189f2f9d6670ab5e56c19f02d4ad709149d721baaf6ce8",
+  "boot_matches_frozen_stable": true,
+  "files": [
+    {
+      "path": "Outputs/00.musicxml",
+      "bytes": 59880,
+      "sha256": "c07b6c955fbcf8b9bd5306d0f5465f7e77142c3c4122e787b345e0de29ef66e7",
+      "mtime_unix": 1778858300.0
+    },
+    {
+      "path": "Outputs/album.json",
+      "bytes": 6871,
+      "sha256": "3abe3126df532605bd1727e82688c076c2a8aa5fd84904ae64fdceb0b44cf0ce",
+      "mtime_unix": 1778863370.0
+    },
+    {
+      "path": "Outputs/last_run.log",
+      "bytes": 4095,
+      "sha256": "d57f00bbd0ee7c4a2ee46a58147308ac030ccce558937f2dbcfd278f952bef50",
+      "mtime_unix": 1778863370.0
+    },
+    {
+      "path": "Outputs/01.musicxml",
+      "bytes": 353833,
+      "sha256": "6bd494350b621f9f03657cccf3cc712435c492ef4448fdf7cd87cfa1bcdc89d4",
+      "mtime_unix": 1778863370.0
+    },
+    {
+      "path": "Outputs/README.txt",
+      "bytes": 498,
+      "sha256": "11ad12be04392699ee7b8f273c4eebe8c016f22a8bec8f2b4b3899ba10cabc50",
+      "mtime_unix": 1778824162.0
+    },
+    {
+      "path": "Meta/00-00.json",
+      "bytes": 1081,
+      "sha256": "1dd731ea3932274c922c25b2a67b1d534a2bcae268fc697e8e33678936195b24",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "Meta/01-00.json",
+      "bytes": 1082,
+      "sha256": "b9f7dd4d6dccaa9f0195c3fcaf830ff985d6880789c5271c735eacafb8d24031",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "Meta/01-01.json",
+      "bytes": 1082,
+      "sha256": "a347a6723c4ecc1e3f339fe0fd33316d3bef13e1c9ef101a41d12a774a3cbdf5",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "Meta/01-02.json",
+      "bytes": 1082,
+      "sha256": "0d0b27c71582e1cc35f0f957b6fe243b78431b94c1903986c96e37ed2ddbe156",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "Meta/01-03.json",
+      "bytes": 1082,
+      "sha256": "b53ae6d32112467c9065c847392a573e19b8eba29f075ac8796a4f536b276c2a",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "Meta/01-04.json",
+      "bytes": 1082,
+      "sha256": "f6fcbeb316a5ea14f453c2ac0a1905cc11bf7596745c997c0a51c3b239a599f4",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "Meta/01-05.json",
+      "bytes": 1082,
+      "sha256": "c38fdc8cc7ac6f19a5bae452dcf52696bc81efc3ab06ded2f86e49051923376e",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "OneCard/DONE.JSON",
+      "bytes": 103,
+      "sha256": "d76a3dc69eaad0f5600cddc90450abd9ade5ad9741db06fe2993b1419e8cd4b3",
+      "mtime_unix": 1262271600.0
+    },
+    {
+      "path": "OneCard/LAST.JSON",
+      "bytes": 57,
+      "sha256": "d5cbf91165497b1f51b0d2f3301e1ab44fee80f24510a1361c79cb5881253760",
+      "mtime_unix": 1778863370.0
+    },
+    {
+      "path": "OneCard/READY.TXT",
+      "bytes": 102,
+      "sha256": "6f54288dbf9fb9a3bbf5c94eeee1ba61c9578d61486c0dea32b1df187388d52b",
+      "mtime_unix": 1778649554.0
+    },
+    {
+      "path": "OneCard/REQUEST.JSON",
+      "bytes": 114,
+      "sha256": "3baab12040204a8d354b6e5e93fab865065f492587a90dc7a9445a92d29fc942",
+      "mtime_unix": 1262271600.0
+    }
+  ],
+  "songs": {
+    "00": {
+      "pages": [
+        0
+      ],
+      "measures": 17,
+      "measures_per_page": [
+        17
+      ]
+    },
+    "01": {
+      "pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "measures": 71,
+      "measures_per_page": [
+        17,
+        14,
+        11,
+        6,
+        10,
+        13
+      ]
+    }
+  },
+  "page_ids": [
+    "00-00",
+    "01-00",
+    "01-01",
+    "01-02",
+    "01-03",
+    "01-04",
+    "01-05"
+  ],
+  "score_files": {
+    "00.musicxml": {
+      "measures": 17,
+      "notes": 366,
+      "bytes": 59880,
+      "sha256": "c07b6c955fbcf8b9bd5306d0f5465f7e77142c3c4122e787b345e0de29ef66e7"
+    },
+    "01.musicxml": {
+      "measures": 71,
+      "notes": 1901,
+      "bytes": 353833,
+      "sha256": "6bd494350b621f9f03657cccf3cc712435c492ef4448fdf7cd87cfa1bcdc89d4"
+    }
+  },
+  "last_run_log_bytes": 4095,
+  "recognized_page_times": [
+    {
+      "page": "01-00",
+      "measures": 17,
+      "notes": 347,
+      "seconds": 35.905
+    },
+    {
+      "page": "01-01",
+      "measures": 14,
+      "notes": 309,
+      "seconds": 26.366
+    },
+    {
+      "page": "01-02",
+      "measures": 11,
+      "notes": 385,
+      "seconds": 38.124
+    },
+    {
+      "page": "01-03",
+      "measures": 6,
+      "notes": 136,
+      "seconds": 25.518
+    },
+    {
+      "page": "01-04",
+      "measures": 10,
+      "notes": 298,
+      "seconds": 32.923
+    },
+    {
+      "page": "01-05",
+      "measures": 13,
+      "notes": 341,
+      "seconds": 21.234
+    }
+  ],
+  "log_completed_marker": true,
+  "scope": "Read-only files from Windows-visible FAT partition. No new recognition was run. ext4 service journal was not collected; original Windows process has no raw-device administrator access. Historical board logs supplied separately.",
+  "card_files_written": false
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Reviewed example",
+  "composer": "",
+  "tempo_bpm": 96,
+  "time_signature": {"beats": 4, "beat_type": 4},
+  "parts": [
+    {
+      "name": "Right hand",
+      "clef": "treble",
+      "events": [
+        {"start_beats": 0, "duration_beats": 1, "midi": 60},
+        {"start_beats": 1, "duration_beats": 1, "midi": 64},
+        {"start_beats": 2, "duration_beats": 2, "midi": 67}
+      ]
+    },
+    {
+      "name": "Left hand",
+      "clef": "bass",
+      "events": [
+        {"start_beats": 0, "duration_beats": 4, "midi": 48}
+      ]
+    }
+  ]
+}
