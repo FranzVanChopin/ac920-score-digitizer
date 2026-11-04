@@ -118,18 +118,6 @@ python src/omr/app/compare_musicxml_events.py /tmp/ref.xml /tmp/out/page.musicxm
 
 只应关注**第 1–17 小节**——这页实际只覆盖 17 小节，之后的小节单页本来就没有。
 
-## 作者
-
-本项目由 **FFT** 团队完成：
-
-| 作者 | 邮箱 |
-|---|---|
-| Daijie Peng（队长） | 1622657658@qq.com |
-| Yunyi Liu | liuyunyi060605@163.com |
-| Jinwen Xi | 2045319009@qq.com |
-
-代码与文档版权声明见 [`LICENSE`](LICENSE)。
-
 ## 许可证
 
 本项目自行编写的代码和文档采用 **MIT**，全文见 [`LICENSE`](LICENSE)。

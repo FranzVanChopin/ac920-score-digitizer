@@ -19,8 +19,8 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 1149,
-      "sha256": "486bfa406d53eb2b1f00ddbee7ef2a9789c543b2c89e8901f85ce933be9dd6de",
+      "bytes": 1114,
+      "sha256": "d407025a943d30741b355ce1ca2d4e5b5e66cf82c8e8a09cb7acfe73fd239c18",
       "mode": "0o644",
       "origin": "project MIT license (2026-11-02)"
     },
@@ -61,8 +61,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10126,
-      "sha256": "2efa87cb200ee1f00721130a7be52244d70d21422fb8b7734bc694f0f6454af3",
+      "bytes": 9869,
+      "sha256": "3aec1fc889e45da6a1284824a69ecc5e69cc6718342eb0936c36ce217249bcea",
       "mode": "0o644",
       "origin": "handoff documentation / packaging utility"
     },
